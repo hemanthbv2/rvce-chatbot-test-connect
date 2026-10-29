@@ -1,0 +1,1332 @@
+[
+  {
+    "id": "hostels",
+    "keyword": "girls hostel",
+    "got": "girls_hostel"
+  },
+  {
+    "id": "hostels",
+    "keyword": "hstl",
+    "got": null
+  },
+  {
+    "id": "hostels",
+    "keyword": "hostl",
+    "got": null
+  },
+  {
+    "id": "food",
+    "keyword": "mess food",
+    "got": "mess"
+  },
+  {
+    "id": "food",
+    "keyword": "lunch",
+    "got": "mess"
+  },
+  {
+    "id": "food",
+    "keyword": "breakfast",
+    "got": "mess"
+  },
+  {
+    "id": "food",
+    "keyword": "mess menu",
+    "got": "mess"
+  },
+  {
+    "id": "exam",
+    "keyword": "exam",
+    "got": null
+  },
+  {
+    "id": "cutoffs",
+    "keyword": "kcet rank",
+    "got": "examTypes"
+  },
+  {
+    "id": "fees",
+    "keyword": "fee",
+    "got": null
+  },
+  {
+    "id": "syllabus_1st_sem",
+    "keyword": "sylly",
+    "got": null
+  },
+  {
+    "id": "syllabus_1st_sem",
+    "keyword": "syll",
+    "got": null
+  },
+  {
+    "id": "principal",
+    "keyword": "princi",
+    "got": null
+  },
+  {
+    "id": "vice_principal",
+    "keyword": "vp",
+    "got": null
+  },
+  {
+    "id": "vice_principal",
+    "keyword": "dr k s geetha",
+    "got": "fac_drksgeetha"
+  },
+  {
+    "id": "hods_list",
+    "keyword": "list of hods",
+    "got": "faculty"
+  },
+  {
+    "id": "coe_quantum",
+    "keyword": "q-rvce",
+    "got": "about_rvce"
+  },
+  {
+    "id": "collaborations",
+    "keyword": "tata",
+    "got": "bye"
+  },
+  {
+    "id": "professional_societies",
+    "keyword": "sae",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "dept_mca",
+    "keyword": "mca",
+    "got": "mca"
+  },
+  {
+    "id": "placements",
+    "keyword": "plcmnt",
+    "got": null
+  },
+  {
+    "id": "placements",
+    "keyword": "plcmnts",
+    "got": null
+  },
+  {
+    "id": "departments",
+    "keyword": "view programs",
+    "got": "ugPrograms"
+  },
+  {
+    "id": "departments",
+    "keyword": "depts",
+    "got": null
+  },
+  {
+    "id": "facilities",
+    "keyword": "amenities",
+    "got": null
+  },
+  {
+    "id": "facilities",
+    "keyword": "infra",
+    "got": null
+  },
+  {
+    "id": "team_ashwa",
+    "keyword": "ashwa",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "team_ashwa",
+    "keyword": "racing team",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "team_antariksh",
+    "keyword": "antariksh",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "team_antariksh",
+    "keyword": "satellite team",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "team_vyoma",
+    "keyword": "team vyoma",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "team_vyoma",
+    "keyword": "vyoma",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "team_vyoma",
+    "keyword": "drone team",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "team_chimera",
+    "keyword": "team chimera",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "team_chimera",
+    "keyword": "chimera",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "astra_robotics",
+    "keyword": "astra robotics",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "team_chitrak",
+    "keyword": "team chitrak",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "team_chitrak",
+    "keyword": "chitrak",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "anoraniya",
+    "keyword": "anoraniya",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "project_garuda",
+    "keyword": "project garuda",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "culturalTeams",
+    "keyword": "cultural teams",
+    "got": "culturalLife"
+  },
+  {
+    "id": "culturalTeams",
+    "keyword": "cultural clubs",
+    "got": "culturalLife"
+  },
+  {
+    "id": "culturalTeams",
+    "keyword": "tedx",
+    "got": "culturalLife"
+  },
+  {
+    "id": "culturalTeams",
+    "keyword": "tedxrvce",
+    "got": "culturalLife"
+  },
+  {
+    "id": "culturalTeams",
+    "keyword": "kannada sangha",
+    "got": "kannada_sangha"
+  },
+  {
+    "id": "culturalTeams",
+    "keyword": "nss",
+    "got": "nss"
+  },
+  {
+    "id": "culturalTeams",
+    "keyword": "ncc",
+    "got": "ncc"
+  },
+  {
+    "id": "culturalTeams",
+    "keyword": "ham club",
+    "got": "innovationTeams"
+  },
+  {
+    "id": "hod_aiml",
+    "keyword": "head of ai & machine learning",
+    "got": "dept_aiml"
+  },
+  {
+    "id": "hod_cs",
+    "keyword": "head of computer science & engg",
+    "got": "dept_cs"
+  },
+  {
+    "id": "hod_csaiml",
+    "keyword": "hod cse",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_csaiml",
+    "keyword": "cse hod",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_cscy",
+    "keyword": "hod cse",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_cscy",
+    "keyword": "cse hod",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_cscy",
+    "keyword": "head of cse",
+    "got": "hod_csaiml"
+  },
+  {
+    "id": "hod_csds",
+    "keyword": "hod cse",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_csds",
+    "keyword": "cse hod",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_csds",
+    "keyword": "head of cse",
+    "got": "hod_csaiml"
+  },
+  {
+    "id": "hod_ee",
+    "keyword": "head of electrical & electronics",
+    "got": "dept_ee"
+  },
+  {
+    "id": "hod_ec",
+    "keyword": "hod electronics & communication",
+    "got": "faculty"
+  },
+  {
+    "id": "hod_ec",
+    "keyword": "electronics & communication hod",
+    "got": "faculty"
+  },
+  {
+    "id": "hod_ec",
+    "keyword": "head of electronics & communication",
+    "got": null
+  },
+  {
+    "id": "hod_ei",
+    "keyword": "head of electronics & instrumentation",
+    "got": "dept_ei"
+  },
+  {
+    "id": "hod_et",
+    "keyword": "head of electronics & telecom",
+    "got": "dept_et"
+  },
+  {
+    "id": "hod_im",
+    "keyword": "head of industrial engg & mgmt",
+    "got": "dept_im"
+  },
+  {
+    "id": "hod_is",
+    "keyword": "head of information science & engg",
+    "got": "dept_is"
+  },
+  {
+    "id": "hod_sports",
+    "keyword": "hod physical education & sports"
+  },
+  {
+    "id": "hod_sports",
+    "keyword": "head of physical education & sports",
+    "got": "sports"
+  },
+  {
+    "id": "hod_bt",
+    "keyword": "head of m.tech biotechnology"
+  },
+  {
+    "id": "hod_cv_se",
+    "keyword": "hod cv_se",
+    "got": "hod_cv"
+  },
+  {
+    "id": "hod_cv_se",
+    "keyword": "cv_se hod",
+    "got": "hod_cv"
+  },
+  {
+    "id": "hod_cv_se",
+    "keyword": "head of cv_se"
+  },
+  {
+    "id": "hod_cv_se",
+    "keyword": "who is the hod of cv_se",
+    "got": "hod_cv"
+  },
+  {
+    "id": "hod_cv_se",
+    "keyword": "hod m.tech structural engg"
+  },
+  {
+    "id": "hod_cv_se",
+    "keyword": "head of m.tech structural engg"
+  },
+  {
+    "id": "hod_cv_ht",
+    "keyword": "hod cv_ht",
+    "got": "hod_cv"
+  },
+  {
+    "id": "hod_cv_ht",
+    "keyword": "cv_ht hod",
+    "got": "hod_cv"
+  },
+  {
+    "id": "hod_cv_ht",
+    "keyword": "head of cv_ht"
+  },
+  {
+    "id": "hod_cv_ht",
+    "keyword": "who is the hod of cv_ht",
+    "got": "hod_cv"
+  },
+  {
+    "id": "hod_cv_ht",
+    "keyword": "hod m.tech highway tech"
+  },
+  {
+    "id": "hod_cv_ht",
+    "keyword": "head of m.tech highway tech"
+  },
+  {
+    "id": "hod_cs_cse",
+    "keyword": "hod cs_cse",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_cs_cse",
+    "keyword": "cs_cse hod",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_cs_cse",
+    "keyword": "head of cs_cse"
+  },
+  {
+    "id": "hod_cs_cse",
+    "keyword": "who is the hod of cs_cse",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_cs_cse",
+    "keyword": "hod m.tech cse",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_cs_cse",
+    "keyword": "head of m.tech cse"
+  },
+  {
+    "id": "hod_cs_cne",
+    "keyword": "hod cs_cne",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_cs_cne",
+    "keyword": "cs_cne hod",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_cs_cne",
+    "keyword": "head of cs_cne"
+  },
+  {
+    "id": "hod_cs_cne",
+    "keyword": "who is the hod of cs_cne",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_cs_cne",
+    "keyword": "hod m.tech computer network engg"
+  },
+  {
+    "id": "hod_cs_cne",
+    "keyword": "head of m.tech computer network engg"
+  },
+  {
+    "id": "hod_ee_pe",
+    "keyword": "hod ee_pe",
+    "got": "hod_ee"
+  },
+  {
+    "id": "hod_ee_pe",
+    "keyword": "ee_pe hod",
+    "got": "hod_ee"
+  },
+  {
+    "id": "hod_ee_pe",
+    "keyword": "head of ee_pe"
+  },
+  {
+    "id": "hod_ee_pe",
+    "keyword": "who is the hod of ee_pe",
+    "got": "hod_ee"
+  },
+  {
+    "id": "hod_ee_pe",
+    "keyword": "hod m.tech power electronics"
+  },
+  {
+    "id": "hod_ee_pe",
+    "keyword": "head of m.tech power electronics"
+  },
+  {
+    "id": "hod_ec_vlsi",
+    "keyword": "hod ec_vlsi",
+    "got": "hod_ec"
+  },
+  {
+    "id": "hod_ec_vlsi",
+    "keyword": "ec_vlsi hod",
+    "got": "hod_ec"
+  },
+  {
+    "id": "hod_ec_vlsi",
+    "keyword": "head of ec_vlsi"
+  },
+  {
+    "id": "hod_ec_vlsi",
+    "keyword": "who is the hod of ec_vlsi",
+    "got": "hod_ec"
+  },
+  {
+    "id": "hod_ec_vlsi",
+    "keyword": "hod m.tech vlsi & embedded"
+  },
+  {
+    "id": "hod_ec_vlsi",
+    "keyword": "head of m.tech vlsi & embedded"
+  },
+  {
+    "id": "hod_ec_cs",
+    "keyword": "hod ec_cs",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_ec_cs",
+    "keyword": "ec_cs hod",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_ec_cs",
+    "keyword": "head of ec_cs"
+  },
+  {
+    "id": "hod_ec_cs",
+    "keyword": "who is the hod of ec_cs",
+    "got": "hod_cs"
+  },
+  {
+    "id": "hod_ec_cs",
+    "keyword": "hod m.tech comm systems"
+  },
+  {
+    "id": "hod_ec_cs",
+    "keyword": "head of m.tech comm systems"
+  },
+  {
+    "id": "hod_is_se",
+    "keyword": "hod is_se"
+  },
+  {
+    "id": "hod_is_se",
+    "keyword": "is_se hod",
+    "got": "faculty"
+  },
+  {
+    "id": "hod_is_se",
+    "keyword": "head of is_se",
+    "got": "hod_is"
+  },
+  {
+    "id": "hod_is_se",
+    "keyword": "who is the hod of is_se"
+  },
+  {
+    "id": "hod_is_se",
+    "keyword": "hod m.tech software engg"
+  },
+  {
+    "id": "hod_is_se",
+    "keyword": "head of m.tech software engg"
+  },
+  {
+    "id": "hod_is_it",
+    "keyword": "hod is_it"
+  },
+  {
+    "id": "hod_is_it",
+    "keyword": "is_it hod",
+    "got": "faculty"
+  },
+  {
+    "id": "hod_is_it",
+    "keyword": "head of is_it",
+    "got": "hod_is"
+  },
+  {
+    "id": "hod_is_it",
+    "keyword": "who is the hod of is_it"
+  },
+  {
+    "id": "hod_is_it",
+    "keyword": "hod m.tech info tech"
+  },
+  {
+    "id": "hod_is_it",
+    "keyword": "head of m.tech info tech"
+  },
+  {
+    "id": "hod_me_pd",
+    "keyword": "hod me_pd"
+  },
+  {
+    "id": "hod_me_pd",
+    "keyword": "me_pd hod",
+    "got": "faculty"
+  },
+  {
+    "id": "hod_me_pd",
+    "keyword": "head of me_pd",
+    "got": "hod_me"
+  },
+  {
+    "id": "hod_me_pd",
+    "keyword": "who is the hod of me_pd"
+  },
+  {
+    "id": "hod_me_pd",
+    "keyword": "hod m.tech product design"
+  },
+  {
+    "id": "hod_me_pd",
+    "keyword": "head of m.tech product design"
+  },
+  {
+    "id": "hod_me_md",
+    "keyword": "hod me_md"
+  },
+  {
+    "id": "hod_me_md",
+    "keyword": "me_md hod",
+    "got": "faculty"
+  },
+  {
+    "id": "hod_me_md",
+    "keyword": "head of me_md",
+    "got": "hod_me"
+  },
+  {
+    "id": "hod_me_md",
+    "keyword": "who is the hod of me_md"
+  },
+  {
+    "id": "hod_me_md",
+    "keyword": "hod m.tech machine design"
+  },
+  {
+    "id": "hod_me_md",
+    "keyword": "head of m.tech machine design"
+  },
+  {
+    "id": "hod_et_dc",
+    "keyword": "hod et_dc"
+  },
+  {
+    "id": "hod_et_dc",
+    "keyword": "et_dc hod",
+    "got": "faculty"
+  },
+  {
+    "id": "hod_et_dc",
+    "keyword": "head of et_dc",
+    "got": "hod_et"
+  },
+  {
+    "id": "hod_et_dc",
+    "keyword": "who is the hod of et_dc"
+  },
+  {
+    "id": "hod_et_dc",
+    "keyword": "hod m.tech digital comm"
+  },
+  {
+    "id": "hod_et_dc",
+    "keyword": "head of m.tech digital comm"
+  },
+  {
+    "id": "plcmt_csaiml",
+    "keyword": "cse placement",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_csaiml",
+    "keyword": "cse placements",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cscy",
+    "keyword": "cse placement",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cscy",
+    "keyword": "cse placements",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cscy",
+    "keyword": "placement in cse",
+    "got": "plcmt_csaiml"
+  },
+  {
+    "id": "plcmt_cscy",
+    "keyword": "placements in cse",
+    "got": "plcmt_csaiml"
+  },
+  {
+    "id": "plcmt_csds",
+    "keyword": "cse placement",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_csds",
+    "keyword": "cse placements",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_csds",
+    "keyword": "placement in cse",
+    "got": "plcmt_csaiml"
+  },
+  {
+    "id": "plcmt_csds",
+    "keyword": "placements in cse",
+    "got": "plcmt_csaiml"
+  },
+  {
+    "id": "plcmt_ec",
+    "keyword": "electronics & communication placement",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_ec",
+    "keyword": "electronics & communication placements",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_ec",
+    "keyword": "placement in electronics & communication",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_ec",
+    "keyword": "placements in electronics & communication",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_sports",
+    "keyword": "physical education & sports placement"
+  },
+  {
+    "id": "plcmt_sports",
+    "keyword": "placement in physical education & sports"
+  },
+  {
+    "id": "plcmt_sports",
+    "keyword": "placements in physical education & sports"
+  },
+  {
+    "id": "plcmt_cv_se",
+    "keyword": "cv_se placement",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_se",
+    "keyword": "cv_se placements",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_se",
+    "keyword": "cv_se salary",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_se",
+    "keyword": "cv_se package",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_se",
+    "keyword": "cv_se job",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_se",
+    "keyword": "m.tech structural engg placement"
+  },
+  {
+    "id": "plcmt_cv_se",
+    "keyword": "placement in cv_se",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_se",
+    "keyword": "placements in cv_se",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_se",
+    "keyword": "placement in m.tech structural engg"
+  },
+  {
+    "id": "plcmt_cv_se",
+    "keyword": "placements in m.tech structural engg"
+  },
+  {
+    "id": "plcmt_cv_ht",
+    "keyword": "cv_ht placement",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_ht",
+    "keyword": "cv_ht placements",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_ht",
+    "keyword": "cv_ht salary",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_ht",
+    "keyword": "cv_ht package",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_ht",
+    "keyword": "cv_ht job",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_ht",
+    "keyword": "m.tech highway tech placement"
+  },
+  {
+    "id": "plcmt_cv_ht",
+    "keyword": "placement in cv_ht",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_ht",
+    "keyword": "placements in cv_ht",
+    "got": "plcmt_cv"
+  },
+  {
+    "id": "plcmt_cv_ht",
+    "keyword": "placement in m.tech highway tech"
+  },
+  {
+    "id": "plcmt_cv_ht",
+    "keyword": "placements in m.tech highway tech"
+  },
+  {
+    "id": "plcmt_cs_cse",
+    "keyword": "cs_cse placement",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cse",
+    "keyword": "cs_cse placements",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cse",
+    "keyword": "cs_cse salary",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cse",
+    "keyword": "cs_cse package",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cse",
+    "keyword": "cs_cse job",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cse",
+    "keyword": "m.tech cse placement",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cse",
+    "keyword": "placement in cs_cse",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cse",
+    "keyword": "placements in cs_cse",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cse",
+    "keyword": "placement in m.tech cse",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cse",
+    "keyword": "placements in m.tech cse",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cne",
+    "keyword": "cs_cne placement",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cne",
+    "keyword": "cs_cne placements",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cne",
+    "keyword": "cs_cne salary",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cne",
+    "keyword": "cs_cne package",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cne",
+    "keyword": "cs_cne job",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cne",
+    "keyword": "m.tech computer network engg placement"
+  },
+  {
+    "id": "plcmt_cs_cne",
+    "keyword": "placement in cs_cne",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cne",
+    "keyword": "placements in cs_cne",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_cs_cne",
+    "keyword": "placement in m.tech computer network engg"
+  },
+  {
+    "id": "plcmt_cs_cne",
+    "keyword": "placements in m.tech computer network engg"
+  },
+  {
+    "id": "plcmt_ee_pe",
+    "keyword": "ee_pe placement",
+    "got": "plcmt_ee"
+  },
+  {
+    "id": "plcmt_ee_pe",
+    "keyword": "ee_pe placements",
+    "got": "plcmt_ee"
+  },
+  {
+    "id": "plcmt_ee_pe",
+    "keyword": "ee_pe salary",
+    "got": "plcmt_ee"
+  },
+  {
+    "id": "plcmt_ee_pe",
+    "keyword": "ee_pe package",
+    "got": "plcmt_ee"
+  },
+  {
+    "id": "plcmt_ee_pe",
+    "keyword": "ee_pe job",
+    "got": "plcmt_ee"
+  },
+  {
+    "id": "plcmt_ee_pe",
+    "keyword": "m.tech power electronics placement"
+  },
+  {
+    "id": "plcmt_ee_pe",
+    "keyword": "placement in ee_pe",
+    "got": "plcmt_ee"
+  },
+  {
+    "id": "plcmt_ee_pe",
+    "keyword": "placements in ee_pe",
+    "got": "plcmt_ee"
+  },
+  {
+    "id": "plcmt_ee_pe",
+    "keyword": "placement in m.tech power electronics"
+  },
+  {
+    "id": "plcmt_ee_pe",
+    "keyword": "placements in m.tech power electronics"
+  },
+  {
+    "id": "plcmt_ec_vlsi",
+    "keyword": "ec_vlsi placement",
+    "got": "plcmt_ec"
+  },
+  {
+    "id": "plcmt_ec_vlsi",
+    "keyword": "ec_vlsi placements",
+    "got": "plcmt_ec"
+  },
+  {
+    "id": "plcmt_ec_vlsi",
+    "keyword": "ec_vlsi salary",
+    "got": "plcmt_ec"
+  },
+  {
+    "id": "plcmt_ec_vlsi",
+    "keyword": "ec_vlsi package",
+    "got": "plcmt_ec"
+  },
+  {
+    "id": "plcmt_ec_vlsi",
+    "keyword": "ec_vlsi job",
+    "got": "plcmt_ec"
+  },
+  {
+    "id": "plcmt_ec_vlsi",
+    "keyword": "m.tech vlsi & embedded placement"
+  },
+  {
+    "id": "plcmt_ec_vlsi",
+    "keyword": "placement in ec_vlsi",
+    "got": "plcmt_ec"
+  },
+  {
+    "id": "plcmt_ec_vlsi",
+    "keyword": "placements in ec_vlsi",
+    "got": "plcmt_ec"
+  },
+  {
+    "id": "plcmt_ec_vlsi",
+    "keyword": "placement in m.tech vlsi & embedded"
+  },
+  {
+    "id": "plcmt_ec_vlsi",
+    "keyword": "placements in m.tech vlsi & embedded"
+  },
+  {
+    "id": "plcmt_ec_cs",
+    "keyword": "ec_cs placement",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_ec_cs",
+    "keyword": "ec_cs placements",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_ec_cs",
+    "keyword": "ec_cs salary",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_ec_cs",
+    "keyword": "ec_cs package",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_ec_cs",
+    "keyword": "ec_cs job",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_ec_cs",
+    "keyword": "m.tech comm systems placement"
+  },
+  {
+    "id": "plcmt_ec_cs",
+    "keyword": "placement in ec_cs",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_ec_cs",
+    "keyword": "placements in ec_cs",
+    "got": "plcmt_cs"
+  },
+  {
+    "id": "plcmt_ec_cs",
+    "keyword": "placement in m.tech comm systems"
+  },
+  {
+    "id": "plcmt_ec_cs",
+    "keyword": "placements in m.tech comm systems"
+  },
+  {
+    "id": "plcmt_is_se",
+    "keyword": "is_se placement",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_is_se",
+    "keyword": "is_se placements",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_is_se",
+    "keyword": "is_se salary",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_is_se",
+    "keyword": "is_se package",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_is_se",
+    "keyword": "is_se job",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_is_se",
+    "keyword": "m.tech software engg placement"
+  },
+  {
+    "id": "plcmt_is_se",
+    "keyword": "placement in is_se"
+  },
+  {
+    "id": "plcmt_is_se",
+    "keyword": "placements in is_se"
+  },
+  {
+    "id": "plcmt_is_se",
+    "keyword": "placement in m.tech software engg"
+  },
+  {
+    "id": "plcmt_is_se",
+    "keyword": "placements in m.tech software engg"
+  },
+  {
+    "id": "plcmt_is_it",
+    "keyword": "is_it placement",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_is_it",
+    "keyword": "is_it placements",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_is_it",
+    "keyword": "is_it salary",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_is_it",
+    "keyword": "is_it package",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_is_it",
+    "keyword": "is_it job",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_is_it",
+    "keyword": "m.tech info tech placement"
+  },
+  {
+    "id": "plcmt_is_it",
+    "keyword": "placement in is_it"
+  },
+  {
+    "id": "plcmt_is_it",
+    "keyword": "placements in is_it"
+  },
+  {
+    "id": "plcmt_is_it",
+    "keyword": "placement in m.tech info tech"
+  },
+  {
+    "id": "plcmt_is_it",
+    "keyword": "placements in m.tech info tech"
+  },
+  {
+    "id": "plcmt_me_pd",
+    "keyword": "me_pd placement",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_me_pd",
+    "keyword": "me_pd placements",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_me_pd",
+    "keyword": "me_pd salary",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_me_pd",
+    "keyword": "me_pd package",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_me_pd",
+    "keyword": "me_pd job",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_me_pd",
+    "keyword": "m.tech product design placement"
+  },
+  {
+    "id": "plcmt_me_pd",
+    "keyword": "placement in me_pd"
+  },
+  {
+    "id": "plcmt_me_pd",
+    "keyword": "placements in me_pd"
+  },
+  {
+    "id": "plcmt_me_pd",
+    "keyword": "placement in m.tech product design"
+  },
+  {
+    "id": "plcmt_me_pd",
+    "keyword": "placements in m.tech product design"
+  },
+  {
+    "id": "plcmt_me_md",
+    "keyword": "me_md placement",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_me_md",
+    "keyword": "me_md placements",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_me_md",
+    "keyword": "me_md salary",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_me_md",
+    "keyword": "me_md package",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_me_md",
+    "keyword": "me_md job",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_me_md",
+    "keyword": "m.tech machine design placement"
+  },
+  {
+    "id": "plcmt_me_md",
+    "keyword": "placement in me_md"
+  },
+  {
+    "id": "plcmt_me_md",
+    "keyword": "placements in me_md"
+  },
+  {
+    "id": "plcmt_me_md",
+    "keyword": "placement in m.tech machine design"
+  },
+  {
+    "id": "plcmt_me_md",
+    "keyword": "placements in m.tech machine design"
+  },
+  {
+    "id": "plcmt_et_dc",
+    "keyword": "et_dc placement",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_et_dc",
+    "keyword": "et_dc placements",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_et_dc",
+    "keyword": "et_dc salary",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_et_dc",
+    "keyword": "et_dc package",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_et_dc",
+    "keyword": "et_dc job",
+    "got": "placements"
+  },
+  {
+    "id": "plcmt_et_dc",
+    "keyword": "m.tech digital comm placement"
+  },
+  {
+    "id": "plcmt_et_dc",
+    "keyword": "placement in et_dc"
+  },
+  {
+    "id": "plcmt_et_dc",
+    "keyword": "placements in et_dc"
+  },
+  {
+    "id": "plcmt_et_dc",
+    "keyword": "placement in m.tech digital comm"
+  },
+  {
+    "id": "plcmt_et_dc",
+    "keyword": "placements in m.tech digital comm"
+  },
+  {
+    "id": "fac_drbmsagar",
+    "keyword": "dr. b.m. sagar"
+  },
+  {
+    "id": "fac_drbmsagar",
+    "keyword": "b.m. sagar"
+  },
+  {
+    "id": "fac_drdranganath",
+    "keyword": "d. ranganath"
+  },
+  {
+    "id": "fac_drdranganath",
+    "keyword": "d. ranganath"
+  },
+  {
+    "id": "fac_drrachanasakki",
+    "keyword": "rachana s. akki"
+  },
+  {
+    "id": "fac_drrachanasakki",
+    "keyword": "rachana s. akki"
+  },
+  {
+    "id": "fac_drbmsagar",
+    "keyword": "b. m. sagar"
+  }
+]

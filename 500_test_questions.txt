@@ -1,0 +1,1499 @@
+Query: "What is ise for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me girls hostel facilities??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me kcet cutoff for cse ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is girls hostel facilities??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me civil branch average package urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me who is dean student affairs please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot what is cse??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of mess food menu please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Biotech department intake??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me is ete NBA accredited ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell who is dean academics please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of is ete NBA accredited in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the total intake for Mechanical please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me civil branch average package for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell fee structur for management quota"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot faculty list in IEM??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Eee placement report ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of how are placements in ETE ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know hostel mess food quality for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the who is vice principal"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me tell me about mechanical engg"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about comedk cutoff ranks please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about sports ground and gym facilities for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How to reach rvce by bus in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Eee placement report for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Is jee mains accepted for admission urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Iem placement package 2025??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell bt seat capacity in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me tell me about cisco iot coe"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Refund policy for fee cancellation ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is eee placement report in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of college timings on saturday??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of how many seats in ete"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of how to reach rvce by bus"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about nearest metro station ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on boys hostel single room??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me comedk cutoff ranks in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on plakement statistics cse ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me bt placement package 2025??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on central library timings in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about professors in iem department for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the who is vice principal in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me what is ise??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell central library timings in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the who is dean research ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me value for money roi of rvce ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me fee structure for BE 2026 please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me boys hostel single room please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about mech placement package 2025??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about ete department HOD name ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know innovation teams in rvce for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know dress code rules??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me ei department HOD name please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell eee placement report ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell tell me about mechanical engg urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on who is dean student affairs??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me professors in eee department??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the is CSE NBA accredited??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know mess food menu ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of who is dean research for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about CSCY placement package 2025 please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about what is cse in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know ISE department HOD name??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell who is HOD of cs please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot anti ragging helpline number urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me contact phone numbers for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot who is dean academics ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me who is dean research in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of total intake for CSDS"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me what is cse??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of sports ground and gym facilities ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know refund policy for fee cancellation for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Anti ragging helpline number for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the civil branch average package"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is dress code rules"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me biotech department intake please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me canteen food options in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about fee structure for BE 2026 urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the is jee mains accepted for admission ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me comedk cutoff ranks in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the innovation teams in rvce in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot canteen food options ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is who is placement director in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me professors in EIE department"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me nearest metro station??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of comedk cutoff ranks please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about who is the principal ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell how to reach rvce by bus for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Head of department CSDS ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about is jee mains accepted for admission in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell hostel mess food quality"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot mess food menu for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot head of department ISE"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot canteen food options in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me who is dean academics in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the head of department mca urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the hostel fee details"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on dean placement name"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is who is the principal in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Contact phone numbers"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me what is cse ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on mech placement package 2025??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know ETE placement package 2025 please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me EEE seat capacity ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about average salary of IEM branch urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know canteen food options ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me head of department MCA please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about who is dean research??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on what are the centres of excellence in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is tell me about cisco iot coe"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me who is dean student affairs urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot contact phone numbers please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell Mechanical seat capacity??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot CSDS placement package 2025 urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about canteen food options ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on is parking available for students urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is fee structur for management quota please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is who is the principal ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot value for money roi of rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me hostel mess food quality urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about comedk cutoff ranks for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know addmissions procedure 2026 for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on contact phone numbers please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about dean placement name for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me anti ragging helpline number in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about what is ise for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Comedk cutoff ranks urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell Aerospace department HOD name for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know tell me about cisco iot coe ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about aero placement statistics 2026 for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is ds seat capacity ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me hostel mess food quality in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me who is dean academics for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know head of department MCA"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about who is princpal of rvce in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me 8th mile college fest for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the total intake for EIE for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell value for money roi of rvce please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about head of department Biotech urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about is IEM NBA accredited for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is fee structure for BE 2026 urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on who is HOD of IEM??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me is mca NBA accredited in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the boys hostel single room??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Dean placement name urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of hostel mess food quality"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me average salary of CSCY branch"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on college timings on saturday??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell central library timings"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the average salary of mech branch??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of what is ece highest salary please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is who is HOD of Mechanical"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about innovation teams in rvce in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the who is the principal urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about who is dean research in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know girls hostel facilities please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me eee placement report"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Highest package in ISE in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Professors in ETE department"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is who is dean academics ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know refund policy for fee cancellation ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is campus size and address in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is who is vice principal urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is what is ece highest salary urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on placement stats for ETE urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me who is the principal ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know who is HOD of ec for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is dean placement name for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the refund policy for fee cancellation please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me who is princpal of rvce please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is what is ise??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the tell me about mechanical engg??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me what is ise urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know who is vice principal ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about hostel mess food quality ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me college timings on saturday"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me who is dean academics??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know average salary of MCA branch"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell nearest metro station in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is is parking available for students please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about refund policy for fee cancellation in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot is Civil NBA accredited ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about is rvce autonomous??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell highest package in AIML??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me sports ground and gym facilities"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of mca placement statistics 2026 for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me average salary of cs branch??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me official website link please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know sports ground and gym facilities urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell value for money roi of rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me ETE seat capacity urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the fee structur for management quota in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about college timings on saturday in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell hostel mess food quality??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell head of department ete ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of who is the placement officer"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on comedk cutoff ranks urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about what is management quota fee please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot addmissions procedure 2026 ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me what is cse??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is boys hostel single room please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot plakement statistics cse please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of official website link ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me who is dean research urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot faculty list in ec in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me is rvce autonomous please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know total intake for IEM ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell tell me about cisco iot coe in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is faculty list in EEE please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell tell me about mechanical engg ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of hostel mess food quality ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me canteen food options??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is sports ground and gym facilities ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me what is management quota fee urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know CSE placement package 2025"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me dean placement name??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me total intake for Biotech for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know is rvce autonomous"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about contact phone numbers for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about dean placement name ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell what is ece highest salary urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me is parking available for students in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is comedk cutoff ranks ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on is MCA NBA accredited ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot nearest metro station"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about addmissions procedure 2026 for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about total intake for ISE??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on what is ece highest salary please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about fee structur for management quota urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Who is dean research please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot mess food menu urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is tell me about mechanical engg for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me comedk cutoff ranks??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot anti ragging helpline number ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me value for money roi of rvce for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know eee placement report ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is refund policy for fee cancellation please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me is rvce autonomous??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know who is the placement officer please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is ashwa racing team details for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of eee placement report for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me is AIML NBA accredited please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Canteen food options urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot eee placement report please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on faculty list in CSCY for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on who is dean research for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me who is vice principal"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of fee structure for BE 2026 for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot dean placement name in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of hostel mess food quality for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hostel fee details"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about hostel fee details??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot highest package in EEE in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me kcet cutoff for cse??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the comedk cutoff ranks for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot canteen food options??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about what are the centres of excellence in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is iem seat capacity please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know iem placement package 2025 please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me ashwa racing team details urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Kcet cutoff for cse"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of what is cse??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on eee placement report"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of who is dean student affairs"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the is aiml NBA accredited??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me comedk cutoff ranks"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about how are placements in AIML"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know fee structur for management quota ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the sports ground and gym facilities ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot who is vice principal in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot who is the placement officer please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me anti ragging helpline number for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about ashwa racing team details in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me dress code rules in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about head of department mech??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell eee placement report urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot what is management quota fee urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me mess food menu for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me how many seats in EIE in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the addmissions procedure 2026 ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Who is princpal of rvce for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about who is dean student affairs urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on anti ragging helpline number for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about faculty list in CSE in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the average salary of Aerospace branch??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is anti ragging helpline number??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of what is ise in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is what is management quota fee ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about fee structure for BE 2026 urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the kcet cutoff for cse please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on professors in Aerospace department"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is faculty list in eee urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on addmissions procedure 2026 ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sports ground and gym facilities"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on who is dean research"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about head of department ise please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about ise placement package 2025 ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of canteen food options please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me placement stats for ise in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on head of department ete please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me comedk cutoff ranks in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot canteen food options"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me average salary of mca branch urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about hostel fee details??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Highest package in IEM for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me mess food menu urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know canteen food options please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know professors in iem department please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the who is dean research"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me hostel mess food quality??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Who is dean academics in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about hostel fee details for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me who is HOD of ise"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about who is placement director??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know kcet cutoff for cse ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell nearest metro station for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot campus size and address??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know total intake for ete for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of civil branch average package??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me college timings on saturday"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot Chemical seat capacity ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the tell me about mechanical engg urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell who is dean academics urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me is civil NBA accredited urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is ashwa racing team details in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know girls hostel facilities for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the civil branch average package urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on sports ground and gym facilities in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about 8th mile college fest ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me addmissions procedure 2026 in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me how to reach rvce by bus ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me average salary of chem branch urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know professors in Mechanical department ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of hostel mess food quality please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of who is placement director in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is is jee mains accepted for admission for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on what are the centres of excellence??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about nearest metro station urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of plakement statistics cse urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me girls hostel facilities for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is central library timings ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me refund policy for fee cancellation"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me professors in IEM department urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know what is cse please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the who is dean student affairs please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me kcet cutoff for cse urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me hostel mess food quality??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me dean placement name for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about value for money roi of rvce??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot Aerospace placement statistics 2026 for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know contact phone numbers please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on mess food menu??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me mech seat capacity in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me what are the centres of excellence for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the EEE department HOD name??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me dean placement name"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is who is dean student affairs"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is placement stats for CSE in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me sports ground and gym facilities??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot college timings on saturday??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell hostel mess food quality ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know how are placements in EIE in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of civil branch average package urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me hostel fee details please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is fee structur for management quota in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on CSE seat capacity for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know ashwa racing team details ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about who is the principal please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me highest package in MCA ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about who is the placement officer please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on hostel mess food quality"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me how many seats in Civil urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is eee placement report for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know how are placements in CSDS please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is ISE seat capacity in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot eee placement report??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of ECE seat capacity"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me boys hostel single room ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on kcet cutoff for cse please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of 8th mile college fest in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about tell me about cisco iot coe"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me comedk cutoff ranks please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Value for money roi of rvce??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Placement stats for CSE please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of anti ragging helpline number"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell dress code rules please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot 8th mile college fest urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me campus size and address??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on civil branch average package"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me chem department HOD name please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about head of department Civil??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Dean placement name please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is average salary of cs branch"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know nearest metro station"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me professors in aiml department for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me fee structure for BE 2026"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is refund policy for fee cancellation??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Fee structur for management quota"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of professors in ei department??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me is parking available for students for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is what is cse urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of what is ise urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the fee structure for BE 2026 ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about what is ece highest salary in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot what is cse"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about is jee mains accepted for admission in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know boys hostel single room please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell how many seats in EEE"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about who is princpal of rvce in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me kcet cutoff for cse please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot how are placements in MCA urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know comedk cutoff ranks please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about who is HOD of iem in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of how to reach rvce by bus urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is who is the placement officer please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me ei placement statistics 2026??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on eee placement report??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me hostel mess food quality ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on girls hostel facilities for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about who is vice principal"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about nearest metro station"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me placement stats for Aerospace please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot who is the placement officer for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know canteen food options in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How many seats in bt in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the value for money roi of rvce??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell what is ise??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know fee structur for management quota for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me plakement statistics cse for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me is jee mains accepted for admission urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about anti ragging helpline number please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the biotech department intake please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me who is princpal of rvce??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of professors in Civil department in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the addmissions procedure 2026 in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me central library timings please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about who is dean student affairs for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me who is placement director??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the what is cse for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell who is vice principal in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Canteen food options in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me refund policy for fee cancellation urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me fee structur for management quota for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot what is management quota fee please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me how many seats in ei for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Who is the principal in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me EIE placement package 2025??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me mca placement statistics 2026"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is anti ragging helpline number for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me what is cse in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell eee seat capacity in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me is aiml NBA accredited ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of professors in MCA department ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me is MCA NBA accredited??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about head of department EEE in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Ashwa racing team details please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Can you tell me professors in ei department ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about how are placements in CSE"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is how many seats in CSCY for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about who is princpal of rvce ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is what is management quota fee please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot how are placements in bt ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Highest package in Biotech ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on bt placement package 2025 ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about mess food menu in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "College timings on saturday in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me about cisco iot coe??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me head of department Biotech ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about how many seats in cs in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Whats the campus size and address??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot who is dean academics in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell who is dean academics"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about how to reach rvce by bus in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know Mechanical department HOD name for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me who is HOD of IEM ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know is jee mains accepted for admission for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me who is the principal please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot average salary of MCA branch"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is hostel fee details"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me dean placement name urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about is rvce autonomous"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me who is the principal please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Im curious about mess food menu for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot placement stats for ei in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me addmissions procedure 2026??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Pls give details of boys hostel single room for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know central library timings for me"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know who is vice principal please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Hey chatbot sports ground and gym facilities ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on is jee mains accepted for admission in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Please show me nearest metro station in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Tell me biotech department intake??"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Give info on hostel mess food quality in rvce"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know nearest metro station ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about how are placements in ise ?"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "I want to know dress code rules urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Sir please tell who is placement director"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "How about addmissions procedure 2026 please"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "Could u tell me who is the placement officer"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback
+
+Query: "What is how many seats in civil urgent"
+   [ ] Correct  |  [ ] Wrong Answer  |  [ ] No Info / Fallback

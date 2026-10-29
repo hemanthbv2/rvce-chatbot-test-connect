@@ -1,0 +1,70 @@
+{
+  "ae": {
+    "hod": null,
+    "intake": null
+  },
+  "aiml": {
+    "hod": null,
+    "intake": null
+  },
+  "bt": {
+    "hod": "Dr. Nagashree N RaoAssociate Professor and HOD Dr. Nagashree N RaoAssociate Professor and HOD",
+    "intake": null
+  },
+  "ch": {
+    "hod": null,
+    "intake": null
+  },
+  "cv": {
+    "hod": null,
+    "intake": null
+  },
+  "cs": {
+    "hod": null,
+    "intake": null
+  },
+  "ee": {
+    "hod": "Dr. J N HemalathaAssociate Professor",
+    "intake": null
+  },
+  "ec": {
+    "hod": "Dr. Ravish Aradhya H VHoD",
+    "intake": null
+  },
+  "ei": {
+    "hod": null,
+    "intake": null
+  },
+  "im": {
+    "hod": "Dr. Rajeswara Rao K. V. S.Associate Professor and HoD",
+    "intake": null
+  },
+  "is": {
+    "hod": null,
+    "intake": null
+  },
+  "me": {
+    "hod": null,
+    "intake": null
+  },
+  "et": {
+    "hod": "Dr. Nagamani KHoD of Electronics",
+    "intake": null
+  },
+  "mca": {
+    "hod": null,
+    "intake": 120
+  },
+  "physics": {
+    "hod": "Dr. G. ShireeshaAssociate Professor and HOD",
+    "intake": null
+  },
+  "chemistry": {
+    "hod": "Dr. Mahesh R.Associate Professor and HOD",
+    "intake": null
+  },
+  "maths": {
+    "hod": null,
+    "intake": null
+  }
+}

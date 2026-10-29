@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RVCE Chatbot — Analytics Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary: #E31E24;
+            --secondary: #6366f1;
+            --success: #10b981;
+            --bg: #030712;
+            --card: rgba(17, 24, 39, 0.7);
+            --text: #f9fafb;
+            --text-dim: #94a3b8;
+            --border: rgba(255, 255, 255, 0.08);
+            --glow: rgba(99, 102, 241, 0.2);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at 50% 50%, #111827 0%, #030712 100%);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 40px;
+            overflow-x: hidden;
+        }
+        .container { max-width: 1300px; margin: 0 auto; }
+        
+        header { 
+            display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; 
+            padding-bottom: 20px; border-bottom: 1px solid var(--border);
+        }
+        h1 { font-size: 32px; font-weight: 900; letter-spacing: -1.5px; background: linear-gradient(to right, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .badge { background: var(--primary); padding: 4px 12px; border-radius: 6px; font-size: 11px; font-weight: 800; text-transform: uppercase; margin-left: 10px; vertical-align: middle; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 40px; }
+        .card { 
+            background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 28px; 
+            backdrop-filter: blur(20px); position: relative; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--secondary); box-shadow: 0 0 20px var(--glow); }
+        .card h2 { font-size: 13px; color: var(--text-dim); margin-bottom: 24px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .stat-val { font-size: 56px; font-weight: 900; margin-bottom: 8px; letter-spacing: -2px; }
+        .stat-sub { font-size: 14px; color: var(--success); font-weight: 600; display: flex; align-items: center; gap: 6px; }
+        
+        .pulse-dot { display: inline-block; width: 10px; height: 10px; background: var(--success); border-radius: 50%; box-shadow: 0 0 15px var(--success); animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.5); opacity: 0.5; } 100% { transform: scale(1); opacity: 1; } }
+
+        .list { display: flex; flex-direction: column; gap: 14px; }
+        .list-item { 
+            display: flex; justify-content: space-between; align-items: center; padding: 16px; 
+            background: rgba(255,255,255,0.02); border-radius: 12px; border: 1px solid var(--border);
+            transition: all 0.2s;
+        }
+        .list-item:hover { background: rgba(255,255,255,0.05); }
+        .list-item .query { font-weight: 600; font-size: 15px; color: #fff; }
+        .list-item .tag { padding: 4px 10px; border-radius: 6px; font-size: 10px; font-weight: 800; background: rgba(99, 102, 241, 0.1); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.2); }
+        .list-item .tag.unmatched { background: rgba(239, 68, 68, 0.1); color: #f87171; border-color: rgba(239, 68, 68, 0.2); }
+
+        .empty-state { text-align: center; color: var(--text-dim); padding: 40px 0; }
+
+        .refresh-btn { 
+            background: var(--card); color: var(--text); border: 1px solid var(--border); padding: 12px 24px; 
+            border-radius: 12px; cursor: pointer; font-weight: 700; font-size: 14px; transition: all 0.2s;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .refresh-btn:hover { background: var(--secondary); border-color: var(--secondary); color: white; }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>RVCE Chatbot Analytics <span class="badge">Standalone Mode</span></h1>
+                <p style="color: var(--text-dim); margin-top: 5px;">Local browser-based tracking (pre-integration)</p>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <input type="date" id="dateFilter" class="refresh-btn" style="background: var(--card); color: var(--text);" onchange="render()">
+                <button class="refresh-btn" onclick="render()">🔄 Sync</button>
+                <button class="refresh-btn" style="background: #2563eb; color: white;" onclick="downloadCSV()">📥 Export CSV</button>
+                <button class="refresh-btn" style="background: var(--success); color: white;" onclick="generateTestData()">🧪 Mock</button>
+                <button class="refresh-btn" style="background: var(--primary); color: white;" onclick="clearAllData()">🗑️ Reset</button>
+            </div>
+        </header>
+
+        <div class="grid">
+            <div class="card" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));">
+                <h2>Network Pulse</h2>
+                <div class="stat-val" style="color: var(--success);"><span class="pulse-dot"></span> <span id="activeUsers">1</span></div>
+                <div class="stat-sub">Live Sessions Detected</div>
+            </div>
+            <div class="card">
+                <h2>Global Reach</h2>
+                <div class="stat-val" id="totalInteractions">0</div>
+                <div class="stat-sub" id="todayActivity">↑ 0 incoming</div>
+            </div>
+            <div class="card">
+                <h2>AI Precision</h2>
+                <div class="stat-val" id="successRate" style="color: var(--secondary);">0%</div>
+                <div class="stat-sub">Intent Accuracy</div>
+            </div>
+        </div>
+        <div class="card" style="margin-bottom: 24px;">
+            <h2>Recent Missed Query</h2>
+            <div id="latestMissed" class="query" style="font-size: 18px; font-weight: 600; margin-top: 15px;">None</div>
+            <div class="stat-sub" style="color: #f43f5e">Requires review</div>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1fr 1fr;">
+            <div class="card">
+                <h2>Top User Intents</h2>
+                <div class="chart-container" style="height: 300px;">
+                    <canvas id="intentChart"></canvas>
+                </div>
+            </div>
+            <div class="card" style="max-height: 400px; overflow-y: auto;">
+                <h2 id="streamTitle">Detailed Interaction Stream</h2>
+                <div class="list" id="recentLogs">
+                    <div class="empty-state">Waiting for data sync...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid" style="grid-template-columns: 1fr 1fr 1fr;">
+            <div class="card">
+                <h2>Top Search Topics (Detailed)</h2>
+                <div class="list" id="queryList">
+                    <div class="empty-state">Analyzing normalized topics...</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Faculty Engagement</h2>
+                <div class="list" id="facultyEngagement">
+                    <div class="empty-state">Tracking profile clicks...</div>
+                </div>
+            </div>
+            <div class="card" style="max-height: 400px; overflow-y: auto;">
+                <h2>Unanswered Questions</h2>
+                <div class="list" id="missedList">
+                    <div class="empty-state">No missed queries yet!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--secondary); margin-bottom: 24px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2>Historical Archives</h2>
+            </div>
+            <div class="list" id="dateSummaryTable" style="max-height: 300px; overflow-y: auto;">
+                <div class="empty-state">Calculating archives...</div>
+            </div>
+        </div>
+
+        <!-- Detailed stream is now inside the grid above -->
+    </div>
+
+    <script>
+        let chart = null;
+        let selectedIntent = null;
+
+        function render() {
+            let allLogs = JSON.parse(localStorage.getItem('rvce_standalone_logs') || '[]');
+            let logs = [...allLogs];
+            
+            const filterDate = document.getElementById('dateFilter').value;
+            if (filterDate) {
+                logs = logs.filter(l => new Date(l.d).toISOString().split('T')[0] === filterDate);
+            }
+            
+            document.getElementById('totalInteractions').textContent = logs.length;
+            const today = new Date().toDateString();
+            const todayCount = logs.filter(l => new Date(l.d).toDateString() === today).length;
+            document.getElementById('todayActivity').textContent = `↑ ${todayCount} today`;
+
+            const missed = logs.filter(l => l.i === 'unmatched');
+            const rate = logs.length ? Math.round(((logs.length - missed.length) / logs.length) * 100) : 100;
+            document.getElementById('successRate').textContent = rate + '%';
+            document.getElementById('latestMissed').textContent = missed.length ? missed[missed.length - 1].q : 'None';
+
+            // Unified Intents (Consolidate Faculty, Fuzzy/Suggestions into real categories)
+            const intents = {};
+            const intentNormalizationMap = {
+                'prgm': 'Programs', 'program': 'Programs', 'programs': 'Programs', 'pgrm': 'Programs',
+                'plcmnt': 'Placements', 'placement': 'Placements', 'placements': 'Placements',
+                'dept': 'Departments', 'department': 'Departments', 'departments': 'Departments',
+                'adm': 'Admissions', 'admission': 'Admissions', 'admissions': 'Admissions',
+                'fee': 'Fees', 'fees': 'Fees',
+                'hod': 'HOD Info', 'hods': 'HOD Info',
+                'hostel': 'Hostels', 'hostels': 'Hostels',
+                'contact': 'Contact Info', 'contacts': 'Contact Info', 'phone': 'Contact Info'
+            };
+
+            logs.forEach(l => {
+                if (l.i !== 'unmatched') {
+                    let key = l.i;
+                    
+                    // Group faculty
+                    if (key.startsWith('fac_') || key === 'faculty') key = 'Faculty';
+                    
+                    // If it's a fuzzy match, try to resolve it to a real category using the query
+                    if (key === 'fuzzy' || key === 'Suggestions' || key === 'Auto-Suggested') {
+                        const words = l.q.trim().toLowerCase().split(/\s+/);
+                        let resolved = null;
+                        for (let word of words) {
+                            if (intentNormalizationMap[word]) {
+                                resolved = intentNormalizationMap[word];
+                                break;
+                            }
+                        }
+                        key = resolved || (l.q.charAt(0).toUpperCase() + l.q.slice(1).toLowerCase());
+                    }
+                    
+                    intents[key] = (intents[key] || 0) + 1;
+                }
+            });
+            const intentLabels = Object.keys(intents).sort((a,b) => intents[b] - intents[a]).slice(0, 8);
+            const intentData = intentLabels.map(l => intents[l]);
+
+            if (chart) chart.destroy();
+            const ctx = document.getElementById('intentChart').getContext('2d');
+            chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: intentLabels,
+                    datasets: [{
+                        label: 'Hits',
+                        data: intentData,
+                        backgroundColor: '#E31E24',
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    onClick: (e, elements) => {
+                        if (elements.length > 0) {
+                            const index = elements[0].index;
+                            selectedIntent = intentLabels[index];
+                            render();
+                        }
+                    },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
+                        x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                    }
+                }
+            });
+
+            // Top Detailed Topics (Normalized Breakdown)
+            const topicCounts = {};
+            const normalizationMap = {
+                'prgm': 'Programs', 'program': 'Programs', 'programs': 'Programs', 'pgrm': 'Programs',
+                'plcmnt': 'Placements', 'placement': 'Placements', 'placements': 'Placements',
+                'dept': 'Departments', 'department': 'Departments', 'departments': 'Departments',
+                'adm': 'Admissions', 'admission': 'Admissions', 'admissions': 'Admissions',
+                'fee': 'Fees', 'fees': 'Fees',
+                'hod': 'HOD Info', 'hods': 'HOD Info',
+                'hostel': 'Hostels', 'hostels': 'Hostels',
+                'contact': 'Contact Info', 'contacts': 'Contact Info', 'phone': 'Contact Info'
+            };
+
+            logs.forEach(l => {
+                let q = l.q.trim().toLowerCase();
+                // Simple word-based normalization
+                const words = q.split(/\s+/);
+                let foundTopic = null;
+                for (let word of words) {
+                    if (normalizationMap[word]) {
+                        foundTopic = normalizationMap[word];
+                        break;
+                    }
+                }
+                
+                if (foundTopic) {
+                    topicCounts[foundTopic] = (topicCounts[foundTopic] || 0) + 1;
+                } else if (q.length > 1) {
+                    // Fallback to title-cased raw query if no map match
+                    const displayQ = q.charAt(0).toUpperCase() + q.slice(1);
+                    topicCounts[displayQ] = (topicCounts[displayQ] || 0) + 1;
+                }
+            });
+
+            const topTopics = Object.keys(topicCounts).sort((a,b) => topicCounts[b] - topicCounts[a]).slice(0, 10);
+            const queryList = document.getElementById('queryList');
+            if (topTopics.length) {
+                queryList.innerHTML = topTopics.map(t => `
+                    <div class="list-item">
+                        <span class="query" style="color: #fff; font-size: 14px;">${t}</span>
+                        <span class="tag" style="background:rgba(99,102,241,0.1); color:#818cf8; border: 1px solid rgba(99,102,241,0.2);">${topicCounts[t]} requests</span>
+                    </div>
+                `).join('');
+            } else {
+                queryList.innerHTML = '<div class="empty-state">No topics analyzed yet.</div>';
+            }
+
+            // Faculty Engagement Tracking
+            const facCounts = {};
+            logs.forEach(l => {
+                if (l.i.startsWith('fac_selection:') || l.i.startsWith('fac_profile_click:')) {
+                    const name = l.i.split(':')[1];
+                    facCounts[name] = (facCounts[name] || 0) + 1;
+                }
+            });
+            const topFac = Object.keys(facCounts).sort((a,b) => facCounts[b] - facCounts[a]).slice(0, 5);
+            const facList = document.getElementById('facultyEngagement');
+            if (topFac.length) {
+                facList.innerHTML = topFac.map(f => `
+                    <div class="list-item">
+                        <span class="query" style="color: #fff; font-size: 14px;">${f}</span>
+                        <span class="tag" style="background:rgba(16,185,129,0.1); color:#10b981;">${facCounts[f]} clicks</span>
+                    </div>
+                `).join('');
+            } else {
+                facList.innerHTML = '<div class="empty-state">No profile clicks tracked.</div>';
+            }
+
+            // Missed Queries
+            const missedList = document.getElementById('missedList');
+            if (missed.length) {
+                missedList.innerHTML = missed.reverse().slice(0, 10).map(m => `
+                    <div class="list-item">
+                        <span class="query">${m.q}</span>
+                        <span class="tag unmatched">MISS</span>
+                    </div>
+                `).join('');
+            } else {
+                missedList.innerHTML = '<div class="empty-state">No missed queries yet!</div>';
+            }
+
+            // Archives
+            const dateMap = {};
+            allLogs.forEach(l => {
+                const d = l.d.split('T')[0];
+                dateMap[d] = (dateMap[d] || 0) + 1;
+            });
+            document.getElementById('dateSummaryTable').innerHTML = Object.keys(dateMap).sort().reverse().map(d => `
+                <div class="list-item">
+                    <span><strong>${d}</strong> <span style="color:var(--text-dim)">(${dateMap[d]} entries)</span></span>
+                    <div style="display:flex; gap:8px;">
+                        <button class="refresh-btn" style="padding: 6px 12px; font-size: 12px; background: rgba(16,185,129,0.1); color: #10b981;" onclick="viewDate('${d}')">👁️ View</button>
+                    </div>
+                </div>
+            `).join('');
+
+            // Stream (Filter by selected intent if active)
+            const streamTitle = document.getElementById('streamTitle');
+            const streamList = document.getElementById('recentLogs');
+            let displayLogs = [...logs];
+
+            if (selectedIntent) {
+                displayLogs = logs.filter(l => {
+                    let key = l.i;
+                    if (key.startsWith('fac_') || key === 'faculty') key = 'Faculty';
+                    if (key === 'fuzzy' || key === 'Suggestions' || key === 'Auto-Suggested') {
+                        const words = l.q.trim().toLowerCase().split(/\s+/);
+                        let resolved = null;
+                        for (let word of words) {
+                            if (intentNormalizationMap[word]) { resolved = intentNormalizationMap[word]; break; }
+                        }
+                        key = resolved || (l.q.charAt(0).toUpperCase() + l.q.slice(1).toLowerCase());
+                    }
+                    return key === selectedIntent;
+                });
+                streamTitle.innerHTML = `Detailed Stream: <span style="color:var(--secondary)">${selectedIntent}</span> <button onclick="clearFilter()" class="refresh-btn" style="display:inline-block; padding: 2px 8px; font-size: 10px; margin-left:10px;">✕ Clear</button>`;
+            } else {
+                streamTitle.textContent = "Detailed Interaction Stream";
+            }
+
+            if (displayLogs.length) {
+                streamList.innerHTML = displayLogs.reverse().slice(0, 50).map(l => `
+                    <div class="list-item">
+                        <div>
+                            <span class="tag" style="background:rgba(255,255,255,0.1); color:#fff; margin-right:8px;">${l.s || 'anon'}</span>
+                            <span class="query">"${l.q}"</span>
+                            <span class="tag">${l.i.startsWith('fac_') && !l.i.includes(':') ? 'Faculty Selection' : ( (l.i === 'fuzzy' || l.i === 'Suggestions' || l.i === 'Auto-Suggested') ? 'Resolved Match' : l.i)}</span>
+                        </div>
+                        <span class="time">${new Date(l.d).toLocaleTimeString()}</span>
+                    </div>
+                `).join('');
+            } else {
+                streamList.innerHTML = '<div class="empty-state">No data for this selection.</div>';
+            }
+        }
+
+        function clearFilter() {
+            selectedIntent = null;
+            render();
+        }
+
+        // Auto-refresh for presentation
+        setInterval(() => {
+            render();
+            // Simulate 1-3 extra users for presentation effect
+            document.getElementById('activeUsers').textContent = Math.floor(Math.random() * 3) + 1;
+        }, 3000);
+
+        function generateTestData() {
+            const today = new Date().toISOString();
+            const yesterday = new Date(Date.now() - 86400000).toISOString();
+            const sampleLogs = [
+                { s: 'sid_1', q: "Hi", i: "greet", d: today },
+                { s: 'sid_2', q: "CSE placements", i: "placements", d: today },
+                { s: 'sid_1', q: "Principal contact", i: "contact", d: yesterday },
+                { s: 'sid_3', q: "Hostel fees", i: "hostels", d: yesterday },
+                { s: 'sid_2', q: "where is mars?", i: "unmatched", d: yesterday }
+            ];
+            localStorage.setItem('rvce_standalone_logs', JSON.stringify(sampleLogs));
+            render();
+            alert("Test data generated for Today and Yesterday! Look at the 'Historical Archives' section below.");
+        }
+
+        function clearAllData() {
+            if (confirm("Are you sure you want to clear all analytics data? This cannot be undone.")) {
+                localStorage.removeItem('rvce_standalone_logs');
+                render();
+            }
+        }
+
+        function viewDate(dateStr) {
+            document.getElementById('dateFilter').value = dateStr;
+            render();
+            // Scroll to top to see charts update
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function downloadSpecificDate(dateStr) {
+            const allLogs = JSON.parse(localStorage.getItem('rvce_standalone_logs') || '[]');
+            const filtered = allLogs.filter(l => new Date(l.d).toISOString().split('T')[0] === dateStr);
+            triggerDownload(filtered, dateStr);
+        }
+
+        function downloadCSV() {
+            const logs = JSON.parse(localStorage.getItem('rvce_standalone_logs') || '[]');
+            if (logs.length === 0) { alert("No data to download!"); return; }
+            triggerDownload(logs, 'all_time');
+        }
+
+        function triggerDownload(data, label) {
+            let csv = "Timestamp,SessionID,Query,Intent\n";
+            data.forEach(l => {
+                const row = [
+                    l.d,
+                    l.s || 'anon',
+                    `"${l.q.replace(/"/g, '""')}"`,
+                    l.i
+                ].join(",");
+                csv += row + "\n";
+            });
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.setAttribute('href', url);
+            a.setAttribute('download', `rvce_logs_${label}.csv`);
+            a.click();
+        }
+
+        render();
+    </script>
+</body>
+</html>

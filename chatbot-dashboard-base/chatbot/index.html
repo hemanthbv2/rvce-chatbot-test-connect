@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Boilerplate</title>
+    <!-- Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Chatbot Container -->
+    <div class="chat-container" id="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">
+                    <!-- Placeholder for the mascot image, use an SVG or PNG here later -->
+                    <img src="https://ui-avatars.com/api/?name=RVCE&background=0D8ABC&color=fff" alt="Mascot Avatar" id="header-avatar">
+                </div>
+                <div>
+                    <h3>RVCE Assistant</h3>
+                    <p class="status">Online</p>
+                </div>
+            </div>
+            <button class="close-btn" id="close-chat" aria-label="Close chat">×</button>
+        </div>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-messages" id="chat-messages">
+            <!-- Example Bot Message -->
+            <div class="message bot">
+                <div class="message-content">
+                    Hello! I'm your RVCE Assistant. How can I help you today?
+                </div>
+            </div>
+            <!-- Dynamic messages will be appended here by script.js -->
+        </div>
+
+        <!-- Chat Input Area -->
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type your message here..." autocomplete="off" />
+            <button id="send-btn" aria-label="Send message">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Action Button (FAB) to open chat -->
+    <button class="chat-fab" id="chat-fab" aria-label="Open chat">
+        <!-- Mascot goes here (placeholder SVG) -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

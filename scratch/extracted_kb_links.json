@@ -1,0 +1,3116 @@
+[
+  {
+    "url": "https://rvce.edu.in/",
+    "label": "Official Website",
+    "context": "Contact Information",
+    "category": "General & Contact"
+  },
+  {
+    "url": "mailto:principal@rvce.edu.in",
+    "label": "Principal Email",
+    "context": "Contact Information",
+    "category": "General & Contact"
+  },
+  {
+    "url": "mailto:viceprincipal@rvce.edu.in",
+    "label": "Vice Principal Email",
+    "context": "Contact Information",
+    "category": "General & Contact"
+  },
+  {
+    "url": "https://www.facebook.com/RVCEngineering/",
+    "label": "Facebook Page",
+    "context": "Social Media (facebook)",
+    "category": "Social Media"
+  },
+  {
+    "url": "https://www.instagram.com/rvcollegeofengineering/",
+    "label": "Instagram Page",
+    "context": "Social Media (instagram)",
+    "category": "Social Media"
+  },
+  {
+    "url": "https://www.linkedin.com/school/rvcengineering/",
+    "label": "Linkedin Page",
+    "context": "Social Media (linkedin)",
+    "category": "Social Media"
+  },
+  {
+    "url": "https://x.com/rvce_official",
+    "label": "X Page",
+    "context": "Social Media (x)",
+    "category": "Social Media"
+  },
+  {
+    "url": "https://rvce.edu.in/placement_and_training/",
+    "label": "Placements & Training Portal",
+    "context": "Placement Information",
+    "category": "Admissions & Placements"
+  },
+  {
+    "url": "https://rvce.edu.in/admissions/",
+    "label": "Admissions Info Page",
+    "context": "Admissions Information",
+    "category": "Admissions & Placements"
+  },
+  {
+    "url": "https://rvce.edu.in/facilities/",
+    "label": "Hostels & Campus Facilities Page",
+    "context": "Hostel Information",
+    "category": "Admissions & Placements"
+  },
+  {
+    "url": "https://rvce.edu.in/facilities/",
+    "label": "Campus Facilities Portal",
+    "context": "Campus Facilities",
+    "category": "Admissions & Placements"
+  },
+  {
+    "url": "https://rvce.edu.in/innovative_teams/",
+    "label": "Innovative Student Teams Portal",
+    "context": "Extra-curricular Innovation",
+    "category": "Campus Life & Teams"
+  },
+  {
+    "url": "https://rvce.edu.in/cultural_teams/",
+    "label": "Cultural Teams Portal",
+    "context": "Extra-curricular Activities",
+    "category": "Campus Life & Teams"
+  },
+  {
+    "url": "https://rvce.edu.in/academic-circular/",
+    "label": "Academic Circular",
+    "context": "Academic Circulars (academic)",
+    "category": "Circulars"
+  },
+  {
+    "url": "https://rvce.edu.in/admission-circulars/",
+    "label": "Admissions Circular",
+    "context": "Academic Circulars (admissions)",
+    "category": "Circulars"
+  },
+  {
+    "url": "https://rvce.edu.in/examination-circulars/",
+    "label": "Examinations Circular",
+    "context": "Academic Circulars (examinations)",
+    "category": "Circulars"
+  },
+  {
+    "url": "https://rvce.edu.in/academics_and_examinations/fee_payment_circulars/",
+    "label": "Fee Payment Circular",
+    "context": "Academic Circulars (feePayment)",
+    "category": "Circulars"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/department-of-aerospace-engineering/",
+    "label": "Department Homepage",
+    "context": "Aerospace Engineering (AE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/dr_r_supreeth/",
+    "label": "HOD Profile",
+    "context": "Aerospace Engineering (AE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/about_dept/",
+    "label": "About",
+    "context": "Aerospace Engineering (AE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/b_e_ase/",
+    "label": "Syllabus",
+    "context": "Aerospace Engineering (AE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/faculty/",
+    "label": "Faculty",
+    "context": "Aerospace Engineering (AE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/research_faculty/",
+    "label": "Research",
+    "context": "Aerospace Engineering (AE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/placement/",
+    "label": "Placement",
+    "context": "Aerospace Engineering (AE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/laboratories/",
+    "label": "Labs",
+    "context": "Aerospace Engineering (AE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/facilities/",
+    "label": "Facilities",
+    "context": "Aerospace Engineering (AE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/campus_diaries/",
+    "label": "Campus diaries",
+    "context": "Aerospace Engineering (AE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/dr_r_supreeth_hod_message/",
+    "label": "Hod message",
+    "context": "Aerospace Engineering (AE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/department-of-artificial-intelligence-machine-learning/",
+    "label": "Department Homepage",
+    "context": "AI & Machine Learning (AIML) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/about_the_department/",
+    "label": "About",
+    "context": "AI & Machine Learning (AIML) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/be_al_ml/",
+    "label": "Syllabus",
+    "context": "AI & Machine Learning (AIML) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/faculty/",
+    "label": "Faculty",
+    "context": "AI & Machine Learning (AIML) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/research/",
+    "label": "Research",
+    "context": "AI & Machine Learning (AIML) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/placement/",
+    "label": "Placement",
+    "context": "AI & Machine Learning (AIML) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/laboratories/",
+    "label": "Labs",
+    "context": "AI & Machine Learning (AIML) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/facilities/",
+    "label": "Facilities",
+    "context": "AI & Machine Learning (AIML) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/campus_diaries/",
+    "label": "Campus diaries",
+    "context": "AI & Machine Learning (AIML) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/dr_b_sathish_babu_hod_message/",
+    "label": "Hod message",
+    "context": "AI & Machine Learning (AIML) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/collaboration-and-networking/",
+    "label": "Collab",
+    "context": "AI & Machine Learning (AIML) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/department-of-biotechnology/",
+    "label": "Department Homepage",
+    "context": "Biotechnology (BT) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/about_the_department/",
+    "label": "About",
+    "context": "Biotechnology (BT) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/b_e_in_biotechnology/",
+    "label": "Syllabus",
+    "context": "Biotechnology (BT) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/research/",
+    "label": "Research",
+    "context": "Biotechnology (BT) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/placement/",
+    "label": "Placement",
+    "context": "Biotechnology (BT) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/laboratories/",
+    "label": "Labs",
+    "context": "Biotechnology (BT) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/facilities/",
+    "label": "Facilities",
+    "context": "Biotechnology (BT) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/message_from_hod_biotechnology/",
+    "label": "Hod message",
+    "context": "Biotechnology (BT) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/main_dept/",
+    "label": "Department Homepage",
+    "context": "Chemical Engineering (CH) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/about_dept/",
+    "label": "About",
+    "context": "Chemical Engineering (CH) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/academic_planning/",
+    "label": "Syllabus",
+    "context": "Chemical Engineering (CH) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/faculty/",
+    "label": "Faculty",
+    "context": "Chemical Engineering (CH) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/research/",
+    "label": "Research",
+    "context": "Chemical Engineering (CH) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/placement/",
+    "label": "Placement",
+    "context": "Chemical Engineering (CH) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/laboratories/",
+    "label": "Labs",
+    "context": "Chemical Engineering (CH) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/facilities/",
+    "label": "Facilities",
+    "context": "Chemical Engineering (CH) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/campus_diaries/",
+    "label": "Campus diaries",
+    "context": "Chemical Engineering (CH) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/dr_jagadish_h_patil/",
+    "label": "Hod message",
+    "context": "Chemical Engineering (CH) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/department_of_chemistry/",
+    "label": "Department Homepage",
+    "context": "Chemistry (CHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/about_the_department/",
+    "label": "About",
+    "context": "Chemistry (CHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/academic_planning/",
+    "label": "Syllabus",
+    "context": "Chemistry (CHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/faculty/",
+    "label": "Faculty",
+    "context": "Chemistry (CHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/research/",
+    "label": "Research",
+    "context": "Chemistry (CHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/laboratories/",
+    "label": "Labs",
+    "context": "Chemistry (CHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/facilities/",
+    "label": "Facilities",
+    "context": "Chemistry (CHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/message_from_hod_basic_chemistry/",
+    "label": "Hod message",
+    "context": "Chemistry (CHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/department-of-civil-engineering/",
+    "label": "Department Homepage",
+    "context": "Civil Engineering (CV) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/about-the-department/",
+    "label": "About",
+    "context": "Civil Engineering (CV) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/academic-planning/",
+    "label": "Syllabus",
+    "context": "Civil Engineering (CV) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/faculty/",
+    "label": "Faculty",
+    "context": "Civil Engineering (CV) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/research/",
+    "label": "Research",
+    "context": "Civil Engineering (CV) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/placement/",
+    "label": "Placement",
+    "context": "Civil Engineering (CV) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/civil-laboratories/",
+    "label": "Labs",
+    "context": "Civil Engineering (CV) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/facilities/",
+    "label": "Facilities",
+    "context": "Civil Engineering (CV) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/collaboration-and-networking/",
+    "label": "Collab",
+    "context": "Civil Engineering (CV) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/centre_of_excellence_in_3s_infrastructure_safe_sustainable_smart/",
+    "label": "Coe 3s",
+    "context": "Civil Engineering (CV) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/cse_main/",
+    "label": "Department Homepage",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/about_the_department/",
+    "label": "About",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/academic_planning/",
+    "label": "Syllabus",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/faculty/",
+    "label": "Faculty",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/research/",
+    "label": "Research",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/placement/",
+    "label": "Placement",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/laboratories/",
+    "label": "Labs",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/facilities/",
+    "label": "Facilities",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_shanta_rangaswamy_hod_message/",
+    "label": "Hod message",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/collaboration-and-networking/",
+    "label": "Collab",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/centre_of_excellence_in_rvce_hpcc_systems_cognitive_intelligent_systems_for_sustainable_solutionscisss/",
+    "label": "Coe cisss",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/centre_of_excellence_in_computer_vision_research_next_generation_ai_enabled/",
+    "label": "Coe vision",
+    "context": "Computer Science & Engg (CSE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/b_e_cse_cy/",
+    "label": "Syllabus",
+    "context": "CSE (Cyber Security) (CSCY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/b_e_cse_2/",
+    "label": "Syllabus",
+    "context": "CSE (Data Science) (CSDS) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/department-of-electrical-and-electronics-engineering/",
+    "label": "Department Homepage",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/about_the_department/",
+    "label": "About",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/academic_planning/",
+    "label": "Syllabus",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/faculty/",
+    "label": "Faculty",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/research/",
+    "label": "Research",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/placement/",
+    "label": "Placement",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/laboratories/",
+    "label": "Labs",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/facilities/",
+    "label": "Facilities",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/campus_diaries/",
+    "label": "Campus diaries",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/hod_message/",
+    "label": "Hod message",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/eee_coe/",
+    "label": "Coe mobility",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/wp-content/uploads/2025/11/SMART-VIDYUTH-SUSTAINABLE-SOLUTIONS.pdf",
+    "label": "Coe vidyuth",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/coc_vision_astra_in_ev_academy/",
+    "label": "Coc ev",
+    "context": "Electrical & Electronics (EEE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/department_of_electronics_and_communication/",
+    "label": "Department Homepage",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/about_department/",
+    "label": "About",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/academic_planning/",
+    "label": "Syllabus",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/faculty/",
+    "label": "Faculty",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/research/",
+    "label": "Research",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/placement/",
+    "label": "Placement",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/laboratories/",
+    "label": "Labs",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/facilities/",
+    "label": "Facilities",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/hod_message/",
+    "label": "Hod message",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/the_centre_of_excellence_in_materials_fabrication_characterisation/",
+    "label": "Coe mfc",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/centre_of_excellence_in_connected_autonomous_vehicles/",
+    "label": "Coe cav",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/centre_of_excellence_in_integrated_circuits_and_systemscoe_icas/",
+    "label": "Coe icas",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/the-centre-of-excellence-in-materials-fabrication-characterisation-coe-mfc/",
+    "label": "Coe sasm",
+    "context": "Electronics & Communication (ECE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/main_dept/",
+    "label": "Department Homepage",
+    "context": "Electronics & Instrumentation (EIE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/about_dept/",
+    "label": "About",
+    "context": "Electronics & Instrumentation (EIE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/academic_planning/",
+    "label": "Syllabus",
+    "context": "Electronics & Instrumentation (EIE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/faculty/",
+    "label": "Faculty",
+    "context": "Electronics & Instrumentation (EIE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/research/",
+    "label": "Research",
+    "context": "Electronics & Instrumentation (EIE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/laboratories/",
+    "label": "Labs",
+    "context": "Electronics & Instrumentation (EIE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/campus_diaries/",
+    "label": "Campus diaries",
+    "context": "Electronics & Instrumentation (EIE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/hod_message/",
+    "label": "Hod message",
+    "context": "Electronics & Instrumentation (EIE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/eie_centre_of_excellence_in_sensor_technology_applications/",
+    "label": "Coe sensor",
+    "context": "Electronics & Instrumentation (EIE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/eie_centre_of_excellence_in_health_care_technology_research/",
+    "label": "Coe health",
+    "context": "Electronics & Instrumentation (EIE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/main_department/",
+    "label": "Department Homepage",
+    "context": "Electronics & Telecom (ETE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/about_the_department/",
+    "label": "About",
+    "context": "Electronics & Telecom (ETE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/academic_planning/",
+    "label": "Syllabus",
+    "context": "Electronics & Telecom (ETE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/faculty/",
+    "label": "Faculty",
+    "context": "Electronics & Telecom (ETE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/research/",
+    "label": "Research",
+    "context": "Electronics & Telecom (ETE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/placement/",
+    "label": "Placement",
+    "context": "Electronics & Telecom (ETE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/laboratories/",
+    "label": "Labs",
+    "context": "Electronics & Telecom (ETE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/facilities/",
+    "label": "Facilities",
+    "context": "Electronics & Telecom (ETE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/campus_diaries/",
+    "label": "Campus diaries",
+    "context": "Electronics & Telecom (ETE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_nagamani_k_hod_message/",
+    "label": "Hod message",
+    "context": "Electronics & Telecom (ETE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/b_e_industrial_engineering_and_management/",
+    "label": "Department Homepage",
+    "context": "Industrial Engg & Mgmt (IEM) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/about_the_department/",
+    "label": "About",
+    "context": "Industrial Engg & Mgmt (IEM) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/b_e_industrial_engineering_and_management/#ie_sche",
+    "label": "Syllabus",
+    "context": "Industrial Engg & Mgmt (IEM) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/faculty/",
+    "label": "Faculty",
+    "context": "Industrial Engg & Mgmt (IEM) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/research/",
+    "label": "Research",
+    "context": "Industrial Engg & Mgmt (IEM) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/placement/",
+    "label": "Placement",
+    "context": "Industrial Engg & Mgmt (IEM) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/laboratories/",
+    "label": "Labs",
+    "context": "Industrial Engg & Mgmt (IEM) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/facilities/",
+    "label": "Facilities",
+    "context": "Industrial Engg & Mgmt (IEM) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/centre-of-excellence-in-logistics-supply-chain-management/",
+    "label": "Coe logistics",
+    "context": "Industrial Engg & Mgmt (IEM) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/research_consulting/centre-of-excellence/",
+    "label": "Coe",
+    "context": "Industrial Engg & Mgmt (IEM) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/department--of-information-science-and-engineering/",
+    "label": "Department Homepage",
+    "context": "Information Science & Engg (ISE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/about_dept/",
+    "label": "About",
+    "context": "Information Science & Engg (ISE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/academic_planning/",
+    "label": "Syllabus",
+    "context": "Information Science & Engg (ISE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/faculty/",
+    "label": "Faculty",
+    "context": "Information Science & Engg (ISE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/research/",
+    "label": "Research",
+    "context": "Information Science & Engg (ISE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/placement/",
+    "label": "Placement",
+    "context": "Information Science & Engg (ISE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/facilities/",
+    "label": "Labs",
+    "context": "Information Science & Engg (ISE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/campus_diaries/",
+    "label": "Campus diaries",
+    "context": "Information Science & Engg (ISE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/dr_g_s_mamatha_hod_message/",
+    "label": "Hod message",
+    "context": "Information Science & Engg (ISE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/collaboration-and-networking/",
+    "label": "Collab",
+    "context": "Information Science & Engg (ISE) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/main_dept/",
+    "label": "Department Homepage",
+    "context": "Mathematics (MATHS) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/about_dept/",
+    "label": "About",
+    "context": "Mathematics (MATHS) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/academic_planning/",
+    "label": "Syllabus",
+    "context": "Mathematics (MATHS) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/main_dept/",
+    "label": "Faculty",
+    "context": "Mathematics (MATHS) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/research/",
+    "label": "Research",
+    "context": "Mathematics (MATHS) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/facilities/",
+    "label": "Labs",
+    "context": "Mathematics (MATHS) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/campus_diaries/",
+    "label": "Campus diaries",
+    "context": "Mathematics (MATHS) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_jayalatha_g_hod_message/",
+    "label": "Hod message",
+    "context": "Mathematics (MATHS) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/centre-of-excellence-in-interdisciplinary-research-in-quantum-information-and-technology-circuit/",
+    "label": "Coe quantum",
+    "context": "Mathematics (MATHS) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/department_of_mechanical_engineering/",
+    "label": "Department Homepage",
+    "context": "Mechanical Engineering (ME) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/about_the_department/",
+    "label": "About",
+    "context": "Mechanical Engineering (ME) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/academic_planning/",
+    "label": "Syllabus",
+    "context": "Mechanical Engineering (ME) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/faculty/",
+    "label": "Faculty",
+    "context": "Mechanical Engineering (ME) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/research/",
+    "label": "Research",
+    "context": "Mechanical Engineering (ME) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/laboratories/",
+    "label": "Labs",
+    "context": "Mechanical Engineering (ME) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/facilities/",
+    "label": "Facilities",
+    "context": "Mechanical Engineering (ME) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/campus_diaries/",
+    "label": "Campus diaries",
+    "context": "Mechanical Engineering (ME) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/collaboration_networking/",
+    "label": "Collab",
+    "context": "Mechanical Engineering (ME) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/rv_toyota_kriloskar_centre_of_excellence_in_automotive_engineering/",
+    "label": "Coe toyota",
+    "context": "Mechanical Engineering (ME) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/rvce_morris_garage_centre_of_excellence_in_electric_vehicle_technology_evt/",
+    "label": "Coe ev",
+    "context": "Mechanical Engineering (ME) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/department_of_physics/",
+    "label": "Department Homepage",
+    "context": "Physics (PHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/about_the_department/",
+    "label": "About",
+    "context": "Physics (PHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/academic_planning/",
+    "label": "Syllabus",
+    "context": "Physics (PHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/faculty/",
+    "label": "Faculty",
+    "context": "Physics (PHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/research/#",
+    "label": "Research",
+    "context": "Physics (PHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/laboratories/",
+    "label": "Labs",
+    "context": "Physics (PHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/facilities/",
+    "label": "Facilities",
+    "context": "Physics (PHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/collaboration-and-networking/",
+    "label": "Collab",
+    "context": "Physics (PHY) Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department-of-physical-education-sports/",
+    "label": "Department Homepage",
+    "context": "Physical Education & Sports Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department-of-physical-education-sports/rvce-sports-scholarship/",
+    "label": "Scholarship",
+    "context": "Physical Education & Sports Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department-of-physical-education-sports/v-t-u-tournament-organized/",
+    "label": "Tournaments",
+    "context": "Physical Education & Sports Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/administration/",
+    "label": "Department Homepage",
+    "context": "Deans & Administration Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/administration/",
+    "label": "About",
+    "context": "Deans & Administration Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/administration/",
+    "label": "Faculty",
+    "context": "Deans & Administration Department",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/department-of-biotechnology/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech Biotechnology (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/mtech_in_structural_engineering/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech Structural Engg (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/mtech_in_highway_technology/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech Highway Tech (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/m-tech-cse/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech CSE (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/m-tech-cne/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech Computer Network Engg (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/mtech_in_power_electronics/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech Power Electronics (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/m-tech-in-vlsi-design-embedded-systems/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech VLSI & Embedded (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/master-of-technology-in-m-tech-communication-systems/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech Comm Systems (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/ise-mtech-in-software-engineering/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech Software Engg (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/ise_mtech_in_information_technology/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech Info Tech (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/mtech-in-product-design-and-manufacturing/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech Product Design (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/mtech-in-machine-design/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech Machine Design (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/mtech_in_digital_communication_engineering/",
+    "label": "PG Department Homepage",
+    "context": "M.Tech Digital Comm (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/main_department/",
+    "label": "PG Department Homepage",
+    "context": "Master of Computer Applications (MCA) (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/about_the_department/",
+    "label": "About",
+    "context": "Master of Computer Applications (MCA) (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/academic_planning/",
+    "label": "Syllabus",
+    "context": "Master of Computer Applications (MCA) (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/main_department/",
+    "label": "Faculty",
+    "context": "Master of Computer Applications (MCA) (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/placement/",
+    "label": "Placement",
+    "context": "Master of Computer Applications (MCA) (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/laboratories/",
+    "label": "Labs",
+    "context": "Master of Computer Applications (MCA) (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/facilities/",
+    "label": "Facilities",
+    "context": "Master of Computer Applications (MCA) (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/research/",
+    "label": "Research",
+    "context": "Master of Computer Applications (MCA) (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/campus_diaries/",
+    "label": "Campus diaries",
+    "context": "Master of Computer Applications (MCA) (PG)",
+    "category": "Department Resources"
+  },
+  {
+    "url": "https://rvce.edu.in/about_us/key-executives/",
+    "label": "Dr. Shanmukha Nagaraj (Dean Academics)",
+    "context": "DEANS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/about_us/key-executives/",
+    "label": "Dr. B.M. Sagar (Dean Student Affairs)",
+    "context": "DEANS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/about_us/key-executives/",
+    "label": "Dr. M Uttara Kumari (Dean R&D)",
+    "context": "DEANS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/about_us/key-executives/",
+    "label": "Dr. D. Ranganath (Dean Placement & Training)",
+    "context": "DEANS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/about_us/key-executives/",
+    "label": "Dr. M Krishna (Dean Skill Development)",
+    "context": "DEANS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/dr_r_supreeth/",
+    "label": "Dr. R Supreeth (HOD & Associate Professor)",
+    "context": "AE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/dr_ravindra_s_kulkarni/#",
+    "label": "Dr. Ravindra S Kulkarni (Professor)",
+    "context": "AE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/dr_promio_charles_f/",
+    "label": "Dr. Promio Charles F (Associate Professor)",
+    "context": "AE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/bhaskar_k/",
+    "label": "Bhaskar K (Assistant Professor)",
+    "context": "AE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/pranesh_kumar_s_r/",
+    "label": "Pranesh Kumar S R (Assistant Professor)",
+    "context": "AE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/dr_benjamin_rohit/",
+    "label": "Dr. Benjamin Rohit (Assistant Professor)",
+    "context": "AE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/srinivasan_s/",
+    "label": "Srinivasan S (Assistant Professor)",
+    "context": "AE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/mukesh_m/",
+    "label": "Mukesh M (Assistant Professor)",
+    "context": "AE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/prof_deepak_bana/",
+    "label": "Prof. Deepak Bana (Assistant Professor)",
+    "context": "AE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/mr_jitendra_singh/",
+    "label": "Jitendra Singh (Professor of Practice)",
+    "context": "AE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ae/mr_srinath_ramakrishnan/",
+    "label": "Srinath Ramakrishnan (Assistant Professor)",
+    "context": "AE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/dr_b_sathish_babu_bio/",
+    "label": "Dr. B. Sathish Babu (Professor & HOD)",
+    "context": "AIML Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/dr_vijayalakshmi_m_n/",
+    "label": "Dr. Vijayalakshmi M N (Associate Professor)",
+    "context": "AIML Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/dr_s_anupama_kumar/",
+    "label": "Dr. S. Anupama Kumar (Associate Professor)",
+    "context": "AIML Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/dr_narasimha_swamy_s/",
+    "label": "Dr. Narasimha Swamy S (Assistant Professor)",
+    "context": "AIML Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/dr_somesh_nandi/",
+    "label": "Dr. Somesh Nandi (Assistant Professor)",
+    "context": "AIML Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/dr_k_vishwavardhan_reddy/",
+    "label": "K Vishwavardhan Reddy (Assistant Professor)",
+    "context": "AIML Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/prof_manasa_m/",
+    "label": "Prof. Manasa M (Assistant Professor)",
+    "context": "AIML Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/prof_harshitha_v/",
+    "label": "Prof. Harshitha V (Assistant Professor)",
+    "context": "AIML Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ai_ml/prof_rushikesh_anil_padaki/",
+    "label": "Prof. Rushikesh Anil Padaki (Assistant Professor)",
+    "context": "AIML Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_nagashree_n_rao/",
+    "label": "Dr. Nagashree N Rao (Associate Professor & HOD)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_vidya_niranjan/",
+    "label": "Dr. Vidya Niranjan (Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_g_vijaya_kumar/",
+    "label": "Dr. G Vijaya Kumar (Associate Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_a_h_manjunatha_reddy/",
+    "label": "Dr. A. H. Manjunatha Reddy (Associate Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_neeta_shivakumar/",
+    "label": "Dr. Neeta Shivakumar (Associate Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_lingayya_hiremath/",
+    "label": "Dr. Lingayya Hiremath (Associate Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_m_rajeswari/",
+    "label": "Dr. M Rajeswari (Assistant Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_ajeet_kumar_srivastava/",
+    "label": "Dr. Ajeet Kumar Srivastava (Assistant Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_shivandappa/",
+    "label": "Dr. Shivandappa (Assistant Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_narendra_kumar_s/",
+    "label": "Dr. Narendra Kumar S (Assistant Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_praveen_kumar_gupta/",
+    "label": "Dr. Praveen Kumar Gupta (Assistant Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_trilok_chandran_b/",
+    "label": "Dr. Trilok Chandran B (Assistant Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_h_raju/",
+    "label": "Dr. H. Raju (Assistant Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_sumathra_m/",
+    "label": "Dr. Sumathra M (Assistant Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_h_g_ashok_kumar/",
+    "label": "Dr. H G Ashok Kumar (Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_a_v_narayan/",
+    "label": "Dr. A V Narayan (Associate Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/biotechnology/dr_ashwani_sharma/",
+    "label": "Dr. Ashwani Sharma (Assistant Professor)",
+    "context": "BT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/dr_jagadish_h_patil/",
+    "label": "Dr. Jagadish H Patil (Associate Professor & HOD)",
+    "context": "CH Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/dr_d_ranganath/",
+    "label": "Dr. D. Ranganath (Associate Professor & Dean (Placement))",
+    "context": "CH Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/dr_vinod_kallur/",
+    "label": "Dr. Vinod Kallur (Associate Professor)",
+    "context": "CH Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/dr_basavaraja_r_j/",
+    "label": "Dr. Basavaraja R. J. (Associate Professor)",
+    "context": "CH Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/dr_vidya_c/",
+    "label": "Dr. Vidya C. (Assistant Professor)",
+    "context": "CH Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/dr_rajalakshmi_mudbidre/",
+    "label": "Dr. Rajalakshmi Mudbidre (Assistant Professor)",
+    "context": "CH Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/dr_ujwal_shreenag_meda/",
+    "label": "Dr. Ujwal Shreenag Meda (Assistant Professor)",
+    "context": "CH Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/dr_manjula_sarode/",
+    "label": "Dr. Manjula Sarode (Assistant Professor)",
+    "context": "CH Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/vinutha_moses/",
+    "label": "Dr. Vinutha Moses (Assistant Professor)",
+    "context": "CH Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/dr_p_l_muralidhara/",
+    "label": "Dr. P L Muralidhara (Assistant Professor)",
+    "context": "CH Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemical_engineering/anupama_v_joshi/",
+    "label": "Dr. Anupama V. Joshi (Assistant Professor)",
+    "context": "CH Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/dr_mahesh_r/",
+    "label": "Dr. Mahesh R (Associate Professor & HOD)",
+    "context": "CHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/raviraj_a_k/",
+    "label": "Dr. Raviraj Kusanur (Professor)",
+    "context": "CHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/dr_swarna_mayee_patra/",
+    "label": "Dr. Swarna M. Patra (Associate Professor)",
+    "context": "CHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/dr_manjunatha_c/",
+    "label": "Dr. C. Manjunatha (Associate Professor)",
+    "context": "CHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/sham_aan_m_p/",
+    "label": "Dr. Sham Aan M. P. (Assistant Professor)",
+    "context": "CHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/dr_sridharan_m/",
+    "label": "Dr. M. Sridharan (Assistant Professor)",
+    "context": "CHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/dr_vishnumurthy_k_a/",
+    "label": "Dr. Vishnumurthy K. A (Assistant Professor)",
+    "context": "CHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/dr_swetha_s_m/",
+    "label": "Dr. Swetha S. M. (Assistant Professor)",
+    "context": "CHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/dr_rita_hemanth_shankar/",
+    "label": "Dr. Rita Hemanth Shankar (Assistant Professor)",
+    "context": "CHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/chemistry/dr-radha-n/",
+    "label": "Dr. Radha N (Assistant Professor)",
+    "context": "CHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr-radhakrishna/",
+    "label": "Dr. Radhakrishna (Professor & Head, PG Dean (Non Circuit))",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/civil-faculty-bio/",
+    "label": "Dr. Anjaneyappa (Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr_m_v_renukadevi/",
+    "label": "Dr. M.V. Renukadevi (Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr-b-c-udayashankar/",
+    "label": "Dr. B.C. Udayashankar (Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr-m-s-nagakumar/",
+    "label": "Dr. M S Nagakumar (Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr_v_anantharama/",
+    "label": "Dr. V. Anantharama (Associate Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr_vinod_a_r/",
+    "label": "Dr. Vinod A R (Associate Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr_m_lokeshwari/",
+    "label": "Dr. M. Lokeshwari (Associate Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr_t_raghavendra/",
+    "label": "Dr. T. Raghavendra (Associate Professor & Associate Dean)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr_s_nethravathi/",
+    "label": "Dr. S. Nethravathi (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr-l-durga-prashanth/",
+    "label": "Dr. L. Durga Prashanth (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr_m_varuna/",
+    "label": "Dr. M. Varuna (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr-sindhu-d/",
+    "label": "Dr. Sindhu D (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr-sunil-s/",
+    "label": "Dr. Sunil S (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr-praveen-kumar-k/",
+    "label": "Dr. Praveen Kumar K (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr-k-gajalakshmi/",
+    "label": "Dr. K. Gajalakshmi (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr_somanath_m_basutkar/",
+    "label": "Dr. Somanath M. Basutkar (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr-venugopal-g/",
+    "label": "Dr. Venugopal G (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr_vikas_mendi/",
+    "label": "Dr. Vikas Mendi (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/ram-thilak/",
+    "label": "Dr. Ram Thilak (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/vageesh_h_p/",
+    "label": "Vageesh H P (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/ravikiran_s_wali/",
+    "label": "Dr. Ravikiran S. Wali (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/shrithi-s-badami/",
+    "label": "Dr. Shrithi S. Badami (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/shashi_kiran_c_r/",
+    "label": "Dr. Shashi Kiran C R (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/gowtham_prasad_m_e/",
+    "label": "Gowtham Prasad M E (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/ashwin_thammaiah_k/",
+    "label": "Ashwin Thammaiah K (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr_k_madhavi/",
+    "label": "Dr. K. Madhavi (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/civil_engineering/dr_m_r_archana/",
+    "label": "Dr. M. R. Archana (Assistant Professor)",
+    "context": "CV Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_ramakanth_kumar_p/",
+    "label": "Dr. Ramakanth Kumar P (Professor & Dean, CSE Cluster)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_shanta_rangaswamy/",
+    "label": "Dr. Shanta Rangaswamy (Professor & HOD)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_vinay_hegde/",
+    "label": "Dr. Vinay Hegde (Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_hemavathy_r/",
+    "label": "Dr. Hemavathy R. (Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_krishnappa_h_k/",
+    "label": "Dr. Krishnappa H K (Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-sowmyarani-c-n/",
+    "label": "Dr. Sowmyarani C N (Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-rajashree-shettar/",
+    "label": "Dr. Rajashree Shettar (Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-g-s-nagaraja/ ",
+    "label": "Dr. G. S. Nagaraja (Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-minal-moharir/",
+    "label": "Dr. Minal Moharir (Professor & Programme Coordinator)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_soumya_a/",
+    "label": "Dr. Soumya A. (Professor & Program Coordinator)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_deepamala_n/",
+    "label": "Dr. Deepamala N (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_azra_nasreen/",
+    "label": "Dr. Azra Nasreen (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-pratiba-d/",
+    "label": "Dr. Pratiba D (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-praveena-t/",
+    "label": "Dr. Praveena T (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_k_badari_nath/",
+    "label": "Dr. K. Badari Nath (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-chethana-r-murthy/",
+    "label": "Dr. Chethana R. Murthy (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-pavithra-h/",
+    "label": "Dr. Pavithra H (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-prapulla-s-b/",
+    "label": "Dr. Prapulla S B (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_sneha_m/",
+    "label": "Dr. Sneha M (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_smriti_srivastava/",
+    "label": "Dr. Smriti Srivastava (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-veena-gadad/",
+    "label": "Dr. Veena Gadad (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_mohana/",
+    "label": "Dr. Mohana (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_sandhya_s/",
+    "label": "Dr. Sandhya S. (Associate Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-manas-m-n/",
+    "label": "Dr. Manas M N (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-manonmani-s/",
+    "label": "Dr. Manonmani S. (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/prof-deepika-dash/",
+    "label": "Dr. Deepika Dash (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_anitha_sandeep/",
+    "label": "Dr. Anitha Sandeep (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/prof_apoorva_udaya_kumar_chate/",
+    "label": "Dr. Apoorva Udaya Kumar Chate (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/prof_rajatha/",
+    "label": "Prof. Rajatha (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/prof_savitri_kulkarni/",
+    "label": "Dr. Savitri Kulkarni (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-karanam-sunil-kumar/",
+    "label": "Dr. Karanam Sunil Kumar (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/prof-saraswathi-govind-datard/",
+    "label": "Prof. Saraswathi Govind Datard (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/prof_mekhala_vinod_purohit/",
+    "label": "Prof. Mekhala Vinod Purohit (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/prof-deepthi-l/",
+    "label": "Prof. Deepthi L. (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/sahana-d-shejwadkar/",
+    "label": "Dr. Sahana D. Shejwadkar (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/sanjana-ravindra-otihal/",
+    "label": "Sanjana Ravindra Otihal (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr-jyoti-shetty/",
+    "label": "Dr. Jyoti Shetty (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_suma_b/",
+    "label": "Dr. Suma B. (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_sindhu_d_v/",
+    "label": "Dr. Sindhu D V (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/prof_nithyashree_g_d/",
+    "label": "Prof. Nithyashree G D (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/prof_shweta_babu_prasad/",
+    "label": "Prof. Shweta Babu Prasad (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/dr_srividya_m_s/",
+    "label": "Dr. Srividya M. S. (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/prof_l_kala_chandrashekhar/",
+    "label": "Prof. L. Kala Chandrashekhar (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/cse/prof-ganashree-k-c/",
+    "label": "Prof. Ganashree K C (Assistant Professor)",
+    "context": "CS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_s_g_srivani_bio/",
+    "label": "Dr. S G Srivani (Professor & HOD)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_hemalatha_j_n/",
+    "label": "Dr. Hemalatha J.N. (Associate Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_adinatha_jain/",
+    "label": "Dr. Adinatha Jain (Associate Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_rachana_s_akki/",
+    "label": "Dr. Rachana S. Akki (Associate Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_c_sunanda/",
+    "label": "Dr. C. Sunanda (Associate Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_suresh_c/",
+    "label": "Dr. Suresh C (Associate Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_ajay_k_m/",
+    "label": "Dr. Ajay K.M. (Associate Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_madhu_b_r/",
+    "label": "Dr. Madhu B.R. (Assistant Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_sushmita_sarkar/",
+    "label": "Dr. Sushmita Sarkar (Assistant Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/raja_vidya/",
+    "label": "Raja Vidya (Assistant Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_parth_sarathi_panigrahy/",
+    "label": "Dr. Parth Sarathi Panigrahy (Assistant Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_pandry_narendra_rao/",
+    "label": "Dr. Pandry Narendra Rao (Assistant Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eee/dr_abhilash_krishna_d_g/",
+    "label": "Dr. Abhilash Krishna D G (Assistant Professor)",
+    "context": "EE Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_h_v_ravish_aradhya/",
+    "label": "Dr. H. V. Ravish Aradhya (Professor & HOD)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_k_s_geetha/",
+    "label": "Dr. K. S. Geetha (Professor & Vice-Principal)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_m_uttara_kumari/",
+    "label": "Dr. M. Uttara Kumari (Professor & Dean (R&D))",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_prakash_biswagar/",
+    "label": "Dr. Prakash Biswagar (Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_ramesh_k_b/",
+    "label": "Dr. Ramesh K B (Associate Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_veena_devi/",
+    "label": "Dr. Veena Devi (Associate Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_govinda_raju_m/",
+    "label": "Dr. Govinda Raju M (Associate Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_mahesh_a/",
+    "label": "Dr. Mahesh A (Associate Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_shilpa_d_r/",
+    "label": "Dr. Shilpa D. R. (Associate Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_abhay_a_deshpande/",
+    "label": "Dr. Abhay A. Deshpande (Associate Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_chethana_g/",
+    "label": "Dr. Chethana G (Associate Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_sujata_d_badiger/",
+    "label": "Dr. Sujata D. Badiger (Associate Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_rohini_s_hallikar/",
+    "label": "Dr. Rohini S. Hallikar (Associate Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_sujatha_hiremath/",
+    "label": "Dr. Sujatha Hiremath (Assistant Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr-deepashree-devaraj/",
+    "label": "Dr. Deepashree Devaraj (Assistant Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_rajani_katiyar/",
+    "label": "Dr. Rajani Katiyar (Assistant Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_k_a_nethravathi/",
+    "label": "Dr. K. A. Nethravathi (Assistant Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_harsha/",
+    "label": "Dr. Harsha H (Assistant Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_ramavenkateswaran_n/",
+    "label": "Dr. Ramavenkateswaran N (Assistant Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/dr_roopa_j/",
+    "label": "Dr. Roopa J (Assistant Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/p_narashimaraja/",
+    "label": "P Narashimaraja (Assistant Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ece/veena_divya_krishnappa/",
+    "label": "Dr. Veena Divya Krishnappa (Assistant Professor)",
+    "context": "EC Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/dr_padmaja_k_v/",
+    "label": "Dr. Padmaja K V (Associate Professor & HOD)",
+    "context": "EI Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/dr_prasanna_kumar_s_c/",
+    "label": "Dr. Prasanna Kumar S. C. (Professor)",
+    "context": "EI Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/prof_venkatesh_s/",
+    "label": "Prof. Venkatesh S (Associate Professor)",
+    "context": "EI Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/dr_k_b_ramesh/",
+    "label": "Dr. K. B. Ramesh (Associate Professor)",
+    "context": "EI Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/dr_anand_jatti/",
+    "label": "Dr. Anand Jatti (Assistant Professor)",
+    "context": "EI Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/dr_sudarshan_b_g/",
+    "label": "Dr. Sudarshan B. G. (Assistant Professor)",
+    "context": "EI Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/dr_rachana_s_akki/#",
+    "label": "Dr. Rachana S. Akki (Assistant Professor)",
+    "context": "EI Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/dr_deepashree_devaraj/",
+    "label": "Dr. Deepashree Devaraj (Assistant Professor)",
+    "context": "EI Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/dr_tabitha_janumala/",
+    "label": "Dr. Tabitha Janumala (Assistant Professor)",
+    "context": "EI Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/dr_rajasree_p_m/",
+    "label": "Dr. Rajasree P.M. (Assistant Professor)",
+    "context": "EI Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/eim/dr_kendaganna_swamy_s/",
+    "label": "Dr. Kendaganna Swamy S (Assistant Professor)",
+    "context": "EI Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_nagamani_k_bio/",
+    "label": "Dr. Nagamani K (Professor & HOD)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_h_v_kumaraswamy/",
+    "label": "Dr. H.V. Kumaraswamy (Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_k_sreelakshmi/",
+    "label": "Dr. K. Sreelakshmi (Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_p_nagaraju/",
+    "label": "Dr. P. Nagaraju (Associate Professor & PG Dean)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_b_roja_reddy/",
+    "label": "Dr. B. Roja Reddy (Associate Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_premananda_b_s/",
+    "label": "Dr. Premananda B S (Associate Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_bhagya_r/",
+    "label": "Dr. Bhagya R (Associate Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_shanthi_p/",
+    "label": "Dr. Shanthi P (Associate Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_usha_padma/",
+    "label": "Dr. Usha Padma (Assistant Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/prof_t_p_mithun/",
+    "label": "Prof. T.P. Mithun (Assistant Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_shambulinga_m/",
+    "label": "Dr. Shambulinga M (Assistant Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_sandya_h_b/",
+    "label": "Dr. Sandya H B (Assistant Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/prof_nagendra_n_n/",
+    "label": "Prof. N.N. Nagendra (Assistant Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/prof_mahalakshmi_m_n/",
+    "label": "Prof. Mahalakshmi M. N. (Assistant Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/prof_rakesh_k_r/",
+    "label": "Prof. Rakesh K.R (Assistant Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_k_saraswathi/",
+    "label": "Dr. K. Saraswathi (Assistant Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/etc/dr_ranjani_g/",
+    "label": "Dr. Ranjani G (Assistant Professor)",
+    "context": "ET Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/dr_rajeswara_rao_k_v_s/",
+    "label": "Dr. Rajeswara Rao K V S (Professor & HOD)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/dr_k_n_subramanya/",
+    "label": "Dr. K N Subramanya (Professor & Principal)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/dr_c_k_nagendra_gupta/",
+    "label": "Dr. C K Nagendra Gupta (Professor)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/dr_m_n_vijaya_kumar/",
+    "label": "Dr M N Vijaya Kumar (Associate Professor)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/dr_ramaa_a/",
+    "label": "Dr. Ramaa A (Associate Professor)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/dr_shobha_n_s/",
+    "label": "Dr. Shobha N S (Assistant Professor)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/dr_vivekanand_s_gogi/",
+    "label": "Dr. Vivekanand S. Gogi (Assistant Professor)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/dr_vikram_n_bahadurdesai/",
+    "label": "Dr Vikram N Bahadurdesai (Assistant Professor)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/dr_chitra_b_t/",
+    "label": "Dr Chitra B T (Assistant Professor)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/dr_bindu_ashwini_c/",
+    "label": "Dr Bindu Ashwini C. (Assistant Professor (Psychology))",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/prof_shruthi_m_n/",
+    "label": "Prof Shruthi M N (Assistant Professor)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/prof_b_nandini/",
+    "label": "Prof B. Nandini (Assistant Professor)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/prof_bhaskar_m_g/",
+    "label": "Prof Bhaskar M G (Assistant Professor)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/iem/n_s_narahari/",
+    "label": "Dr N. S. Narahari (Professor)",
+    "context": "IM Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/dr_g_s_mamatha/",
+    "label": "Dr. G. S. Mamatha (Professor & HOD)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/dr_b_m_sagar/",
+    "label": "Dr. B. M. Sagar (Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/dr_ashwini_k_b/",
+    "label": "Dr Ashwini K. B. (Assistant Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/dr_vanishree_k/",
+    "label": "Dr Vanishree K. (Associate Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/dr_merin_meleet/",
+    "label": "Dr Merin Meleet (Assistant Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/s_g_raghavendra_prasad/",
+    "label": "Dr S. G. Raghavendra Prasad (Assistant Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/rekha_b_s/",
+    "label": "Dr Rekha B. S. (Assistant Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/swetha_s/",
+    "label": "Dr Swetha S. (Assistant Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/b_k_srinivas/",
+    "label": "B K Srinivas (Assistant Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/sushmitha_n/",
+    "label": "Dr Sushmitha N. (Assistant Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/dr_kavitha_s_n/",
+    "label": "Dr Kavitha S. N. (Associate Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/rashmi_r/",
+    "label": "Dr Rashmi R (Assistant Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/dr_anala_m_r/",
+    "label": "Dr Anala M. R. (Assistant Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/dr_padmashree_t/",
+    "label": "Dr Padmashree T (Assistant Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/ise/poornima_kulkarni/",
+    "label": "Dr Poornima Kulkarni (Assistant Professor)",
+    "context": "IS Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_g_jayalatha/",
+    "label": "Dr. G. Jayalatha (Professor & HOD)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_neeti_ghiya/",
+    "label": "Dr. Neeti Ghiya (Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_c_nandeesh_kumar/",
+    "label": "Dr. C. Nandeesh Kumar (Associate Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_savithri_shashidhar/",
+    "label": "Dr. Savithri Shashidhar (Associate Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_prakash_r/",
+    "label": "Dr. Prakash R (Associate Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_sowmya_m/",
+    "label": "Dr. Sowmya M (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_satish_v_motammanavar/",
+    "label": "Dr. Satish V. Motammanavar (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_y_sailaja/",
+    "label": "Dr. Y. Sailaja (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_sujatha_a/",
+    "label": "Dr. Sujatha A. (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_vidya_patil/",
+    "label": "Dr. Vidya Patil (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_nivya_muchikel/",
+    "label": "Dr. Nivya Muchikel (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_ravi_k_m/",
+    "label": "Dr. Ravi K. M (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/mr_p_l_rajashekhar/",
+    "label": "P. L. Rajashekhar (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_harish_m/",
+    "label": "Dr. Harish M (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_suman_n_p/",
+    "label": "Dr. Suman N P (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_kiran_kumar_d_l/",
+    "label": "Dr. Kiran Kumar D L (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_venugopal_k/",
+    "label": "Dr. Venugopal K (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_niranjan_p_k/",
+    "label": "Dr. Niranjan P. K. (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_suma_n_manjunath/",
+    "label": "Dr. Suma N Manjunath (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_prasanna_kumar_t/",
+    "label": "Dr. Prasanna Kumar T (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_sakshath_t_n/",
+    "label": "Dr. Sakshath T N (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_hemanthkumar_b/",
+    "label": "Dr. Hemanthkumar B (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_kirthiga_m/",
+    "label": "Dr. Kirthiga M (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/maths/dr_vyshnavi_d/",
+    "label": "Dr. Vyshnavi D (Assistant Professor)",
+    "context": "MAT Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/dr_jasmine_k_s_bio/",
+    "label": "Dr Jasmine K. S. (Professor & HOD)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/dr_usha_j/",
+    "label": "Dr Usha J. (Assistant Professor)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/dr_andhe_dharani/",
+    "label": "Dr Andhe Dharani (Professor)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/dr_b_renuka_prasad/",
+    "label": "Dr B. Renuka Prasad (Associate Professor)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/dr_b_h_chandrashekar/",
+    "label": "Dr B. H. Chandrashekar (Assistant Professor)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/dr_deepika_k/",
+    "label": "Dr Deepika K (Assistant Professor)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/dr_mohan_aradhya/",
+    "label": "Dr Mohan Aradhya (Assistant Professor)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/dr_divya_t_l/",
+    "label": "Dr Divya T. L. (Assistant Professor)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/prof_saravanan_c/",
+    "label": "Prof Saravanan C (Assistant Professor)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/prof_chandrani_chakravorty/",
+    "label": "Prof Chandrani Chakravorty (Assistant Professor)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/prof_savita_sheelavant/",
+    "label": "Prof Savita Sheelavant (Assistant Professor)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/mca/prof_prashanth_k/",
+    "label": "Prof Prashanth K (Assistant Professor)",
+    "context": "MCA Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/faculty/",
+    "label": "Dr. Shanmukha N (Professor & Dean Academics)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_krishna_m/",
+    "label": "Dr Krishna M (Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_nanjundaradhya_n_v/",
+    "label": "Dr Nanjundaradhya N. V. (Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_srihari_p_v/",
+    "label": "Dr Srihari P. V. (Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_p_r_venkatesh/",
+    "label": "Dr P. R. Venkatesh (Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_sridhar_r/",
+    "label": "Dr Sridhar R (Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_harisha_s_k/",
+    "label": "Dr Harisha S. K. (Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_ratna_pal/",
+    "label": "Dr Ratna Pal (Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_nataraj_j_r/",
+    "label": "Dr Nataraj J. R. (Professor & Dean)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_nagesh_s/",
+    "label": "Dr Nagesh S (Associate Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_ramakrishna_hegde/",
+    "label": "Dr Ramakrishna Hegde (Associate Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_chandrakumar_r/",
+    "label": "Dr Chandrakumar R (Associate Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_sourabha_srinivasa_havaldar/",
+    "label": "Dr Sourabha S. Havaldar (Associate Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/keshavamurthy_y_c/",
+    "label": "Keshavamurthy Y. C. (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_keshav_m/",
+    "label": "Dr Keshav M (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_girish_kumar_r/",
+    "label": "Dr Girish Kumar R (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_girish_v_a/",
+    "label": "Dr Girish V. A. (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_gangadhar_angadi/",
+    "label": "Dr Gangadhar Angadi (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_anjaneya_g/",
+    "label": "Dr Anjaneya G (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/jinka_ranganayakalu/",
+    "label": "Jinka Ranganayakulu (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/rakesh_kumar/",
+    "label": "Dr Rakesh Kumar (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/gajanan/",
+    "label": "Gajanan (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/abhiram_e_r/",
+    "label": "Abhiram E. R. (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_prapul_chandra_a_c/",
+    "label": "Dr Prapul Chandra A C (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_mahantash_m_math/",
+    "label": "Dr Mahantash M. Math (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_g_r_rajkumar/",
+    "label": "Prof G R Rajkumar (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_bharatish_a/",
+    "label": "Dr Bharatish A (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_roopa_t_s/",
+    "label": "Prof Roopa T. S. (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_ramesh_s_sharma/",
+    "label": "Dr Ramesh S. Sharma (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_kirthan_l_j/",
+    "label": "Dr Kirthan L. J. (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/sujan_chakraborty/",
+    "label": "Sujan Chakraborty (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/me/dr_jagannatha_guptha_v_l/",
+    "label": "Dr Jagannatha Guptha V. L. (Assistant Professor)",
+    "context": "ME Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_g_shireesha/",
+    "label": "Dr. G. Shireesha (Professor & HOD)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/faculty/",
+    "label": "Dr. Bhuvaneswara Babu T (Associate Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_avadhani_d_n/",
+    "label": "Dr. D. N. Avadhani (Associate Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_sudha_kamath_m_k/",
+    "label": "Dr. Sudha Kamath M K (Associate Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_shubha_s/",
+    "label": "Dr. Shubha S (Assistant Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_tribikram_gupta/",
+    "label": "Dr. Tribikram Gupta (Associate Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_b_m_rajesh/",
+    "label": "Dr. B. M. Rajesh (Assistant Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_ramya_p/",
+    "label": "Dr. Ramaya P (Assistant Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_niranjana_k_m/",
+    "label": "Dr. Niranjana K M (Assistant Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_dileep_m_s/",
+    "label": "Dr. Dileep M S (Assistant Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_shwetha_k_p/",
+    "label": "Dr. Shwetha K P (Assistant Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_rini_ganguly/",
+    "label": "Dr. Rini Ganguly (Assistant Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  },
+  {
+    "url": "https://rvce.edu.in/department/physics/dr_kavya_k_nayak/",
+    "label": "Dr. Kavya K. Nayak (Assistant Professor)",
+    "context": "PHY Department Faculty",
+    "category": "Faculty Profiles"
+  }
+]

@@ -1,0 +1,778 @@
+function getResponse(id) {
+    const r = { text: '', buttons: [], noMenu: false };
+    
+    // Dynamic Faculty Lookup
+    if (id && id.startsWith('fac_')) {
+        const match = findFacultyBySlug(id.replace('fac_', ''));
+        if (match) return renderFaculty(match.f, match.d);
+    }
+
+    // Add conversational prefix for non-greeting/bye intents
+    if (id !== 'greet' && id !== 'bye' && id !== 'menu') {
+        r.text = getPrefix();
+    }
+
+    SESSION.lastIntent = id;
+
+    switch (id) {
+    case 'greet':
+        r.text = T("Hey there! 👋 Welcome to RVCE — the place where engineers are crafted! 🔧 What would you like to know?","Hello! Welcome to RV College of Engineering. How can I assist you today?");
+        r.noMenu = true; return r;
+    case 'bye':
+        r.text = T("See ya! 🙌 Hope I helped. Come back anytime!","Thank you for visiting. Feel free to return anytime. Have a good day!");
+        r.buttons = [{l:'Visit Website',u:KB.contact.website,i:'🌐'}]; return r;
+    case 'about':
+    case 'about_disambiguation':
+        r.text = T(
+            "Are you looking for information about Departments, the RV Educational Institutions (RVEI), or RV College of Engineering (RVCE)?",
+            "Please clarify what you would like to know about:"
+        );
+        r.buttons = [
+            {l:'Departments 📚', a:'departments', i:'📚'},
+            {l:'About RVEI 🏛️', a:'about_rvei', i:'🏛️'},
+            {l:'About RVCE 🏫', a:'about_rvce', i:'🏫'}
+        ];
+        r.noMenu = true;
+        break;
+    case 'about_rvei':
+        r.text += T("Rashtreeya Vidyalaya Educational Institutions (RVEI) is managed by RSST! 🏛️","About RVEI (RSST):");
+        r.text += "\n• "+KB.rvei.history+"\n• "+KB.rvei.institutions+"\n• Motto: "+KB.rvei.motto;
+        r.buttons = [{l:'RVEI Website',u:'https://rvinstitutions.com/',i:'🌐'},{l:'About RVCE',a:'about_rvce',i:'🏫'}];
+        break;
+    case 'about_rvce':
+        r.text += T("RVCE — engineering excellence since 1963! 🔧\n📍 16.85 acres on Mysuru Road, Bengaluru\n🏆 NAAC A+ (3.39/4.0) | NIRF 101-150\n🎓 16 UG + 14 PG programs\n📄 100+ Patents | 30+ Centres of Excellence",
+            "RV College of Engineering, established in 1963, is situated on 16.85 acres on Mysuru Road, Bengaluru.\n\n• Accreditation: NAAC A+ Grade (CGPA 3.39/4.0, valid 2024-2029)\n• Ranking: NIRF 101-150, #1 Private College (IIRF 2025)\n• Programs: 16 B.E., 14 M.Tech/MCA, PhD\n• Research: 100+ Patents, 30+ Centres of Excellence");
+        r.buttons = [{l:'Rankings',a:'ranking',i:'🏆'},{l:'Vision & Mission',a:'vision',i:'🎯'},{l:'Research',a:'research',i:'🔬'},{l:'Website',u:'https://rvce.edu.in/about_us/',i:'🌐'}]; break;
+    case 'vision':
+        r.text += T("RVCE's vision? Tech + Innovation + Sustainability = Future! 🚀","Vision: "+KB.general.vision); break;
+    case 'principal':
+        r.text += T("Dr. K.N. Subramanya is the Principal! With 34+ years experience, he leads the team! ⚓",
+            "The Principal of RVCE is Dr. K.N. Subramanya.\n\nHe holds a B.E., M.Tech., MBA, and Ph.D., bringing over 34 years of experience in teaching, research, and administration.\n\nContact: [principal@rvce.edu.in](mailto:principal@rvce.edu.in)");
+        r.buttons = [{l:'About Principal',u:'https://rvce.edu.in/about-k_n_subramanya/',i:'👨‍🏫'}, {l:'Vice Principal',a:'vice_principal',i:'👩‍🏫'}]; break;
+    case 'vice_principal':
+        r.text += T("Dr. K. S. Geetha is our Vice-Principal! A powerhouse of academic excellence! 👩‍🏫",
+            "The Vice-Principal of RVCE is Dr. K. S. Geetha.\n\nShe is a Professor in the ECE department and handles academic and administrative responsibilities alongside the Principal.\n\nContact: [viceprincipal@rvce.edu.in](mailto:viceprincipal@rvce.edu.in)");
+        r.buttons = [{l:'About Vice Principal',u:'https://rvce.edu.in/department/ece/dr_k_s_geetha/',i:'👩‍🏫'}, {l:'Principal',a:'principal',i:'👨‍🏫'}]; break;
+    case 'ranking':
+        r.text += T("RVCE is killing it! 🏆","RVCE Rankings:");
+        r.text += "\n• "+KB.general.ranking+"\n• "+KB.general.accreditation; break;
+    case 'accreditation':
+        r.text += T("RVCE scored the top marks! 💎","Accreditation Details:");
+        r.text += "\n• "+KB.general.accreditation+"\n• "+KB.general.status;
+        r.buttons = [{l:'NAAC Portal',u:'https://rvce.edu.in/naac/',i:'🌐'}]; break;
+    case 'timings':
+        r.text += T("⏰ "+KB.general.timings,"College timings: "+KB.general.timings); break;
+    case 'trust':
+        r.text += T("RVCE is powered by RSST! 🏛️","RVCE is managed by "+KB.general.trust+".");
+        r.buttons = [{l:'RVEI Website',u:'https://rvei.edu.in/',i:'🌐'}]; break;
+    case 'research':
+        r.text += T("Research at RVCE is 🔥!","Research Highlights:");
+        r.text += "\n• "+KB.general.research+"\n• Domains: "+KB.general.researchDomains;
+        r.buttons = [{l:'Centres of Excellence 🔬',a:'centres_of_excellence',i:'🧪'},{l:'Research Centres',u:'https://rvce.edu.in/research_consulting/',i:'🌐'}]; break;
+    case 'centres_of_excellence':
+        r.text += T("RVCE has 20+ Centres of Excellence (CoEs)! 🔬 World-class research hubs with global industry partners:\n\n💡 *Tip: Search a specific CoE by name to see details & direct page link!*","Centres of Excellence (COEs) at RVCE:\n\nTip: Search a specific CoE name to get its description and direct page link.");
+        r.text += "\n\n" + KB.general.coes_db.slice(0, 5).map((c,i) =>
+            `${i+1}. ${c.emoji} **${c.n}** — *${c.dept}*`
+        ).join('\n');
+        r.text += `\n\n*...and ${KB.general.coes_db.length - 5} more CoEs!*`;
+        r.buttons = [
+            {l:'See All CoEs ➕',a:'more_coes',i:'➕'},
+            {l:'Boston AI CoE 🧠',a:'coe_boston',i:'🧠'},
+            {l:'CISSS CoE 🤖',a:'coe_cisss',i:'🤖'},
+            {l:'Full CoE Page 🌐',u:'https://rvce.edu.in/research_consulting/centre-of-excellence/',i:'🌐'}
+        ]; break;
+    case 'more_coes':
+        r.text += T("Here is the complete list of all Centres of Excellence at RVCE! 🔬","Complete List of Centres of Excellence:");
+        r.text += "\n\n" + KB.general.coes_db.map((c,i) =>
+            `${i+1}. ${c.emoji} **${c.n}** — *${c.dept}*`
+        ).join('\n');
+        r.text += "\n\n**Industry Competence Centres (CoCs):**\n• " + KB.general.cocs.join("\n• ");
+        r.buttons = [
+            {l:'Back 🔙',a:'_back',i:'🔙'},
+            {l:'Full CoE Page 🌐',u:'https://rvce.edu.in/research_consulting/centre-of-excellence/',i:'🌐'}
+        ]; break;
+    case 'collaborations':
+    case 'partnerships':
+        r.text += T("RVCE is a hub for industry tie-ups! 🤝 We have 200+ MoUs with global giants:","Industry Collaborations & MoUs:");
+        r.text += "\n\n• **Boston UK**: CoE in AI Research with 1-PetaFLOP computing power 🧠\n• **Tata Technologies**: CIIIT Center for Industry 4.0 and Smart Manufacturing (₹60 Cr project).\n• **Cisco**: Networking Academy and IoT CoE.\n• **MG Motor**: EV Technology skill development.\n• **Mercedes-Benz**: ADAM (Automotive Mechatronics) diploma program.\n• **Toyota Kirloskar**: Automotive Engineering centre.\n• **IBM**: Software & Cloud CoE.\n• **Research Partners**: ISRO, CSIR-NAL, Indian Navy, Boeing, and Airbus.";
+        r.buttons = [{l:'Boston AI CoE',a:'boston',i:'🧠'},{l:'Centres of Excellence',a:'centres_of_excellence',i:'🔬'},{l:'Placements',a:'placements',i:'💼'}]; break;
+    case 'boston':
+        r.text += T("The **RVCE-Boston CoE in AI Research** is a beast! 🧠🔋\n\nIt was built with **Boston Ltd., UK** and features a **Graphcore POD4 server** with 1-PetaFLOP of AI power! It's one of the few in India.","Centre of Excellence in AI Research (RVCE-Boston Ltd):");
+        r.text += "\n\n• **Focus**: Computer Vision, FinTech, AgriTech, and BioTech research.\n• **Certification**: Offers a 6-month professional course in Data Science & MLOps.\n• **Consultancy**: Invites industry projects and algorithm testing for scholars.\n• **Impact**: Bridges the gap between academic theory and real-world AI deployment.";
+        r.buttons = [{l:'AI Research Home',u:'https://rvce.edu.in/department/wp-content/uploads/2026/03/RVCE-Boston-AI-CoE2.pdf',i:'🌐'},{l:'All Collaborations',a:'collaborations',i:'🤝'}]; break;
+    case 'germany_program':
+        r.text += T("RVCE has strong ties with Germany! 🇩🇪 We offer several Indo-German programs and host German-partnered Centres of Excellence:", "RVCE's Indo-German Collaborations:");
+        r.text += "\n\n**Academic Programs:**\n• **Indo-German Certificate Programme**: In collaboration with Technical University of Applied Sciences Würzburg-Schweinfurt (THWS) and other Bavarian universities.\n• Focuses on preparing students for higher education and careers in Germany.";
+        r.text += "\n\n**German-Partnered CoEs:**\n• **RV-Mercedes Benz Centre (ADAM)**: Advanced Diploma in Automotive Mechatronics.\n• **RV-Bosch Rexroth Centre**: Automation, hydraulics, and pneumatics.";
+        r.buttons = [{l:'Mercedes Benz CoE 🏎️',a:'coe_benz',i:'🏎️'},{l:'Bosch Rexroth CoE ⚙️',a:'coe_bosch',i:'⚙️'},{l:'All Collaborations 🤝',a:'collaborations',i:'🤝'}];
+        break;
+    case 'admissions':
+        r.text += T("Let's get you enrolled! 🎓","Admission Information:");
+        r.buttons = [{l:'UG (B.E.)',a:'ugAdm',i:'🎓'},{l:'PG (M.Tech)',a:'pgAdm',i:'📘'},{l:'MCA',a:'mca',i:'💻'},{l:'PhD',a:'phd',i:'🧪'},{l:'Admissions Page',u:KB.admissions.url,i:'🌐'}]; break;
+    case 'ugAdm':
+        r.text += T("B.E. admission details 📋:","UG Admission:");
+        r.text += "\n• Eligibility: "+KB.admissions.ug.eligibility+"\n• Exams: "+KB.admissions.ug.exams+"\n• "+KB.admissions.ug.quotas;
+        r.buttons = [{l:'View Programs',a:'ugPrograms',i:'📋'},{l:'Apply',u:KB.admissions.url,i:'🌐'}]; break;
+    case 'notifications':
+    case 'circulars':
+        r.text += T("Looking for the latest updates? 📢 Check out the official circulars below!","Please select the type of circular you are looking for:");
+        r.buttons = [
+            {l:'Admission Circulars',u:KB.circulars.admissions,i:'🎓'},
+            {l:'Exam Circulars',u:KB.circulars.examinations,i:'📝'},
+            {l:'Academic Circulars',u:KB.circulars.academic,i:'📚'},
+            {l:'Fee Payment Circulars',u:'https://rvce.edu.in/academics_and_examinations/fee_payment_circulars/',i:'💰'}
+        ]; break;
+    case 'committees':
+        r.text += T("Here are the top Statutory Committees at RVCE! 🏛️","Statutory Committees at RVCE:");
+        r.text += "\n\n• **Governing Body**: Strategic oversight\n• **Academic Council**: Academic planning\n• **Board of Studies**: Curriculum design";
+        r.buttons = [
+            {l:'Governing Body PDF',u:'https://rvce.edu.in/wp-content/uploads/2025/10/RVCE.pdf',i:'📄'},
+            {l:'Academic Council PDF',u:'https://rvce.edu.in/wp-content/uploads/2025/10/AC-Members-List-2025-26.pdf',i:'📄'},
+            {l:'View All Committees 🌐',u:'https://rvce.edu.in/statutory-committees/',i:'🌐'}
+        ]; break;
+    case 'policies':
+        r.text += T("Here are some of the key Policies and Documents for RVCE! 📜","Key Policies & Documents:");
+        r.text += "\n\n• **Mandatory Disclosure**: Official college data\n• **Strategic Planning**: Long-term goals\n• **Code of Conduct**: Rules & guidelines";
+        r.buttons = [
+            {l:'Mandatory Disclosure',u:'https://rvce.edu.in/mandatory-disclosure/',i:'📄'},
+            {l:'Code of Conduct PDF',u:'https://rvce.edu.in/wp-content/uploads/2025/09/Code-of-conduct.pdf',i:'📄'},
+            {l:'View All Policies 🌐',u:'https://rvce.edu.in/about_us/policies-documents/',i:'🌐'}
+        ]; break;
+    case 'pgAdm':
+        r.text += T("M.Tech time! 🚀","PG Admission:");
+        r.text += "\n• Eligibility: "+KB.admissions.pg.eligibility+"\n• Exams: "+KB.admissions.pg.exams;
+        r.buttons = [{l:'PG Programs',a:'pgPrograms',i:'📋'},{l:'Apply (M.Tech/MCA)',u:'https://rvce.edu.in/admissions/#mtechmca_link',i:'🌐'}]; break;
+    case 'jee':
+        r.text += T("⚠️ JEE Mains is NOT accepted at RVCE! You need KCET, COMED-K, or Management Quota.","Important: JEE Mains scores are NOT considered for RVCE admission. Accepted exams: KCET (KEA), COMED-K, and Management Quota.");
+        r.buttons = [{l:'Admission Info',a:'admissions',i:'🎓'}]; break;
+    case 'examTypes':
+        r.text += T("Ways to get in 🎯:","Admission Modes:");
+        r.text += "\n• KCET (KEA) — Karnataka entrance\n• COMED-K — Private colleges\n• Management Quota\n• Special: CIWG/PIO/OCI/Nepal";
+        r.buttons = [{l:'More Info',u:KB.admissions.url,i:'🌐'}]; break;
+    case 'management_quota':
+        r.text += T("Management Quota Seats 💰:","Management Quota Information:");
+        r.text += "\n• Admission is based on academic performance and seat availability.\n• Fees: "+KB.admissions.fees;
+        r.buttons = [{l:'Contact Admissions',a:'contact',i:'📞'},{l:'Admissions Page',u:KB.admissions.url,i:'🌐'}]; break;
+    case 'cutoffs':
+        r.text += T("Rankings & Cutoffs 📊:","KCET/COMEDK Cutoffs:");
+        r.text += "\n• "+KB.admissions.cutoffs+"\n• Note: Cutoffs vary significantly by year and category.";
+        r.buttons = [{l:'KEA Website',u:'https://cetonline.karnataka.gov.in/kea/',i:'🌐'},{l:'Admissions Info',a:'admissions',i:'🎓'}]; break;
+    case 'scholarships':
+        r.text += T("Scholarships & Aid 🎓:","Financial Support:");
+        r.text += "\n• "+KB.placements.scholarships;
+        r.buttons = [{l:'More Details',u:'https://rvce.edu.in/scholarships/',i:'🌐'}]; break;
+    case 'lateral':
+        r.text += T("Lateral Entry (Diploma) 🔄:","Admission for Diploma Holders:");
+        r.text += "\n• Direct admission to 2nd year B.E.\n• Mandatory Requirement: DCET (Diploma CET) rank.";
+        r.buttons = [{l:'Admissions Page',u:KB.admissions.url,i:'🌐'}]; break;
+    case 'fees':
+        r.text += T("Tuition fees depend on the admission quota:<br><br>" + KB.admissions.fees + "<br><br><em>Note: Hostels cost an additional ₹1.1L - ₹1.3L per year.</em>",
+            "Tuition fees depend on the admission quota:\n\n" + KB.admissions.fees);
+        r.buttons = [
+            {l:'Admissions Info',a:'admissions',i:'🎓'},
+            {l:'Fee Payment Circulars',u:'https://rvce.edu.in/academics_and_examinations/fee_payment_circulars/',i:'💰'}
+        ]; break;
+    case 'contact':
+    case 'address':
+    case 'location':
+        r.text += T("You can find us here! 📍","Official Contact Details:");
+        r.text += "\n\n**Address:**\n" + KB.contact.address;
+        r.text += "\n\n**Phone:**\n" + KB.contact.phone;
+        r.text += "\n\n**Email:**\n[" + KB.contact.email.split(':')[1] + "](" + KB.contact.email + ")";
+        r.buttons = [
+            {l:'View on Maps',u:KB.contact.maps,i:'📍'},
+            {l:'Contact Page',u:'https://rvce.edu.in/contact-us/',i:'📞'},
+            {l:'Follow Us 📱',a:'social',i:'📱'},
+            {l:'Main Menu',a:'menu',i:'📋'}
+        ]; break;
+    case 'social':
+        r.text += T("Stay connected with RVCE! 🌐 Follow our official social media handles for the latest updates, events, and campus news.","Official RVCE Social Media Handles:");
+        r.buttons = [
+            {l:'Facebook',u:KB.contact.social.facebook,i:'📘'},
+            {l:'Instagram',u:KB.contact.social.instagram,i:'📸'},
+            {l:'LinkedIn',u:KB.contact.social.linkedin,i:'🔗'},
+            {l:'X (Twitter)',u:KB.contact.social.x,i:'🐦'},
+            {l:'Contact Details',a:'contact',i:'📞'}
+        ]; break;
+    case 'placements':
+        r.text += T("Our record is legendary! 📊 For the 2026 batch, the drive is ongoing with fantastic results!","Placement Statistics (2026 Batch - Ongoing):");
+        r.text += "\n• Max: " + KB.placements.maxSalary + "\n• Avg: " + KB.placements.avgSalary + "\n• " + KB.placements.offers + "\n• " + KB.placements.companies + "\n• Top Recruiters: " + KB.placements.recruiters;
+        r.text += T("\n\n🏆 Previous batch (2025): ₹67 LPA highest, 922 offers","\n\nPrevious Year (2025): ₹67 LPA highest package, 262 companies, 922 offers.");
+        r.buttons = [{l:'Department-wise Stats',a:'dept_placements_list',i:'📊'}, {l:'Placement Training',u:KB.placements.url,i:'🌐'}]; break;
+    case 'dept_placements_list':
+        r.text += T("Sure! Select a department to see its detailed placement statistics:", "Department-wise Placement Statistics:");
+        r.buttons = [
+            {l:'CSE',a:'plcmt_cs',i:'💻'}, {l:'ISE',a:'plcmt_is',i:'💻'}, {l:'AIML',a:'plcmt_aiml',i:'🤖'},
+            {l:'ECE',a:'plcmt_ec',i:'📡'}, {l:'EEE',a:'plcmt_ee',i:'⚡'}, {l:'Telecom',a:'plcmt_et',i:'📞'}, {l:'Instrumentation',a:'plcmt_ei',i:'📟'},
+            {l:'Mechanical',a:'plcmt_me',i:'⚙️'}, {l:'Aerospace',a:'plcmt_ae',i:'✈️'}, 
+            {l:'Civil',a:'plcmt_cv',i:'🏗️'}, {l:'Chemical',a:'plcmt_ch',i:'🧪'}, {l:'BioTech',a:'plcmt_bt',i:'🧬'}, {l:'Industrial (IEM)',a:'plcmt_im',i:'🏭'},
+            {l:'Back to Placements',a:'_back',i:'🔙'}
+        ]; break;
+    case 'top_companies':
+        r.text += T("RVCE attracts the best in the industry! 🏢 Here are some of our top recruiters:","Top Recruiting Companies at RVCE:");
+        r.text += "\n\n• " + KB.placements.recruiters.split(", ").join("\n• ");
+        r.buttons = [{l:'Placements',a:'placements',i:'💼'},{l:'Admissions',a:'admissions',i:'🎓'}]; break;
+    case 'refund_policy':
+        r.text += T("Refund policy follows AICTE rules! 💸<br><br>• Before start: Full refund (-₹1k)<br>• After start: Only if seat filled<br>• Document retention is BANNED.",
+            "The Fee Refund Policy strictly follows <strong>AICTE Regulations</strong>.<br><br>• <strong>Before Course Start:</strong> Full refund minus a processing fee (max ₹1,00,0).<br>• <strong>After Course Start:</strong> Refundable only if the vacated seat is filled.<br>• <strong>Original Docs:</strong> By AICTE mandate, colleges cannot retain original certificates.");
+        break;
+    case 'syllabus_1st_sem':
+        r.text += T("1st Year Syllabus (VTU 2022 Scheme) 📚<br><br>Physics & Chemistry cycles apply! Key subjects include Math, Electronics, C-Programming.",
+            "The <strong>1st Year B.E. Syllabus</strong> follows the VTU 2022 Scheme.<br><br>Students are divided into Physics and Chemistry Cycles. Key subjects include:<br>• Engineering Mathematics<br>• Basic Electronics/Electrical<br>• Programming in C");
+        r.buttons = [{l:'Download Syllabus PDF',u:'https://rvce.edu.in/sites/default/files/FIRST-YEAR-SYLLABUS-BOOK-2022-SCHEMEFORPRINT.pdf',i:'📑'}]; break;
+    case 'faculty':
+        r.text += T("Explore our department faculty! 👨‍🏫 Choose a category:", "Academic Faculty - Select a category:");
+        r.buttons = [
+            {l:'Computing & IT 💻',a:'fac_group_comp',i:'💻'},
+            {l:'Electrical & Comm 🔌',a:'fac_group_elec',i:'🔌'},
+            {l:'Core Engineering ⚙️',a:'fac_group_core',i:'⚙️'},
+            {l:'Applied Sciences 🧬',a:'fac_group_sci',i:'🧬'},
+            {l:'Deans List 📋',a:'deans_list',i:'👨‍🏫'},
+            {l:'Main Menu',a:'menu',i:'🔙'}
+        ];
+        r.noMenu = true; break;
+    case 'fac_group_comp':
+        r.text += T("Computing & IT Faculty pages:", "Computing & IT Faculty pages:");
+        r.buttons = [
+            {l:'CSE 💻',u:'https://rvce.edu.in/department/cse/faculty/',i:'💻'},
+            {l:'ISE 💻',u:'https://rvce.edu.in/department/ise/faculty/',i:'💻'},
+            {l:'AIML 💻',u:'https://rvce.edu.in/department/ai_ml/faculty/',i:'💻'},
+            {l:'Data Science 📊',u:'https://rvce.edu.in/department/cse/faculty/',i:'📊'},
+            {l:'Cyber Security 🛡️',u:'https://rvce.edu.in/department/cse/faculty/',i:'🛡️'},
+            {l:'MCA 💻',u:'https://rvce.edu.in/department/mca/main_department/',i:'💻'},
+            {l:'All Faculty',a:'faculty',i:'🔙'}
+        ];
+        r.noMenu = true; break;
+    case 'fac_group_elec':
+        r.text += T("Electrical & Communication Faculty pages:", "Electrical & Communication Faculty pages:");
+        r.buttons = [
+            {l:'ECE 🔌',u:'https://rvce.edu.in/department/ece/faculty/',i:'🔌'},
+            {l:'EEE ⚡',u:'https://rvce.edu.in/department/eee/faculty/',i:'⚡'},
+            {l:'EIE 📡',u:'https://rvce.edu.in/department/eim/faculty/',i:'📡'},
+            {l:'Telecom (ETE) 📱',u:'http://rvce.edu.in/department/etc/faculty/',i:'📱'},
+            {l:'All Faculty',a:'faculty',i:'🔙'}
+        ];
+        r.noMenu = true; break;
+    case 'fac_group_core':
+        r.text += T("Core Engineering Faculty pages:", "Core Engineering Faculty pages:");
+        r.buttons = [
+            {l:'Mechanical ⚙️',u:'https://rvce.edu.in/department/me/faculty/',i:'⚙️'},
+            {l:'Civil 🏗️',u:'https://rvce.edu.in/department/civil_engineering/faculty/',i:'🏗️'},
+            {l:'Aerospace 🚀',u:'https://rvce.edu.in/department/ae/faculty/',i:'🚀'},
+            {l:'Industrial (IEM) 🏭',u:'https://rvce.edu.in/department/iem/faculty/',i:'🏭'},
+            {l:'All Faculty',a:'faculty',i:'🔙'}
+        ];
+        r.noMenu = true; break;
+    case 'fac_group_sci':
+        r.text += T("Applied Sciences Faculty pages:", "Applied Sciences Faculty pages:");
+        r.buttons = [
+            {l:'Biotechnology 🧬',u:'https://rvce.edu.in/department/biotechnology/faculty/',i:'🧬'},
+            {l:'Chemical 🧪',u:'http://rvce.edu.in/department/chemical_engineering/faculty/',i:'🧪'},
+            {l:'Chemistry 🧪',u:'https://rvce.edu.in/department/chemistry/faculty/',i:'🧪'},
+            {l:'Mathematics 📐',u:'https://rvce.edu.in/department/maths/main_dept/',i:'📐'},
+            {l:'Physics ⚛️',u:'https://rvce.edu.in/department/physics/faculty/',i:'⚛️'},
+            {l:'All Faculty',a:'faculty',i:'🔙'}
+        ];
+        r.noMenu = true; break;
+    case 'deans_list':
+        r.text += T("Here are the top commanders at RVCE! ⚓\n\n","RVCE Deans & Key Executives:\n\n");
+        r.text += "• **Principal:** Dr. K.N. Subramanya\n• **Vice Principal:** Dr. K. S. Geetha\n• **Dean Academics:** Dr. M.V. Renukadevi\n• **Dean Student Affairs:** Dr. B.M. Sagar\n• **Dean R&D:** Dr. M Uttara Kumari\n• **Dean CSE Cluster:** Dr. Ramakanth Kumar P\n• **Dean PG Circuit:** Dr. K Sreelakshmi\n• **Dean PG Non-Circuit:** Dr. Radhakrishna\n• **Dean Skill Dev:** Dr. M Krishna\n• **Dean Placement & Training:** Dr. D. Ranganath\n• **Dean Global Partnerships:** Dr. J R Nataraj";
+        r.buttons = [{l:'HODs List 📚',a:'hods_list',i:'👩‍🏫'}, {l:'Key Executives Page',u:'https://rvce.edu.in/about_us/key-executives/',i:'🌐'}]; break;
+    case 'hods_list':
+        r.text += T("Here are the Heads of Departments (HODs): 📚\n\n","RVCE Head of Departments:\n\n");
+        r.text += "• **CSE:** Dr. Shanta Rangaswamy\n• **AIML:** Dr. Sathish Babu B\n• **ISE:** Dr. Mamatha G S\n• **ECE:** Dr. Ravish Aradhya H V\n• **Mechanical:** Dr. Shanmukha Nagaraj\n• **Civil:** Dr. Anjaneyappa\n• **EEE:** Dr. J N Hemalatha (I/c)\n• **Aerospace:** [Dr. Supreeth R](https://rvce.edu.in/department/ae/dr_r_supreeth/)\n• **Biotech:** Dr. Nagashree N Rao\n• **Chemical:** Dr. Jagadish H Patil\n• **EIE:** Dr. CH. Renumadhavi\n• **ETE:** Dr. Nagamani K\n• **IEM:** Dr. Rajeswara Rao K V S\n• **MCA:** Dr. Jasmine K S\n• **Physics:** Dr. G. Shireesha\n• **Maths:** Dr. Jayalatha G\n• **Chemistry:** Dr. Mahesh R";
+        r.buttons = [{l:'Deans List 🎓',a:'deans_list',i:'👨‍🏫'}, {l:'Key Executives Page',u:'https://rvce.edu.in/about_us/key-executives/',i:'🌐'}]; break;
+    case 'dress_code':
+        r.text += T("Dress sharp! 👔 No shorts or ripped jeans. Casuals are okay, but labs require safety gear (Khakis/Aprons)!",
+            "As an institution affiliated with <strong>VTU</strong>, RVCE enforces a dress code that aligns with professional and academic decorum.<br><br>• <strong>General Wear:</strong> Clean, neat, and non-revealing casual wear is permitted.<br>• <strong>Prohibited:</strong> Shorts, ripped jeans, revealing tops.<br>• <strong>Labs/Workshops:</strong> Closed-toe shoes and safety uniforms mandatory.");
+        break;
+    case 'anti_ragging':
+        r.text += T("Ragging is a crime! 🛑 Total ban at RVCE.<br><br>🚨 National Helpline: 1800-180-5522",
+            "RVCE strictly adheres to the <strong>UGC Regulations on Curbing the Menace of Ragging (2009)</strong>. Ragging is a criminal offense.<br><br>🚨 <strong>National 24x7 Anti-Ragging Helpline:</strong> 1800-180-5522<br>Email: [helpline@antiragging.in](mailto:helpline@antiragging.in)");
+        r.buttons = [{l:'Anti-Ragging Portal',u:'https://www.antiragging.in/',i:'🛑'}]; break;
+
+    case 'culturalLife':
+        r.text += T("Student life is more than classes! 🎭","Cultural Activities & Clubs:");
+        r.text += "\n• Clubs: " + KB.campus.clubs.join(", ") + "\n• Fest: " + KB.campus.fest;
+        r.buttons = [{l:'Cultural Teams',u:KB.campus.urls.cultural,i:'🌐'}]; break;
+
+    case 'website':
+        r.text += T("Here you go! 🌐","Official Website:");
+        r.buttons = [{l:'rvce.edu.in',u:KB.contact.website,i:'🌐'}]; break;
+    case 'intake':
+        r.text += T("RVCE admits 2000+ students every year! 🎓","Annual intake: "+KB.general.intake+"."); break;
+    case 'ug_disambiguation':
+        r.text += T("Academic explorer! 🗺️ Are you looking to see the **Programmes List** or do you need **Admission Details** for UG?","Would you like to explore Undergraduate (B.E.) Programmes or check Admission Details?");
+        r.buttons = [
+            {l:'Programmes List 📜',a:'ugPrograms',i:'📋'},
+            {l:'Admission Process 🎓',a:'ugAdm',i:'🎫'}
+        ]; 
+        return r;
+    case 'ugPrograms':
+        r.text += T("RVCE offers 16 Undergraduate (B.E.) programs. Choose a category:","RVCE offers 16 UG programs. Select a category below:");
+        r.buttons = [
+            {l:'Computing & IT 💻',a:'dept_group_comp',i:'💻'},
+            {l:'Electrical & Comm 🔌',a:'dept_group_elec',i:'🔌'},
+            {l:'Core Engineering ⚙️',a:'dept_group_core',i:'⚙️'},
+            {l:'Applied Sciences 🧬',a:'dept_group_sci',i:'🧬'}
+        ];
+        r.noMenu = true; break;
+    case 'pgPrograms':
+        r.text += T("RVCE offers 14 Postgraduate programs. Choose a category to find your program:","RVCE offers 14 PG programs. Select a category below:");
+        r.buttons = [
+            {l:'Computing & IT 💻',a:'pg_group_comp',i:'💻'},
+            {l:'Electrical & Comm 🔌',a:'pg_group_elec',i:'🔌'},
+            {l:'Core Engineering ⚙️',a:'pg_group_core',i:'⚙️'},
+            {l:'Applied Sciences 🧬',a:'pg_group_sci',i:'🧬'}
+        ];
+        r.noMenu = true; break;
+    case 'pg_group_comp':
+        r.text += T("M.Tech & MCA Computing Programs:","PG Computing Programs:");
+        r.buttons = [{l:'M.Tech CSE',a:'pg_cs_cse',i:'💻'},{l:'M.Tech CNE',a:'pg_cs_cne',i:'💻'},{l:'M.Tech Software Engg',a:'pg_is_se',i:'💻'},{l:'M.Tech Info Tech',a:'pg_is_it',i:'💻'},{l:'MCA',a:'pg_mca',i:'💻'}];
+        r.noMenu = true; break;
+    case 'pg_group_elec':
+        r.text += T("M.Tech Electrical & Communication:","PG Electrical & Communication:");
+        r.buttons = [{l:'M.Tech VLSI',a:'pg_ec_vlsi',i:'🔌'},{l:'M.Tech Comm Sys',a:'pg_ec_cs',i:'📡'},{l:'M.Tech Digital Comm',a:'pg_et_dc',i:'📱'},{l:'M.Tech Power Electronics',a:'pg_ee_pe',i:'⚡'}];
+        r.noMenu = true; break;
+    case 'pg_group_core':
+        r.text += T("M.Tech Core Engineering:","PG Core Engineering:");
+        r.buttons = [{l:'M.Tech Structural',a:'pg_cv_se',i:'🏗️'},{l:'M.Tech Highway',a:'pg_cv_ht',i:'🛣️'},{l:'M.Tech Product Design',a:'pg_me_pd',i:'⚙️'},{l:'M.Tech Machine Design',a:'pg_me_md',i:'🏭'}];
+        r.noMenu = true; break;
+    case 'pg_group_sci':
+        r.text += T("M.Tech Applied Sciences:","PG Applied Sciences:");
+        r.buttons = [{l:'M.Tech Biotechnology',a:'pg_bt',i:'🧬'}];
+        r.noMenu = true; break;
+    case 'mca':
+    case 'dept_mca':
+        return renderDepartment(KB.departments.pg.find(d => d.c === 'mca'));
+    case 'sports':
+        r.text += T("Stay fit and active at RVCE! 🏃‍♂️🏆\n\nThe Department of Physical Education & Sports provides excellent facilities for indoor and outdoor games. RVCE students regularly participate in VTU, State, and National level tournaments.",
+            "Department of Physical Education & Sports:\nRVCE provides comprehensive sports facilities and scholarships for outstanding athletes.");
+        r.buttons = [
+            {l:'Sports Dept Page',u:'https://rvce.edu.in/department-of-physical-education-sports/',i:'🌐'},
+            {l:'Sports Scholarships',u:'https://rvce.edu.in/department-of-physical-education-sports/rvce-sports-scholarship/',i:'🏅'},
+            {l:'VTU Tournaments',u:'https://rvce.edu.in/department-of-physical-education-sports/v-t-u-tournament-organized/',i:'🏆'}
+        ];
+        break;
+    case 'phd':
+        r.text += T("RVCE offers robust Ph.D. programs! 🧪 Check the official page for research domains.","Ph.D. Programs:");
+        r.buttons = [{l:'Main Menu',a:'menu',i:'🏠'},{l:'Research at RVCE',u:'https://rvce.edu.in/research',i:'🔬'},{l:'PhD Admissions',u:'https://rvce.edu.in/admissions/#ph_link',i:'🌐'}]; break;
+    case 'departments':
+        r.text += T("Explore our departments! 📚 Choose a level of study:","Academic Departments - Select a level of study:");
+        r.buttons = [
+            {l:'UG Programs (B.E.) 🎓',a:'ugPrograms',i:'🎓'},
+            {l:'PG Programs 📘',a:'pgPrograms',i:'📘'},
+            {l:'Ph.D. Programs 🧪',a:'phd',i:'🧪'}
+        ];
+        r.noMenu = true;
+        break;
+    case 'career_options_menu':
+        r.text += T("Select a department to view its Top Career Options! 🎯","Top Career Options - Select a Department:");
+        r.buttons = [];
+        KB.departments.ug.forEach(d => {
+            if (KB.career_options[d.c]) {
+                r.buttons.push({ l: d.n, a: 'career_' + d.c, i: '🎯' });
+            }
+        });
+        KB.departments.pg.forEach(d => {
+            if (KB.career_options[d.c]) {
+                r.buttons.push({ l: d.n, a: 'career_' + d.c, i: '🎯' });
+            }
+        });
+        r.buttons.push({l:'Main Menu',a:'menu',i:'🏠'});
+        r.noMenu = true;
+        break;
+    case 'dept_group_comp':
+        r.text += T("Computing & IT Branches:","Computing & IT:");
+        r.buttons = [{l:'CSE',a:'dept_cs',i:'💻'},{l:'ISE',a:'dept_is',i:'💻'},{l:'AIML',a:'dept_aiml',i:'💻'},{l:'Data Science',a:'dept_csds',i:'📊'},{l:'Cyber Security',a:'dept_cscy',i:'🛡️'}];
+        r.noMenu = true; break;
+    case 'dept_group_elec':
+        r.text += T("Electrical & Communication Branches:","Electrical & Communication:");
+        r.buttons = [{l:'ECE',a:'dept_ec',i:'🔌'},{l:'EEE',a:'dept_ee',i:'⚡'},{l:'EIE',a:'dept_ei',i:'📡'},{l:'Telecom (ETE)',a:'dept_et',i:'📱'}];
+        r.noMenu = true; break;
+    case 'dept_group_core':
+        r.text += T("Core Engineering & Manufacturing Branches:","Core Engineering:");
+        r.buttons = [{l:'Mechanical',a:'dept_me',i:'⚙️'},{l:'Civil',a:'dept_cv',i:'🏗️'},{l:'Aerospace',a:'dept_ae',i:'🚀'},{l:'Industrial (IEM)',a:'dept_im',i:'🏭'}];
+        r.noMenu = true; break;
+    case 'dept_group_sci':
+        r.text += T("Applied Sciences Branches:","Applied Sciences:");
+        r.buttons = [{l:'Biotechnology',a:'dept_bt',i:'🧬'},{l:'Chemical',a:'dept_ch',i:'🧪'},{l:'Chemistry',a:'dept_chy',i:'🧪'},{l:'Mathematics',a:'dept_mat',i:'📐'},{l:'Physics',a:'dept_phy',i:'⚛️'}];
+        r.noMenu = true; break;
+    case 'campusLife':
+        r.text += T("Life at RVCE is vibrant! 🏕️","Student Experience & Campus Life:");
+        r.text += "\n• Cultural Clubs & Kannada Sangha\n• Technical Innovation Teams & STEAM\n• Sports & Athletics\n• NCC & NSS Units\n• Annual Fest: " + KB.campus.fest;
+        r.buttons = [
+            {l:'Cultural Clubs',a:'culturalLife',i:'🎭'},
+            {l:'Innovation Teams',a:'innovationTeams',i:'💡'},
+            {l:'Sports & Athletics',a:'sports',i:'🏆'},
+            {l:'NCC & NSS',a:'ncc_nss_disambiguation',i:'🤝'}
+        ]; break;
+    case 'professional_societies':
+        r.text += T("Get professional! 🤝 Join a chapter:","Professional Student Societies:");
+        r.text += "\n• " + KB.campus.societies.join("\n• ") + "\n\nThese chapters host international conferences, workshops, and networking events regularly.";
+        r.buttons = [{l:'Innovation Teams',a:'innovationTeams',i:'💡'},{l:'Cultural Clubs',a:'culturalLife',i:'🎭'}]; break;
+    case 'hostels':
+        r.text += T("Home away from home 🏠:","Hostel Facilities:");
+        r.text += "\n• Boys: " + KB.hostels.boys + "\n• Girls: " + KB.hostels.girls + "\n• Amenities: " + KB.hostels.amenities;
+        r.buttons = [{l:'See Facilities',u:KB.hostels.url,i:'🌐'}]; break;
+    case 'stats_disambiguation':
+        r.text += T("Check out the numbers! 📊","RVCE Statistics:");
+        r.buttons = [{l:'Placement Stats',a:'placements',i:'💼'},{l:'NIRF & Rankings',a:'ranking',i:'🏆'},{l:'Upcoming Events 📅',a:'upcoming_events',i:'🔥'}]; break;
+    case 'upcoming_events':
+        r.text += T("What's brewing at RVCE? 📅","Upcoming Events Calendar 2026:");
+        KB.events.forEach(e => {
+            r.text += `\n• **${e.name}** — ${e.date} (${e.type})`;
+        });
+        r.buttons = [{l:'Placement Scene',a:'placements',i:'💼'},{l:'Main Menu',a:'menu',i:'📋'}]; break;
+    case 'facilities':
+        r.text += T("Top-notch facilities 🏢:","Campus Infrastructure:");
+        r.text += "\n• " + KB.facilities.list.join("\n• ");
+        r.buttons = [{l:'Full Details',u:KB.facilities.url,i:'🌐'}]; break;
+    case 'vtu':
+        r.text += T("VTU affiliated but autonomous for UG! 🏛️","RVCE is affiliated to VTU (Visvesvaraya Technological University) and has Autonomous status for UG programs."); break;
+    case 'transport':
+        r.text += T("Getting to RVCE 🚌:\n• Located on Mysuru Road, ~13 km from city center\n• BMTC buses: Multiple routes to RVCE stop\n• Nearest Metro: Kengeri station\n• Autos & cabs: Easily available\n• Near NICE Road junction",
+            "How to Reach RVCE:\n• Location: Mysuru Road, ~13 km from Bengaluru city center\n• Bus: BMTC bus routes serve the RVCE stop directly\n• Metro: Kengeri Metro station is the nearest\n• Auto/Cab: Easily accessible via Mysuru Road\n• Near NICE Road junction"); break;
+    case 'wifi':
+        r.text += T("Yes! Wi-Fi everywhere! 📶 Campus + Hostels!","Wi-Fi is available across the campus and in hostel blocks."); break;
+    case 'food':
+        r.text += T("Hungry? 🍛 RVCE has multiple food spots! **"+KB.general.foodCourt.name+"** is the biggest! 😋",
+            "### 🍽️ Dining at RVCE\n\n" +
+            "**1. Campus Food Courts:**\n" +
+            "• **Main Food Court (Cafe Mingos):** " + KB.general.foodCourt.features + ".\n" +
+            "• **Mini Canteen & Extension:** Located near departments for quick snacks and easier access.\n" +
+            "• **Timings:** " + KB.general.foodCourt.timings + "\n\n" +
+            "**2. Hostel Messes (Strictly Veg):**\n" +
+            "• " + KB.hostelDetails.messDetails.messes.join(", ") + "\n" +
+            "• Serves: " + KB.hostelDetails.messDetails.meals + ".");
+        r.buttons = [{l:'Campus Facilities',a:'facilities',i:'🏢'}, {l:'Mess Details',a:'mess',i:'🍲'}]; break;
+    case 'mess':
+        r.text += T("The hostel mess serves strictly vegetarian food to keep you fueled! 🍲",
+            "### 🏠 Hostel Mess Information\n\n" +
+            "• **Messes:** " + KB.hostelDetails.messDetails.messes.join(", ") + "\n" +
+            "• **Cuisine:** " + KB.hostelDetails.messDetails.type + "\n" +
+            "• **Meals:** " + KB.hostelDetails.messDetails.meals + "\n" +
+            "• **Management:** " + KB.hostelDetails.messDetails.management + "\n\n" +
+            "**Looking for more?** The campus also has a multi-level **Food Court (Cafe Mingos)** open from 9 AM to 4:30 PM.");
+        r.buttons = [{l:'Hostel Details',a:'hostels',i:'🏠'}, {l:'Food Court',a:'food',i:'🍛'}]; break;
+    case 'exam':
+        r.text += T("Exams? 📝 Semester system with CIE + SEE. Being autonomous, RVCE sets its own papers!","RVCE follows a semester system with Continuous Internal Evaluation (CIE) and Semester End Examination (SEE). As an autonomous institution, it designs its own syllabus and sets examination papers."); break;
+    case 'nri':
+        r.text += T("International students welcome! 🌍 CIWG/PIO/OCI/Nepal quotas available!","International admissions: Quotas available for CIWG, PIO, OCI, and Nepal Citizens.");
+        r.buttons = [{l:'Admissions',u:KB.admissions.url,i:'🌐'}]; break;
+    case 'library':
+        r.text += T("The Central Library is a knowledge fortress! 📚","Central Library:");
+        r.text += "\n• 1,00,000+ books, journals, and e-resources\n• Digital library with IEEE, Springer, Elsevier, NPTEL access\n• Reading rooms and group study areas\n• Reprography, book bank, and reference section\n• Open during college hours (Mon-Sat)";
+        r.buttons = [{l:'Library Portal',u:'https://rvce.edu.in/library/',i:'🌐'}]; break;
+    case 'ncc_nss_disambiguation':
+        r.text += T("Service and Leadership! 🇮🇳 Choose a unit:","NCC & NSS Units:");
+        r.buttons = [{l:'NCC 🇮🇳',a:'ncc',i:'🎖️'},{l:'NSS 🤝',a:'nss',i:'🌍'}]; break;
+    case 'ncc':
+        r.text += T("Join the National Cadet Corps (NCC) at RVCE! 🇮🇳","National Cadet Corps (NCC):");
+        r.text += "\n• " + KB.ncc.battalion + " (Est. " + KB.ncc.established + ")\n• Strength: " + KB.ncc.strength + "\n• Activities: " + KB.ncc.activities;
+        r.buttons = [{l:'NCC Page',u:'https://rvce.edu.in/ncc/',i:'🌐'}]; break;
+    case 'nss':
+        r.text += T("Service before self! 🤝 Join the NSS at RVCE.","National Service Scheme (NSS):");
+        r.text += "\n• " + KB.nss.units + " with " + KB.nss.strength + "\n• Motto: " + KB.nss.motto + "\n• Activities: " + KB.nss.activities;
+        r.buttons = [{l:'NSS Page',u:'https://rvce.edu.in/national_service_scheme_nss/',i:'🌐'}]; break;
+    case 'kannada_sangha':
+        r.text += T("Promoting the heritage of Karnataka! 🎭","Kannada Sangha:");
+        r.text += "\n• " + KB.kannadaSangha.info + "\n• Events: " + KB.kannadaSangha.events;
+        r.buttons = [{l:'Kannada Sangha',u:'https://rvce.edu.in/cultural_teams/kannada_sangha/',i:'🎭'}]; break;
+    case 'rvjsteam':
+        r.text += T("Science, Technology, Engineering, Arts, and Mathematics! 🎨","RVJ STEAM Team:");
+        r.text += "\n• " + KB.rvjsteam.info;
+        r.buttons = [{l:'STEAM Team Page',u:'https://rvce.edu.in/rvjsteam/',i:'🌐'}]; break;
+    case 'mandatory_disclosure':
+        r.text += T("Official compliance and disclosures. 📄","Mandatory Disclosure:");
+        r.buttons = [{l:'View Disclosure',u:'https://rvce.edu.in/mandatory-disclosure/',i:'📄'}]; break;
+    case 'calendar_events':
+        r.text += T("Don't miss out on important dates! 📅","Academic Calendar:");
+        r.buttons = [{l:'Academic Calendar',u:'https://rvce.edu.in/calendar-of-events/',i:'📅'}]; break;
+    case 'sports_simple':
+        r.text += T("Sporty campus! 🏅","Sports Facilities:");
+        r.text += "\n• 400m athletic track\n• Cricket & Football grounds\n• Basketball, Volleyball, Badminton courts\n• Gymnatorium with modern equipment\n• Table Tennis, Chess";
+        r.buttons = [{l:'Sports Info',u:'https://rvce.edu.in/facilities/sports_and_gymnatorium/',i:'🌐'}]; break;
+    case 'numbers_info':
+        r.text += T("Looking for specific numbers? 📞 Here are the most requested ones:","Please select the type of numerical information or contact you are looking for:");
+        r.buttons = [
+            {l:'Placement Stats 💼',a:'placements',i:'📈'},
+            {l:'Official Contact 📞',a:'contact',i:'📱'},
+            {l:'Admission Desk 🎓',a:'admissions',i:'🎫'},
+            {l:'Hostel Help 🏠',a:'hostels',i:'🛌'}
+        ]; break;
+    case 'intake':
+        r.text += T("RVCE has a significant intake capacity! 🎓 Every year, we admit over **2,000+ students** across our 16 UG and 14 PG programs. Seats are filled through KCET, COMEDK, and Management Quota.", "RVCE has an annual intake of over 2,000 students across its various Undergraduate and Postgraduate programs.");
+        r.buttons = [{l:'Admission Info',a:'admissions',i:'🎫'}, {l:'UG Programs',a:'ugPrograms',i:'📜'}]; break;
+    case 'student_count':
+        r.text += T("RVCE is a bustling hub of talent! 👨‍🎓👩‍🎓 We have approximately **8,000 to 9,000 students** on campus at any given time, including all years of UG and PG programs.", "The total student population at RVCE is approximately 8,000 to 9,000, encompassing students across all years of undergraduate and postgraduate courses.");
+        r.buttons = [{l:'Campus Life',a:'campusLife',i:'🏕️'}, {l:'Innovation Teams',a:'innovationTeams',i:'💡'}]; break;
+    case 'autonomous':
+        r.text += T("RVCE is autonomous for UG — they design their own syllabus and exams! 📋 For PG, it's affiliated to VTU.","RVCE has Autonomous status for UG programs, meaning it designs its own curriculum and conducts its own examinations. PG programs are affiliated to VTU."); break;
+    // ===== PARENT & GEN-Z SPECIFIC RESPONSES =====
+    case 'safety':
+        r.text += T("Your safety is top priority at RVCE! 🛡️","Campus Safety at RVCE:");
+        r.text += "\n• " + KB.safety.cctv + "\n• " + KB.safety.wardens + "\n• " + KB.safety.healthCentre + "\n• " + KB.safety.grievance + "\n• " + KB.safety.antiRagging;
+        r.buttons = [{l:'Health Centre Details 🏥',a:'health_centre',i:'🩺'},{l:'Anti-Ragging',a:'anti_ragging',i:'🛑'}]; break;
+    case 'health_centre':
+        r.text += T("Health is wealth! 🏥 The on-campus centre is solid:","Health Centre Facilities:");
+        r.text += "\n• " + KB.safety.healthDetails.doctor + "\n• Services: " + KB.safety.healthDetails.services.join(", ") + "\n• Partnership: " + KB.safety.healthDetails.hospital + "\n• 24/7 Ambulance available for emergencies.";
+        r.buttons = [{l:'Safety Info',a:'safety',i:'🛡️'}]; break;
+    case 'attendance':
+        r.text += T("Attendance matters at RVCE! 📋 It's strict but keeps you on track!","Attendance Policy:");
+        r.text += "\n• " + KB.attendance.requirement + "\n• " + KB.attendance.consequence + "\n• " + KB.attendance.tracking;
+        break;
+    case 'roi':
+        r.text += T("Is RVCE paisa vasool? ABSOLUTELY! 💎\n\n","Return on Investment:\n\n");
+        r.text += "• 2026 Highest Package: " + KB.placements2026.maxSalary + "\n• Avg Package: " + KB.placements2026.avgSalary + "\n• Offers so far: " + KB.placements2026.offers + "\n• " + KB.placements2026.companies + "\n• Top recruiters: Microsoft, Google, Amazon, Samsung\n• NAAC A+ accreditation";
+        r.buttons = [{l:'Placements',a:'placements',i:'💼'},{l:'Fee Structure',a:'fees',i:'💰'}]; break;
+    case 'girls_hostel':
+        r.text += T("Girls hostel deets! 🏠 Safe & well-managed!","Girls Hostel Information:");
+        r.text += "\n• DJ Block (On-campus): " + KB.hostelDetails.girlsBlocks.djBlock + "\n• Krishna Garden (Off-campus, Pattanagere): " + KB.hostelDetails.girlsBlocks.krishnaGarden + "\n• Fees (Triple): " + KB.hostelDetails.fees.tripleSharing + "\n• Fees (Double): " + KB.hostelDetails.fees.doubleSharing + "\n• Facilities: " + KB.hostelDetails.facilities + "\n• Residential wardens & CCTV in all blocks\n• Strict curfew timings enforced for safety";
+        r.buttons = [{l:'Safety Info',a:'safety',i:'🛡️'},{l:'All Hostels',a:'hostels',i:'🏠'}]; break;
+    case 'nearby':
+        r.text += T("What's around RVCE? Plenty! 📍","Nearby Areas & Amenities:");
+        r.text += "\n• Areas: " + KB.nearby.areas + "\n• Food: " + KB.nearby.food + "\n• Shopping: " + KB.nearby.shopping + "\n• Hospitals: " + KB.nearby.hospitals + "\n• Connectivity: " + KB.nearby.connectivity;
+        r.buttons = [{l:'Transport',a:'transport',i:'🚌'},{l:'Food Court',a:'food',i:'🍛'}]; break;
+    case 'internship':
+        r.text += T("Internships? RVCE students are everywhere! 🧑‍💻","Internship Opportunities:");
+        r.text += "\n• Mandatory 6-8 week industry internship in curriculum\n• Placement & Training cell assists with internship placements\n• Top companies like Google, Microsoft, Amazon, Bosch offer internships\n• Being in Bangalore (India's tech capital) = tons of opportunities\n• Many students do internships at IITs, IISc, DRDO, ISRO";
+        r.buttons = [{l:'Placements',a:'placements',i:'💼'},{l:'Innovation Teams',u:'https://rvce.edu.in/innovative_teams/',i:'🚀'}]; break;
+    case 'innovationTeams':
+        r.text += T("RVCE's Innovation Teams are LEGENDARY! 🚀 They build everything from race cars to satellites!","Innovative & Project Teams at RVCE:");
+        r.text += "\n\n• **Team Ashwa**: Formula Student racing 🏎️\n• **Team Antariksh**: Space Tech 🛰️\n• **Team Vyoma**: UAVs & Drones 🛸\n• **Team Chimera**: Hybrid Racing ⚡\n• **ASTRA Robotics**: AI & Robotics 🤖\n• **Project Garuda**: Super Mileage 🔋\n• **Team Chitrak**: Electric Motorcycles 🏍️\n• **Anoraniya**: Quantum Tech ⚛️";
+        r.buttons = [
+            {l:'Team Ashwa',a:'team_ashwa',i:'🏎️'}, 
+            {l:'Team Antariksh',a:'team_antariksh',i:'🛰️'},
+            {l:'Team Vyoma',a:'team_vyoma',i:'🛸'},
+            {l:'Team Chimera',a:'team_chimera',i:'⚡'},
+            {l:'ASTRA Robotics',a:'astra_robotics',i:'🤖'},
+            {l:'All Teams List',u:'https://rvce.edu.in/innovative_teams/',i:'🚀'}
+        ]; break;
+
+    case 'team_ashwa':
+    case 'ashwa':
+        r.text += T("Team Ashwa is the pride of RVCE! 🏎️💨\n\nThey design and build high-performance Formula Student cars. Established in 2003, they were India's first FS team to compete globally. They recently achieved a top-10 worldwide ranking in hybrid technology!","Team Ashwa (Formula Student):\n\nTeam Ashwa is RVCE’s premier Formula Student team. Achievements include top-10 global rankings and consistent performance in FS Germany and FS Italy.");
+        r.buttons = [{ l: 'Visit Team Ashwa', u: 'https://rvce.edu.in/innovative_teams/ashwa/', i: '🏎️' }, { l: 'All Teams', u: 'https://rvce.edu.in/innovative_teams/', i: '🚀' }]; break;
+    case 'team_antariksh':
+    case 'antariksh':
+        r.text += T("Team Antariksh is reaching for the stars! 🛰️✨\n\nIn December 2024, they successfully launched **RVSat-1** aboard ISRO's PSLV C-60! It carried India's first student-developed microbiological payload. They also launched the **Ananta** rocket to 1km apogee!","Team Antariksh (Space Technology):\n\nTeam Antariksh focuses on aerospace and space tech. Their recent highlights include the RVSat-1 satellite launch with ISRO and the Ananta rocket launch in 2024.");
+        r.buttons = [{ l: 'Visit Team Antariksh', u: 'https://rvce.edu.in/innovative_teams/antariksh/', i: '🚀' }, { l: 'All Teams', u: 'https://rvce.edu.in/innovative_teams/', i: '🚀' }]; break;
+    case 'team_vyoma':
+    case 'vyoma':
+        r.text += T("Team Vyoma is the king of the skies! 🛸🦅\n\nThey are RVCE's premier Aero-design and UAV team. In 2024, they were named the **'Best Overall Performer'**! They design autonomous drones, heavy-lift UAVs, and innovative aircraft for global competitions like SAE Aero Design.","Team Vyoma (Aero-design):\n\nTeam Vyoma is the aerospace and UAV project team. They achieved the 'Best Overall Performer' award in 2024 for their drone technology and SAE competition success.");
+        r.buttons = [{ l: 'Visit Team Vyoma', u: 'https://rvce.edu.in/innovative_teams/vyoma/', i: '🛸' }, { l: 'All Teams', u: 'https://rvce.edu.in/innovative_teams/', i: '🚀' }]; break;
+    case 'team_chimera':
+    case 'chimera':
+        r.text += T("Team Chimera is electrifying the track! ⚡🏎️\n\nThey design and build hybrid and electric race cars. They recently secured **4th place overall** at the FSEV Challenge! Their focus is on battery management, powertrain optimization, and sustainable racing tech.","Team Chimera (Hybrid/Electric Racing):\n\nTeam Chimera focuses on sustainable automotive technology. Recent highlights include a 4th place finish at the FSEV Challenge.");
+        r.buttons = [{ l: 'Visit Team Chimera', u: 'https://rvce.edu.in/innovative_teams/chimera/', i: '⚡' }, { l: 'All Teams', u: 'https://rvce.edu.in/innovative_teams/', i: '🚀' }]; break;
+    case 'astra_robotics':
+    case 'astra':
+        r.text += T("ASTRA Robotics is the future of AI! 🤖🦾\n\nThey specialize in robotics and autonomous systems. Their **Project T.A.R.A** (autonomous surveillance) was recently presented to the Chief of the Indian Army! They compete in international robotics challenges and build cutting-edge automation solutions.","ASTRA Robotics:\n\nASTRA Robotics specializes in AI and autonomous systems. Notable projects include Project T.A.R.A, which was presented to high-level military officials.");
+        r.buttons = [{ l: 'Visit ASTRA Robotics', u: 'https://rvce.edu.in/innovative_teams/astra/', i: '🤖' }, { l: 'All Teams', u: 'https://rvce.edu.in/innovative_teams/', i: '🚀' }]; break;
+    case 'team_chitrak':
+    case 'chitrak':
+        r.text += T("Team Chitrak is building the future of two-wheelers! 🏍️⚡\n\nThey are RVCE's electric motorcycle team. They won the **'Lightest Motorcycle'** award for their innovative chassis design. They focus on urban mobility and high-efficiency electric powertrains.","Team Chitrak (Electric Motorcycles):\n\nTeam Chitrak designs lightweight electric motorcycles for urban performance. Award winners for innovative engineering.");
+        r.buttons = [{ l: 'Visit Team Chitrak', u: 'https://rvce.edu.in/innovative_teams/chitrak/', i: '🏍️' }, { l: 'All Teams', u: 'https://rvce.edu.in/innovative_teams/', i: '🚀' }]; break;
+    case 'anoraniya':
+        r.text += T("Anoraniya is diving into the Quantum realm! ⚛️🔬\n\nThis team focuses on Quantum Technology and Communication. They successfully implemented the **BB84 Quantum Key Distribution protocol**! They are one of the few student teams in India working on cutting-edge quantum research.","Anoraniya (Quantum Tech):\n\nAnoraniya focuses on quantum communication and research. They have successfully implemented advanced quantum protocols.");
+        r.buttons = [{ l: 'Visit Anoraniya', u: 'https://rvce.edu.in/innovative_teams/anoraniya/', i: '⚛️' }, { l: 'All Teams', u: 'https://rvce.edu.in/innovative_teams/', i: '🚀' }]; break;
+    case 'project_garuda':
+    case 'garuda':
+        r.text += T("Project Garuda is all about ultra-efficiency! 🔋🍃\n\nThey build super-mileage electric vehicles designed to travel hundreds of kilometers on a single charge. They compete in the Shell Eco-marathon and push the boundaries of aerodynamics and energy efficiency.","Project Garuda (Super Mileage EVs):\n\nProject Garuda focuses on high-efficiency electric vehicles and competes in global eco-marathons.");
+        r.buttons = [{ l: 'Visit Project Garuda', u: 'https://rvce.edu.in/innovative_teams/garuda/', i: '🔋' }, { l: 'All Teams', u: 'https://rvce.edu.in/innovative_teams/', i: '🚀' }]; break;
+    case 'culturalTeams':
+        r.text += T("Campus is always buzzing! 💃🎶 From dance to photography, we've got it all!", "Cultural Teams & Clubs at RVCE:");
+        r.text += "\n\n• **RAAG**: Music 🎵\n• **Footprints**: Dance 💃\n• **F/6.3**: Photography 📸\n• **Evoke**: Fashion 👗\n• **DebSoc**: Debating 🗣️\n• **QuizCorp**: Trivia 🧠\n• **Rotaract**: Social Service 🤝\n• **E-Cell**: Entrepreneurship 💡";
+        r.buttons = [
+            { l: 'Footprints', u: 'https://rvce.edu.in/cultural_teams/footprints/', i: '💃' },
+            { l: 'RAAG', u: 'https://rvce.edu.in/cultural_teams/raag/', i: '🎵' },
+            { l: 'F/6.3 Photo', u: 'https://rvce.edu.in/cultural_teams/f-6-3-photography-club/', i: '📸' },
+            { l: 'Evoke', u: 'https://rvce.edu.in/cultural_teams/evoke/', i: '👗' },
+            { l: 'More Clubs', a: '_more_cultural_teams', i: '➕' }
+        ]; break;
+    case '_more_cultural_teams':
+        r.text += "Check out these other amazing clubs and societies at RVCE:";
+        r.buttons = [
+            { l: 'DebSoc', u: 'https://rvce.edu.in/cultural_teams/debsoc/', i: '🗣️' },
+            { l: 'QuizCorp', u: 'https://rvce.edu.in/cultural_teams/quizcorp/', i: '🧠' },
+            { l: 'Rotaract', u: 'https://rvce.edu.in/cultural_teams/rotaract-club/', i: '🤝' },
+            { l: 'E-Cell', u: 'https://rvce.edu.in/cultural_teams/entrepreneurship-cell/', i: '💡' },
+            { l: 'All Cultural', a: 'culturalTeams', i: '🎭' }
+        ]; break;
+    case 'startup':
+        r.text += T("Startup vibes are real at RVCE! 🚀","Entrepreneurship & Startup Ecosystem:");
+        r.text += "\n• Active E-Cell (Entrepreneurship Cell) organizes events & workshops\n• Innovation & Incubation Centre for student startups\n• Annual hackathons and startup pitch competitions\n• Bangalore = India's startup capital — perfect ecosystem\n• Many RVCE alumni have founded successful startups";
+        r.buttons = [{l:'Innovation Teams',a:'innovationTeams',i:'💡'},{l:'Campus Life',a:'campusLife',i:'🏕️'}]; break;
+    case 'peer_quality':
+        r.text += T("The crowd at RVCE is top-tier! 🎯 Competitive AF but also super helpful!","Peer Quality at RVCE:");
+        r.text += "\n• Highly competitive admission (KCET/COMEDK) ensures quality intake\n• 2000+ students admitted annually from top rank holders\n• Strong coding culture — students participate in ICPC, GSoC, hackathons\n• Active on competitive platforms (Codeforces, LeetCode, CodeChef)\n• Collaborative environment with study groups and project teams";
+        r.buttons = [{l:'Placements',a:'placements',i:'💼'},{l:'Rankings',a:'ranking',i:'🏆'}]; break;
+    case 'worth_it':
+        r.text += T("Is RVCE worth it? Let me put it this way — it SLAPS! 🔥\n\n","Is RVCE Worth Joining?\n\n");
+        r.text += "✅ NAAC A+ | NIRF 101-150 | #1 Private (IIRF)\n✅ 2025: ₹67 LPA highest, 260+ companies\n✅ 2024: ₹92 LPA highest, 75% placement rate\n✅ Autonomous (own syllabus, industry-relevant)\n✅ Bangalore location = internship & job hub\n✅ 100+ patents, 20 Centres of Excellence\n✅ Strong alumni network in top MNCs";
+        r.buttons = [{l:'Placements',a:'placements',i:'💼'},{l:'Rankings',a:'ranking',i:'🏆'},{l:'ROI',a:'roi',i:'💎'}]; break;
+    case 'best_branch':
+        r.text += T("Which branch is the GOAT? 🔝 Here's the lowdown:","Branch Selection Guide:");
+        r.text += "\n\n🔥 **Highest Demand (Top Packages):** CSE, ISE, AIML, CSDS, CSCY\n💻 **Strong Tech:** ECE, ETE (with good coding skills)\n⚙️ **Core Engineering:** Mech, Civil, EEE, Chemical, Aero (strong in core companies like Bosch, ABB, Boeing)\n🧬 **Niche:** Biotech, IEM\n\n💡 Tip: Branch matters less than what YOU do — coding skills, projects, and internships make the real difference!";
+        r.buttons = [{l:'All Departments',a:'departments',i:'📚'},{l:'Placements',a:'placements',i:'💼'}]; break;
+    case 'parking':
+        r.text += T("Got a ride? 🅿️ RVCE has parking!","Vehicle & Parking Info:");
+        r.text += "\n• Dedicated two-wheeler and four-wheeler parking areas\n• Bikes and scooties are commonly used by students\n• Parking is free for students with valid college ID\n• Helmets mandatory as per campus rules";
+        break;
+    case 'part_time':
+        r.text += T("Side hustle while studying? Smart move! 💼","Part-Time Work Opportunities:");
+        r.text += "\n• Bangalore has tons of freelancing and part-time opportunities\n• Many students freelance in web dev, graphic design, tutoring\n• Coding contests and hackathons often have cash prizes\n• Some students do remote internships alongside studies\n• Note: Academic workload at RVCE is heavy — balance wisely!";
+        r.buttons = [{l:'Internships',a:'internship',i:'🧑‍💻'},{l:'Startup Culture',a:'startup',i:'🚀'}]; break;
+    case 'alumni':
+        r.text += T("RVCE alumni are EVERYWHERE — from Google to ISRO! 🤝","Alumni Network:");
+        r.text += "\n• 60+ years of alumni across the globe (Est. 1963)\n• Strong presence in top tech companies (Google, Microsoft, Amazon, Flipkart)\n• Active alumni chapters in Bangalore, Mumbai, USA, Europe\n• Alumni mentorship programs for current students\n• Regular alumni meets and networking events\n• Many alumni are founders of successful startups";
+        r.buttons = [{l:'Alumni Portal',u:'https://rvce.edu.in/alumni-2/',i:'🎓'}, {l:'Placements',a:'placements',i:'💼'},{l:'About RVCE',a:'about_disambiguation',i:'🏫'}]; break;
+    case 'college_compare':
+        r.text += T("RVCE vs others? Here's the tea ☕:","RVCE in Comparison:");
+        r.text += "\n\n📊 **RVCE Strengths:**\n• #1 Private Engg College (IIRF 2025)\n• NAAC A+ (higher than most private colleges)\n• Autonomous status — industry-relevant curriculum\n• ₹67 LPA highest (2025), ₹92 LPA (2024)\n• 260+ companies visit campus\n\n🏛️ RVCE is consistently ranked alongside PES, MSRIT, and BMS as Bangalore's top private engineering colleges. It edges ahead in autonomy, research output, and industry connections.";
+        r.buttons = [{l:'Rankings',a:'ranking',i:'🏆'},{l:'Placements',a:'placements',i:'💼'},{l:'Is It Worth It?',a:'worth_it',i:'⭐'}]; break;
+    case 'menu':
+        r.text = T("How can I help? Choose a topic:","Main Menu — Choose a topic:");
+        r.noMenu = true; return r;
+    default:
+        // Handle department-specific HOD requests
+        if (id && id.startsWith('hod_')) {
+            const c = id.replace('hod_','');
+            const d = KB.departments.ug.find(x=>x.c===c) || KB.departments.pg.find(x=>x.c===c);
+            if (d && d.hod) {
+                if (d.hod_bio) return renderHODCard(d);
+                r.text += T(`The Head of Department for ${d.n} is **${d.hod}**! 👨‍🏫`, `The HOD for **${d.n}** is **${d.hod}**.`);
+                r.buttons = [{l:'Department Page',u:d.u,i:'🌐'}, {l:'All HODs',a:'hods_list',i:'👩‍🏫'}];
+                return r;
+            } else {
+                r.text += T(`I don't have the specific HOD name for ${d?d.n:c} saved. Let me show you the full list! 📚`, "Please check the full HODs list for that information.");
+                r.buttons = [{l:'HODs List',a:'hods_list',i:'👩‍🏫'}, {l:'Key Executives',u:'https://rvce.edu.in/about_us/key-executives/',i:'🌐'}];
+                return r;
+            }
+        }
+        // Handle department links (UG and PG)
+        if (id && (id.startsWith('dept_') || id.startsWith('pg_'))) {
+            const c = id.replace('dept_','').replace('pg_','');
+            const d = KB.departments.ug.find(x=>x.c===c) || KB.departments.pg.find(x=>x.c===c);
+            if (d) return renderDepartment(d);
+        }
+        // Handle 'More Options' for departments
+        if (id && id.startsWith('more_dept_')) {
+            const c = id.replace('more_dept_','');
+            const isUg = KB.departments.ug.find(x=>x.c===c);
+            const d = isUg || KB.departments.pg.find(x=>x.c===c);
+            if (d) {
+                r.text += T(`Here are more options for **${d.n}**: ⬇️`, `Additional links for ${d.n}:`);
+                if (KB.career_options[d.c]) r.buttons.push({l:'Top Career Options',a:'career_'+d.c,i:'🎯'});
+                if (d.syllabus) r.buttons.push({l:'Syllabus',u:d.syllabus,i:'📚'});
+                if (d.faculty) r.buttons.push({l:'Faculty',u:d.faculty,i:'👨‍🏫'});
+                if (d.collab) r.buttons.push({l:'Collaborations',u:d.collab,i:'🤝'});
+                if (d.labs) r.buttons.push({l:'Labs/Facilities',u:d.labs,i:'🧪'});
+                r.buttons.push({l:'🔙 Back',a:'_back',i:'🔙'});
+                r.noMenu = true;
+                return r;
+            }
+        }
+        // Handle Department Placement requests
+        if (id && id.startsWith('plcmt_')) {
+            const c = id.replace('plcmt_','');
+            const d = KB.departments.ug.find(x=>x.c===c) || KB.departments.pg.find(x=>x.c===c);
+            const stats = KB.placement_stats[c];
+            if (d) {
+                if (stats) {
+                    r.text += T(`Here are the placement highlights for **${d.n}**: 🚀\n\n`, `Detailed Placement Statistics for ${d.n}:\n\n`);
+                    
+                    if (stats.programs) {
+                        stats.programs.forEach(prog => {
+                            r.text += `**${prog.name}**\n`;
+                            r.text += `• **Number of companies visited:** ${prog.companies}\n`;
+                            r.text += `• **Number of offers made:** ${prog.offers}\n`;
+                            r.text += `• **Number of students selected:** ${prog.students}\n`;
+                            r.text += `• **Average Salary:** ${prog.avg}\n`;
+                            r.text += `• **Maximum salary:** ${prog.max}\n\n`;
+                        });
+                    } else {
+                        r.text += `• **Number of companies visited:** ${stats.companies}\n`;
+                        r.text += `• **Number of offers made:** ${stats.offers}\n`;
+                        r.text += `• **Number of students selected:** ${stats.students}\n`;
+                        r.text += `• **Average Salary:** ${stats.avg}\n`;
+                        r.text += `• **Maximum salary:** ${stats.max}\n`;
+                    }
+                    r.text += `\n**Top Recruiting Companies across RVCE:**\n${KB.placements.recruiters}\n`;
+                    r.buttons = [];
+                    if (d.placement) {
+                        r.buttons.push({l: 'Official Portal', u: d.placement, i: '🌐'});
+                    }
+                    r.buttons.push({l: 'Other Departments', a: 'dept_placements_list', i: '📋'}, {l: 'General Placements', a: 'placements', i: '💼'});
+                } else if (d.placement) {
+                    r.text += T(`The **${d.n}** department has an excellent placement record! 💼\n\nYou can view the latest statistics, top recruiters, and placement highlights for this branch here:`, `Detailed Placement Information for ${d.n}:`);
+                    r.buttons = [{l: d.n + ' Placements', u: d.placement, i: '📈'}, {l: 'General Placements', a: 'placements', i: '💼'}];
+                } else {
+                    r.text += T(`You can find the placement information for **${d.n}** on the department's main page or by contacting the placement cell.`, `Placements for ${d.n}:`);
+                    r.buttons = [{l: d.n + ' Main Page', u: d.u, i: '🌐'}, {l: 'General Placements', a: 'placements', i: '💼'}];
+                }
+                return r;
+            }
+        }
+
+        // Handle Top Career Options requests
+        if (id && id.startsWith('career_')) {
+            const c = id.replace('career_','');
+            const d = KB.departments.ug.find(x=>x.c===c) || KB.departments.pg.find(x=>x.c===c);
+            const careers = KB.career_options[c];
+            if (d) {
+                if (careers) {
+                    r.text += T(`Here are the Top Career Options for **${d.n}**: 🎯\n\n`, `Top Career Options for ${d.n}:\n\n`);
+                    for (const [program, roles] of Object.entries(careers)) {
+                        r.text += `**${program}**\n`;
+                        roles.forEach(role => {
+                            r.text += `• ${role}\n`;
+                        });
+                        r.text += `\n`;
+                    }
+                } else {
+                    r.text += `Sorry, we don't have the specific career options for **${d.n}** available right now.`;
+                }
+                r.buttons = [{l:'Main Page',u:d.u,i:'🌐'}];
+                if (d.about) r.buttons.push({l:'About Dept',u:d.about,i:'ℹ️'});
+                if (d.placement) r.buttons.push({l:'Placements',u:d.placement,i:'💼'});
+                r.buttons.push({l:'All Departments',a:'departments',i:'🔙'});
+                r.buttons.push({l:'More Options 🔽',a:'more_dept_'+d.c,i:'➕'});
+                r.noMenu = true;
+                return r;
+            }
+        }
+        // Handle specific COE intents (coe_mfc, coe_cisss, coe_benz, etc.)
+        if (id && id.startsWith('coe_')) {
+            const coe = KB.general.coes_db.find(c => c.id === id);
+            if (coe) {
+                r.text = T(
+                    coe.emoji + ' **' + coe.n + '**\n\n' + coe.info,
+                    coe.emoji + ' ' + coe.n + '\n\nDepartment: ' + coe.dept + (coe.partner ? '\nIndustry Partner: ' + coe.partner : '') + '\n\n' + coe.info
+                );
+                r.text += '\n\n\u2022 **Department:** ' + coe.dept;
+                if (coe.partner) r.text += '\n\u2022 **Industry Partner:** ' + coe.partner;
+                if (coe.year) r.text += '\n\u2022 **Established:** ' + coe.year;
+                r.buttons = [
+                    {l: 'Visit CoE Page \ud83c\udf10', u: coe.url, i: '\ud83c\udf10'},
+                    {l: 'All CoEs \ud83d\udd2c', a: 'centres_of_excellence', i: '\ud83d\udd2c'},
+                    {l: 'Research \ud83d\udcda', a: 'research', i: '\ud83d\udcda'}
+                ];
+                var relatedCoes = KB.general.coes_db.filter(function(c) { return c.id !== id && c.dept === coe.dept; }).slice(0, 2);
+                relatedCoes.forEach(function(rc) { r.buttons.push({l: rc.emoji + ' ' + rc.n.split('(')[0].trim(), a: rc.id, i: rc.emoji}); });
+                return r;
+            }
+        }
+        r.text = T("Hmm \ud83e\udd14 I didn't get that. Try one of these:","I didn't understand that query. Here are some options:");
+        r.noMenu = true; return r;
+    }
+
+    // Append dynamic follow-up suggestions
+    const followUps = getFollowUps(id);
+    if (!r.noMenu) {
+        r.buttons = [...(r.buttons || []), ...followUps];
+    }
+
+    return r;
+}

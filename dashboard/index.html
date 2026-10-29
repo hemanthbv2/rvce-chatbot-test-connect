@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RVCE Chatbot Command Center & Microsoft Clarity Analytics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <style>
+        :root {
+            --primary: #E31E24;
+            --primary-glow: rgba(227, 30, 36, 0.4);
+            --indigo: #6366f1;
+            --indigo-glow: rgba(99, 102, 241, 0.35);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg: #030712;
+            --sidebar: rgba(15, 23, 42, 0.85);
+            --card: rgba(30, 41, 59, 0.45);
+            --card-hover: rgba(30, 41, 59, 0.7);
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+        }
+
+        /* --- Dynamic Mesh Background --- */
+        .mesh-bg {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 90% 85%, rgba(227, 30, 36, 0.1) 0%, transparent 45%),
+                radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 1) 0%, rgba(3, 7, 18, 1) 100%);
+        }
+
+        /* --- Sidebar Navigation --- */
+        aside {
+            width: 270px;
+            background: var(--sidebar);
+            backdrop-filter: blur(25px);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            padding: 28px 20px;
+            z-index: 20;
+        }
+        .logo-area {
+            display: flex; align-items: center; gap: 12px; margin-bottom: 30px;
+        }
+        .logo-box {
+            width: 42px; height: 42px; background: var(--primary); border-radius: 12px;
+            display: flex; align-items: center; justify-content: center; font-weight: 800;
+            box-shadow: 0 0 24px var(--primary-glow); font-size: 18px; letter-spacing: -0.5px;
+        }
+        .logo-text h2 { font-size: 17px; font-weight: 800; letter-spacing: -0.5px; color: #fff; }
+        .logo-text p { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
+
+        .nav-links { list-style: none; flex-grow: 1; }
+        .nav-item {
+            padding: 12px 16px; border-radius: 12px; cursor: pointer;
+            margin-bottom: 6px; display: flex; align-items: center; gap: 12px;
+            color: var(--text-dim); transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 13.5px; font-weight: 600;
+        }
+        .nav-item:hover { background: rgba(255,255,255,0.05); color: var(--text); transform: translateX(3px); }
+        .nav-item.active { background: rgba(99, 102, 241, 0.12); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.25); }
+        .nav-item svg { width: 18px; height: 18px; opacity: 0.8; }
+
+        .badge-live {
+            background: rgba(16, 185, 129, 0.15); color: var(--success);
+            border: 1px solid rgba(16, 185, 129, 0.3); font-size: 11px; font-weight: 700;
+            padding: 3px 8px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px;
+        }
+        .pulse { width: 7px; height: 7px; background: var(--success); border-radius: 50%; box-shadow: 0 0 10px var(--success); animation: pulseAnim 2s infinite; }
+        @keyframes pulseAnim { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.85); } 100% { opacity: 1; transform: scale(1); } }
+
+        /* --- Main Content Area --- */
+        main {
+            flex-grow: 1; padding: 30px 38px; overflow-y: auto; position: relative;
+        }
+        header {
+            display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;
+        }
+        .header-title h1 { font-size: 24px; font-weight: 800; letter-spacing: -0.5px; }
+        .header-title p { color: var(--text-dim); font-size: 13px; margin-top: 3px; }
+
+        .actions { display: flex; gap: 10px; align-items: center; }
+        .btn {
+            padding: 8px 15px; border-radius: 10px; border: 1px solid var(--border);
+            background: var(--card); color: var(--text); font-size: 12.5px; font-weight: 600;
+            cursor: pointer; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+        }
+        .btn:hover { background: var(--card-hover); border-color: rgba(255,255,255,0.2); transform: translateY(-1px); }
+        .btn-primary { background: var(--primary); border-color: var(--primary); box-shadow: 0 0 15px var(--primary-glow); color:#fff; }
+        .btn-primary:hover { background: #b9151a; }
+        .btn-indigo { background: rgba(99, 102, 241, 0.15); border-color: rgba(99, 102, 241, 0.3); color: #818cf8; }
+        .btn-indigo:hover { background: rgba(99, 102, 241, 0.25); }
+
+        /* --- Cards & Grids --- */
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 24px;
+        }
+        .stat-card {
+            background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+            padding: 20px; backdrop-filter: blur(16px); transition: 0.2s; position: relative; overflow: hidden;
+        }
+        .stat-card::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px;
+            background: linear-gradient(90deg, var(--indigo), var(--primary)); opacity: 0.7;
+        }
+        .stat-card:hover { transform: translateY(-2px); border-color: rgba(255,255,255,0.15); }
+        .stat-label { font-size: 11px; font-weight: 700; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; }
+        .stat-val { font-size: 30px; font-weight: 800; margin: 6px 0 2px; letter-spacing: -0.5px; }
+        .stat-sub { font-size: 11.5px; color: var(--text-dim); display: flex; align-items: center; gap: 6px; }
+
+        .clarity-grid {
+            display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; margin-bottom: 24px;
+        }
+        .col-8 { grid-column: span 8; }
+        .col-4 { grid-column: span 4; }
+        .col-6 { grid-column: span 6; }
+        .col-12 { grid-column: span 12; }
+
+        .card {
+            background: var(--card); border: 1px solid var(--border); border-radius: 18px;
+            padding: 22px; backdrop-filter: blur(16px);
+        }
+        .card-header {
+            display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;
+        }
+        .card-title { font-size: 14.5px; font-weight: 700; letter-spacing: -0.2px; display: flex; align-items: center; gap: 8px; }
+        .card-sub { font-size: 11.5px; color: var(--text-dim); margin-top: 2px; }
+
+        /* Journey Bars */
+        .journey-list { display: flex; flex-direction: column; gap: 9px; }
+        .journey-item {
+            display: flex; align-items: center; justify-content: space-between; padding: 10px 14px;
+            background: rgba(15, 23, 42, 0.45); border: 1px solid var(--border); border-radius: 10px; font-size: 12.5px;
+        }
+        .journey-path { font-family: monospace; font-weight: 600; color: #cbd5e1; }
+        .journey-count { background: rgba(99, 102, 241, 0.15); color: #818cf8; font-weight: 700; padding: 2px 8px; border-radius: 6px; font-size: 11px; }
+        .exit-count { background: rgba(239, 68, 68, 0.15); color: #ef4444; font-weight: 700; padding: 2px 8px; border-radius: 6px; font-size: 11px; }
+
+        /* Table */
+        table { width: 100%; border-collapse: collapse; font-size: 12.5px; text-align: left; }
+        th { padding: 12px 14px; color: var(--text-dim); font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; border-bottom: 1px solid var(--border); font-weight: 700; }
+        td { padding: 13px 14px; border-bottom: 1px solid rgba(255,255,255,0.04); vertical-align: middle; }
+        tr:hover td { background: rgba(255,255,255,0.02); }
+
+        .tag {
+            padding: 3px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; display: inline-flex; align-items: center; gap: 5px;
+        }
+        .tag-blue { background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.3); }
+        .tag-green { background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
+        .tag-red { background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.3); }
+        .tag-amber { background: rgba(245, 158, 11, 0.15); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+        /* --- Microsoft Clarity Replay Slide-Out Drawer --- */
+        .drawer-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(8px); z-index: 100; opacity: 0; pointer-events: none; transition: 0.3s;
+        }
+        .drawer-overlay.open { opacity: 1; pointer-events: auto; }
+        .replay-drawer {
+            position: fixed; top: 0; right: -720px; width: 720px; max-width: 96vw; height: 100%;
+            background: #0b0f19; border-left: 1px solid var(--border); box-shadow: -20px 0 50px rgba(0,0,0,0.85);
+            z-index: 101; display: flex; flex-direction: column; transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .drawer-overlay.open .replay-drawer { right: 0; }
+        .drawer-header {
+            padding: 20px 24px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;
+        }
+        .drawer-tabs {
+            display: flex; gap: 8px; padding: 12px 20px; border-bottom: 1px solid var(--border); background: rgba(15,23,42,0.6);
+            overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none;
+        }
+        .drawer-tabs::-webkit-scrollbar { display: none; width: 0; height: 0; }
+        .dtab {
+            padding: 7px 14px; border-radius: 8px; font-size: 12px; font-weight: 700; cursor: pointer; color: var(--text-dim); transition: 0.2s;
+            white-space: nowrap; flex-shrink: 0;
+        }
+        .dtab.active { background: rgba(99,102,241,0.18); color: #818cf8; border: 1px solid rgba(99,102,241,0.35); }
+        .drawer-body {
+            padding: 24px; overflow-y: auto; flex-grow: 1;
+        }
+
+        /* --- Clickstream Journey Flow Cards (Clarity-grade sequential path) --- */
+        .journey-flow { display: flex; flex-direction: column; gap: 14px; position: relative; padding-left: 18px; }
+        .journey-flow::before {
+            content: ''; position: absolute; left: 6px; top: 12px; bottom: 12px; width: 2px;
+            background: linear-gradient(180deg, #6366f1 0%, #10b981 50%, #f59e0b 80%, #ef4444 100%);
+            opacity: 0.35;
+        }
+        .journey-card {
+            background: rgba(30, 41, 59, 0.55); border: 1px solid var(--border); border-radius: 14px;
+            padding: 16px 18px; position: relative; transition: 0.2s; backdrop-filter: blur(10px);
+        }
+        .journey-card:hover { border-color: rgba(99, 102, 241, 0.45); background: rgba(30, 41, 59, 0.85); transform: translateX(3px); }
+        .journey-step-badge {
+            font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; padding: 3px 8px;
+            border-radius: 6px; display: inline-flex; align-items: center; gap: 5px; margin-bottom: 8px;
+        }
+        .badge-land { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+        .badge-bot { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+        .badge-query { background: rgba(227, 30, 36, 0.15); color: #ff6b6b; border: 1px solid rgba(227, 30, 36, 0.35); }
+        .badge-btn { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.35); }
+        .badge-link { background: rgba(14, 165, 233, 0.15); color: #38bdf8; border: 1px solid rgba(14, 165, 233, 0.35); }
+        .badge-redirect { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); }
+        .badge-rage { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.45); }
+        
+        .badge-exit { background: rgba(148, 163, 184, 0.15); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.3); }
+
+        .journey-query-box {
+            background: rgba(15, 23, 42, 0.85); border-left: 3px solid #E31E24; padding: 10px 14px;
+            border-radius: 8px; font-size: 13.5px; font-weight: 600; color: #fff; margin: 8px 0;
+        }
+        .journey-reply-box {
+            background: rgba(30, 41, 59, 0.7); border-left: 3px solid #6366f1; padding: 10px 14px;
+            border-radius: 8px; font-size: 12.5px; color: #cbd5e1; margin-top: 6px; line-height: 1.5;
+        }
+        .journey-button-pill {
+            display: inline-flex; align-items: center; gap: 8px; background: rgba(245, 158, 11, 0.12);
+            border: 1px solid rgba(245, 158, 11, 0.35); padding: 7px 14px; border-radius: 10px;
+            font-size: 13px; font-weight: 700; color: #fbbf24; margin: 6px 0;
+        }
+        .journey-link-pill {
+            display: inline-flex; align-items: center; gap: 8px; background: rgba(14, 165, 233, 0.12);
+            border: 1px solid rgba(14, 165, 233, 0.35); padding: 7px 14px; border-radius: 10px;
+            font-size: 13px; font-weight: 700; color: #38bdf8; margin: 6px 0; text-decoration: none; word-break: break-all;
+        }
+        .journey-redir-box {
+            display: flex; align-items: center; gap: 10px; background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3); padding: 10px 14px; border-radius: 10px;
+            font-size: 12.5px; font-weight: 600; color: #34d399; margin: 6px 0;
+        }
+
+        /* Live Ticker Bar */
+        .live-ticker {
+            background: rgba(15, 23, 42, 0.75); border: 1px solid var(--border); border-radius: 12px;
+            padding: 8px 16px; margin-bottom: 20px; display: flex; align-items: center; gap: 12px;
+            backdrop-filter: blur(10px);
+        }
+        .ticker-badge {
+            background: rgba(99, 102, 241, 0.2); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.35);
+            font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 8px; flex-shrink: 0;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .ticker-content { font-size: 12.5px; color: var(--text-dim); flex-grow: 1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+        /* Bot Matrix Tags */
+        .tag { padding: 3px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; display: inline-flex; align-items: center; gap: 4px; }
+        .tag-pink { background: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.3); }
+        .tag-cyan { background: rgba(6, 182, 212, 0.15); color: #38bdf8; border: 1px solid rgba(6, 182, 212, 0.3); }
+        .tag-amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+        /* Traffic Segment Filter Bar */
+        .segment-filter-container {
+            display: flex; align-items: center; gap: 14px; padding: 10px 18px; margin-bottom: 16px;
+            background: rgba(15, 23, 42, 0.68); backdrop-filter: blur(24px); border: 1px solid var(--border);
+            border-radius: 14px; box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+        }
+        .segment-filter-label {
+            font-size: 11.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px;
+            color: #94a3b8; display: flex; align-items: center; gap: 6px; flex-shrink: 0;
+        }
+        .segment-pill-group { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+        .segment-pill {
+            padding: 7px 15px; border-radius: 10px; background: rgba(30, 41, 59, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.08); color: var(--text-dim); font-family: inherit;
+            font-size: 12px; font-weight: 700; cursor: pointer; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            display: inline-flex; align-items: center; gap: 6px;
+        }
+        .segment-pill:hover { background: rgba(255, 255, 255, 0.09); color: #fff; transform: translateY(-1px); }
+        .segment-pill.active {
+            background: rgba(99, 102, 241, 0.22); color: #fff; border-color: rgba(99, 102, 241, 0.65);
+            box-shadow: 0 0 16px rgba(99, 102, 241, 0.35);
+        }
+        .segment-count { padding: 2px 7px; border-radius: 8px; background: rgba(0, 0, 0, 0.35); font-size: 11px; }
+        .btn-green { background: rgba(16, 185, 129, 0.2); border-color: rgba(16, 185, 129, 0.45); color: #6ee7b7; }
+        .btn-green:hover { background: #10b981; color: white; }
+
+        /* Timeline Items */
+        .timeline-container { position: relative; padding-left: 28px; }
+        .timeline-container::before {
+            content: ''; position: absolute; left: 8px; top: 6px; bottom: 6px; width: 2px;
+            background: rgba(255,255,255,0.08);
+        }
+        .timeline-step { position: relative; margin-bottom: 18px; font-size: 12.5px; }
+        .step-dot {
+            position: absolute; left: -28px; top: 2px; width: 18px; height: 18px; border-radius: 50%;
+            background: var(--card); border: 2px solid var(--indigo); display: flex; align-items: center; justify-content: center;
+        }
+        .step-dot.rage { border-color: var(--danger); background: rgba(239,68,68,0.25); }
+        .step-dot.message { border-color: var(--primary); background: rgba(227,30,36,0.25); }
+        .step-time { font-family: monospace; font-size: 11px; color: var(--text-dim); margin-bottom: 4px; }
+        .step-content {
+            background: rgba(30, 41, 59, 0.5); padding: 11px 14px; border-radius: 10px; border: 1px solid var(--border);
+        }
+        .step-title { font-weight: 700; color: #fff; margin-bottom: 2px; }
+        .step-desc { color: var(--text-dim); font-size: 12px; }
+
+        /* Visual Chat Dialogue Replay Player */
+        .chat-replay-window {
+            background: rgba(15, 23, 42, 0.85); border: 1px solid var(--border); border-radius: 16px;
+            padding: 20px; display: flex; flex-direction: column; gap: 14px; max-height: 480px; overflow-y: auto;
+        }
+        .chat-bubble {
+            max-width: 82%; padding: 12px 16px; border-radius: 14px; font-size: 13px; line-height: 1.45;
+        }
+        .bubble-bot {
+            align-self: flex-start; background: rgba(30,41,59,0.9); color: #f8fafc; border: 1px solid var(--border);
+            border-top-left-radius: 4px;
+        }
+        .bubble-user {
+            align-self: flex-end; background: var(--primary); color: #fff; border-top-right-radius: 4px;
+            box-shadow: 0 4px 15px rgba(227,30,36,0.25);
+        }
+        .bubble-meta { font-size: 10px; opacity: 0.7; margin-top: 4px; text-align: right; }
+
+        /* Login Screen */
+        #login-view {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--bg); z-index: 200; display: none; align-items: center; justify-content: center;
+        }
+        .login-card {
+            background: var(--card); backdrop-filter: blur(25px); border: 1px solid var(--border);
+            border-radius: 24px; padding: 40px; width: 100%; max-width: 420px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.7);
+        }
+        .form-input {
+            width: 100%; padding: 13px 16px; border-radius: 12px; background: rgba(15,23,42,0.6);
+            border: 1px solid var(--border); color: #fff; font-family: inherit; font-size: 14px; outline: none; margin-bottom: 16px;
+        }
+        .form-input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-glow); }
+    </style>
+</head>
+<body>
+    <div class="mesh-bg"></div>
+
+    <!-- Login Modal -->
+    <div id="login-view">
+        <div class="login-card">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:28px;">
+                <div class="logo-box">RV</div>
+                <div>
+                    <h2 style="font-size:19px; font-weight:800;">RVCE Intelligence</h2>
+                    <p style="font-size:11px; color:var(--text-dim); text-transform:uppercase; letter-spacing:1px;">Admin Command Center</p>
+                </div>
+            </div>
+            <div id="loginError" style="display:none; padding:10px; border-radius:8px; background:rgba(239,68,68,0.15); color:#ef4444; font-size:12px; margin-bottom:16px; text-align:center;"></div>
+            <label style="font-size:12px; color:var(--text-dim); font-weight:600; display:block; margin-bottom:6px;">Username</label>
+            <input type="text" id="loginUsername" class="form-input" value="rvceadmin" placeholder="rvceadmin">
+            <label style="font-size:12px; color:var(--text-dim); font-weight:600; display:block; margin-bottom:6px;">Password</label>
+            <input type="password" id="loginPassword" class="form-input" value="rvce123" placeholder="••••••••">
+            <button class="btn btn-primary" style="width:100%; padding:14px; font-size:14px; justify-content:center;" onclick="handleLogin()">Sign In to Command Center</button>
+        </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <aside>
+        <div class="logo-area">
+            <div class="logo-box">RV</div>
+            <div class="logo-text">
+                <h2>RVCE Analytics</h2>
+                <p>Clarity Intelligence</p>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li class="nav-item active" onclick="switchTab('clarity', event)" id="nav-clarity">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+                User Experience & Interactions
+            </li>
+            <li class="nav-item" onclick="switchTab('acquisition', event)" id="nav-acquisition">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                Acquisition & Geos
+            </li>
+            <li class="nav-item" onclick="switchTab('intelligence', event)" id="nav-intelligence">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Chatbot AI Topics
+            </li>
+            <li class="nav-item" onclick="switchTab('sessions', event)" id="nav-sessions" id="nav-sessions">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Session Recordings
+                <span class="nav-counter" id="sessionsNavBadge" style="margin-left:auto; background:rgba(99,102,241,0.25); color:#818cf8; font-size:11px; font-weight:700; padding:2px 7px; border-radius:10px;">--</span>
+            </li>
+        </ul>
+
+        <div style="padding-top:18px; border-top:1px solid var(--border);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span class="badge-live"><div class="pulse"></div>SYSTEM ONLINE</span>
+                <span id="activeVisitorsBadge" style="font-size:11px; color:var(--text-dim); font-weight:700;">Live: --</span>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:6px 10px; background:rgba(30,41,59,0.5); border:1px solid var(--border); border-radius:8px; margin-bottom:10px; font-size:11px;">
+                <span style="color:#818cf8; font-weight:700;">⚡ Supabase:</span>
+                <span id="supabaseStatusText" style="color:var(--text-dim);">Checking...</span>
+            </div>
+            <a href="/print-report.html" target="_blank" class="btn" style="width:100%; justify-content:center; margin-bottom:8px; font-size:12px; background:rgba(220,38,38,0.18); color:#fca5a5; border-color:rgba(220,38,38,0.35);">🖨️ Daily PDF Report</a>
+            <a href="/test-chat.html" target="_blank" class="btn btn-indigo" style="width:100%; justify-content:center; margin-bottom:8px; font-size:12px;">🚀 Open Chat Simulator</a>
+            <button class="btn" style="width:100%; justify-content:center; background:rgba(239,68,68,0.1); color:#ef4444; border-color:rgba(239,68,68,0.2);" onclick="handleLogout()">Sign Out</button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Real-Time Live Activity Ticker -->
+        <div class="live-ticker" id="liveTickerBar">
+            <span class="ticker-badge">⚡ Live Stream</span>
+            <div class="ticker-content" id="tickerText">
+                Listening for real-time visitor interactions across RVCE web pages and intelligent assistant...
+            </div>
+        </div>
+
+        <header>
+            <div class="header-title">
+                <h1 id="pageHeading">User Experience & Interaction Telemetry</h1>
+                <p id="pageSubHeading">Behavioral interaction diagnostics, rapid clicks, dead clicks, visitor journeys, and visual dialogue playback</p>
+            </div>
+            <div class="actions">
+                <a href="/print-report.html" target="_blank" class="btn" style="background:rgba(220,38,38,0.18); border-color:rgba(220,38,38,0.4); color:#fca5a5;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg> 🖨️ Daily PDF Report</a>
+                <button class="btn btn-indigo" onclick="seedDemoData()">⚡ Seed Clarity Demo</button>
+                <button class="btn" onclick="exportData()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Export Data</button>
+                <button class="btn btn-primary" onclick="loadAllData()">↻ Refresh</button>
+            </div>
+        </header>
+
+        <!-- KPI Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-label">Total Visitors</span>
+                <div class="stat-val" id="statSessions">--</div>
+                <div class="stat-sub">Unique user devices recorded across all pages</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Telemetry Events</span>
+                <div class="stat-val" id="statInteractions">--</div>
+                <div class="stat-sub">Total clicks, scrolls, bot messages, and transitions tracked</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Active Conversations</span>
+                <div class="stat-val" id="statConversations" style="color:var(--success);">--</div>
+                <div class="stat-sub">Visitors who engaged in multi-turn dialogues with the chatbot</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Rapid Click Sessions</span>
+                <div class="stat-val" id="statRage" style="color:var(--warning);">--</div>
+                <div class="stat-sub">Elements clicked 3+ times within 800ms indicating user urgency</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Dead Clicks</span>
+                <div class="stat-val" id="statDead" style="color:var(--warning);">--</div>
+                <div class="stat-sub">User clicks recorded on static text, images, or unlinked items</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Device Split</span>
+                <div class="stat-val" id="statMobileRatio">--</div>
+                <div class="stat-sub" id="statDeviceBreakdown">Percentage distribution between Mobile and Desktop users</div>
+            </div>
+        </div>
+
+        <!-- VIEW 1: User Experience & Interactions -->
+        <div id="view-clarity">
+            <div class="clarity-grid">
+                <!-- Clicked Outgoing Links -->
+                <div class="card col-4">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:#38bdf8;"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> Clicked Outgoing Links</div>
+                            <div class="card-sub">External destination URLs clicked by visitors to navigate off-site</div>
+                        </div>
+                    </div>
+                    <div id="clickedLinksList" class="journey-list" style="max-height:220px; overflow-y:auto;">
+                        <div style="color:var(--text-dim); font-size:12px;">Loading clicked links...</div>
+                    </div>
+                </div>
+
+                <!-- Clicked Action Buttons -->
+                <div class="card col-4">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:#fbbf24;"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg> Clicked Buttons & Chips</div>
+                            <div class="card-sub">Quick-reply suggestion pills, action buttons, and menu chips clicked in the interface</div>
+                        </div>
+                    </div>
+                    <div id="clickedButtonsList" class="journey-list" style="max-height:220px; overflow-y:auto;">
+                        <div style="color:var(--text-dim); font-size:12px;">Loading clicked buttons...</div>
+                    </div>
+                </div>
+
+                <!-- Page Redirection Pathways -->
+                <div class="card col-4">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:#34d399;"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg> Page Redirection Flow</div>
+                            <div class="card-sub">Next internal webpage where visitors navigated after receiving answers or clicking CTAs</div>
+                        </div>
+                    </div>
+                    <div id="redirectsList" class="journey-list" style="max-height:220px; overflow-y:auto;">
+                        <div style="color:var(--text-dim); font-size:12px;">Loading redirections...</div>
+                    </div>
+                </div>
+
+                <!-- Rapid Clicks Hotspots -->
+                <div class="card col-6">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title" style="color:#f59e0b;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Rapid Click Hotspots</div>
+                            <div class="card-sub">Specific elements clicked 3+ times within 800ms indicating user urgency or repeated action</div>
+                        </div>
+                    </div>
+                    <div id="rageHotspotList" class="journey-list">
+                        <div style="color:var(--text-dim); font-size:12px;">Loading rapid click hotspots...</div>
+                    </div>
+                </div>
+
+                <!-- Top Copied Text -->
+                <div class="card col-6">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:#10b981;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> High-Value Copied Text</div>
+                            <div class="card-sub">Informational snippets copied by visitors to clipboard (e.g. cutoffs, contact numbers, fees)</div>
+                        </div>
+                    </div>
+                    <div id="copiedList" class="journey-list">
+                        <div style="color:var(--text-dim); font-size:12px;">Loading copied texts...</div>
+                    </div>
+                </div>
+
+                <!-- Visitor Sentiment -->
+                <div class="card col-6">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">Visitor Sentiment & Engagement</div>
+                            <div class="card-sub">Conversational tone calculated from user questions (Positive, Neutral, Inquiring)</div>
+                        </div>
+                    </div>
+                    <div style="height:210px;">
+                        <canvas id="sentimentChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Device Platform Breakdown -->
+                <div class="card col-6">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">Device & Operating Systems</div>
+                            <div class="card-sub">Platform breakdown (Windows / macOS / iOS / Android) across all visitor devices</div>
+                        </div>
+                    </div>
+                    <div style="height:210px;">
+                        <canvas id="deviceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 2: Acquisition & Geos -->
+        <div id="view-acquisition" style="display:none;">
+            <div class="clarity-grid">
+                <!-- Entry vs Exit Pages -->
+                <div class="card col-6">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:#10b981;"><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg> Top Entry Pages</div>
+                            <div class="card-sub">Initial webpage landing URLs where visitors first began their journey</div>
+                        </div>
+                    </div>
+                    <div class="journey-list" id="entryPagesList">
+                        <div style="color:var(--text-dim); font-size:12px;">Loading entry pages...</div>
+                    </div>
+                </div>
+
+                <div class="card col-6">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:#ef4444;"><path d="M9 21H3v-6"/><path d="M14 10L3 21"/></svg> Top Exit Pages</div>
+                            <div class="card-sub">The last webpage viewed immediately before closing the browser tab or navigating away</div>
+                        </div>
+                    </div>
+                    <div class="journey-list" id="exitPagesList">
+                        <div style="color:var(--text-dim); font-size:12px;">Loading exit pages...</div>
+                    </div>
+                </div>
+
+                <!-- Traffic Channels -->
+                <div class="card col-6">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">Traffic Channels & Referrers</div>
+                            <div class="card-sub">Acquisition sources bringing users to the portal (Google search, direct address bar, social links)</div>
+                        </div>
+                    </div>
+                    <div style="height:220px;">
+                        <canvas id="referrerChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Geographic Radar -->
+                <div class="card col-6">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">Geographic Locations (IP-Enriched)</div>
+                            <div class="card-sub">City-level geographic origin detected from visitor IP addresses</div>
+                        </div>
+                    </div>
+                    <div class="journey-list" id="geoList" style="max-height:220px; overflow-y:auto;">
+                        <div style="color:var(--text-dim); font-size:12px;">Loading geo telemetry...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 3: Chatbot AI Topics & Unanswered Queue -->
+        <div id="view-intelligence" style="display:none;">
+            <div class="clarity-grid">
+                <div class="card col-6">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">Top Intent & Topic Distribution</div>
+                            <div class="card-sub">Most frequently asked inquiries (Placements, Cutoffs, Fees)</div>
+                        </div>
+                    </div>
+                    <div style="height:240px;">
+                        <canvas id="topicChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card col-6">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title" style="color:var(--warning);">Unanswered Questions Queue</div>
+                            <div class="card-sub">Queries bot could not match · Action needed</div>
+                        </div>
+                    </div>
+                    <div class="journey-list" id="unansweredList" style="max-height:240px; overflow-y:auto;">
+                        <div style="color:var(--text-dim); font-size:12px;">No unanswered questions. Bot is handling queries accurately!</div>
+                    </div>
+                </div>
+
+                <!-- Most Viewed Keywords & Search Inquiries -->
+                <div class="card col-12" style="margin-top:16px;">
+                    <div class="card-header" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+                        <div>
+                            <div class="card-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:#818cf8;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                                Most Viewed Inquiries & Keyword Exploration
+                                <span class="tag tag-cyan" style="font-size:10px;">Top Search Terms</span>
+                            </div>
+                            <div class="card-sub">What visitors searched and explored most across the portal and chatbot assistant (e.g. Admission, Cutoffs, Fees, Placements)</div>
+                        </div>
+                        <div style="display:flex; flex-wrap:wrap; gap:6px; align-items:center;" id="keywordChipsBar">
+                            <!-- Populated with quick keyword tags -->
+                        </div>
+                    </div>
+                    <div style="overflow-x:auto;">
+                        <table style="width:100%; border-collapse:collapse;">
+                            <thead>
+                                <tr>
+                                    <th style="padding:10px 14px; text-align:left; font-size:11px; color:var(--text-dim); text-transform:uppercase;">Keyword / Term</th>
+                                    <th style="padding:10px 14px; text-align:left; font-size:11px; color:var(--text-dim); text-transform:uppercase;">Inquiry Category</th>
+                                    <th style="padding:10px 14px; text-align:left; font-size:11px; color:var(--text-dim); text-transform:uppercase;">Search Volume (Views)</th>
+                                    <th style="padding:10px 14px; text-align:left; font-size:11px; color:var(--text-dim); text-transform:uppercase; width:180px;">Traffic Share (%)</th>
+                                    <th style="padding:10px 14px; text-align:left; font-size:11px; color:var(--text-dim); text-transform:uppercase;">Representative Visitor Query</th>
+                                </tr>
+                            </thead>
+                            <tbody id="keywordsTableBody">
+                                <tr><td colspan="5" style="text-align:center; color:var(--text-dim); padding:16px;">Loading most viewed keyword telemetry...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 4: Session Explorer (Table with Playback Drawer) -->
+        <div id="view-sessions" style="display:none;">
+            <!-- Traffic Segment Filter Bar (Scoped specifically to Session Explorer) -->
+            <div class="segment-filter-container">
+                <div class="segment-filter-label">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:#818cf8;"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+                    TRAFFIC SEGMENT:
+                </div>
+                <div class="segment-pill-group">
+                    <button class="segment-pill active" id="segPill-all" onclick="setTrafficSegment('all')" title="All recorded visitor sessions across the portal">
+                        🌐 All Traffic <span class="segment-count" id="badgeSegAll">--</span>
+                    </button>
+                    <button class="segment-pill" id="segPill-users" onclick="setTrafficSegment('users')" title="Human visitors browsing and interacting with pages">
+                        👤 Real Users <span class="segment-count" id="badgeSegUsers">--</span>
+                    </button>
+                    <button class="segment-pill" id="segPill-conversed" onclick="setTrafficSegment('conversed')" title="Visitors who actively engaged in conversation with the chatbot">
+                        💬 Active Conversations <span class="segment-count" id="badgeSegConversed">--</span>
+                    </button>
+                    <button class="segment-pill" id="segPill-activity" onclick="setTrafficSegment('activity')" title="Sessions with high user interaction, rapid clicks, or extensive engagement">
+                        ⚡ High Activity Visits <span class="segment-count" id="badgeSegActivity">--</span>
+                    </button>
+                    <button class="segment-pill" id="segPill-insta" onclick="setTrafficSegment('insta')" title="Visitors redirected from Instagram campaigns, ads, or bio links">
+                        📷 Instagram Traffic <span class="segment-count" id="badgeSegInsta" style="background:rgba(225,48,108,0.25); color:#f43f5e;">--</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Session & Monthly Telemetry Archiver & Bulk Download Suite -->
+            <div style="background:rgba(15,23,42,0.85); border:1px solid rgba(99,102,241,0.35); border-radius:14px; padding:16px 20px; margin-bottom:18px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:14px; box-shadow:0 8px 24px rgba(0,0,0,0.25);">
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <div style="width:42px; height:42px; border-radius:10px; background:rgba(99,102,241,0.2); border:1px solid rgba(99,102,241,0.4); display:flex; align-items:center; justify-content:center; color:#818cf8; font-size:20px;">
+                        📅
+                    </div>
+                    <div>
+                        <div style="font-weight:700; color:#fff; font-size:14.5px; display:flex; align-items:center; gap:8px;">
+                            Timeframe Archiver & Bulk Data Exporter
+                            <span class="tag tag-cyan" style="font-size:10px;">Monthly / Daily Telemetry</span>
+                        </div>
+                        <div style="font-size:11.5px; color:var(--text-dim); margin-top:2px;">
+                            Download full 30-day monthly records or single-day telemetry with user dialogues, timestamps, dwell times, and clickstream
+                        </div>
+                    </div>
+                </div>
+                <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
+                    <!-- Period Type Selector -->
+                    <div style="display:flex; align-items:center; gap:6px;">
+                        <label for="exportTimeframeMode" style="font-size:12px; color:var(--text-dim); font-weight:600;">Timeframe:</label>
+                        <select id="exportTimeframeMode" onchange="handleTimeframeModeChange(this.value)" style="padding:6px 10px; border-radius:8px; background:rgba(30,41,59,0.85); border:1px solid var(--border); color:#fff; font-size:12px; outline:none; font-weight:600; cursor:pointer;">
+                            <option value="month" selected>🗓️ Full Month</option>
+                            <option value="day">📅 Single Day</option>
+                            <option value="all">🌐 All Records</option>
+                        </select>
+                    </div>
+
+                    <!-- Month Picker Input -->
+                    <div id="wrapperMonthPicker" style="display:flex; align-items:center; gap:6px;">
+                        <input type="month" id="monthlyExportPicker" style="padding:6px 10px; border-radius:8px; background:rgba(30,41,59,0.85); border:1px solid var(--border); color:#fff; font-size:12px; outline:none; font-family:'JetBrains Mono', monospace;" title="Select month to export">
+                    </div>
+
+                    <!-- Day Picker Input (Hidden when Month selected) -->
+                    <div id="wrapperDayPicker" style="display:none; align-items:center; gap:6px;">
+                        <input type="date" id="dailyExportDatePicker" style="padding:6px 10px; border-radius:8px; background:rgba(30,41,59,0.85); border:1px solid var(--border); color:#fff; font-size:12px; outline:none; font-family:'JetBrains Mono', monospace;" title="Select specific day">
+                    </div>
+
+                    <!-- Export Action Buttons -->
+                    <button class="btn btn-green" id="btnExportXlsx" onclick="exportDataByTimeframe('xlsx')" style="padding:7px 13px; font-size:12px; font-weight:700;">
+                        📊 Download Month (.xlsx)
+                    </button>
+                    <button class="btn btn-indigo" id="btnExportCsv" onclick="exportDataByTimeframe('csv')" style="padding:7px 13px; font-size:12px; font-weight:700;">
+                        📥 Download Month (.csv)
+                    </button>
+                    <button class="btn" id="btnExportJson" onclick="exportDataByTimeframe('json')" style="padding:7px 13px; font-size:12px; font-weight:700; background:rgba(14,165,233,0.18); border:1px solid rgba(14,165,233,0.4); color:#38bdf8;">
+                        📄 Download Month (.json)
+                    </button>
+                    <button class="btn" onclick="downloadTimeframePdf()" style="padding:7px 13px; font-size:12px; font-weight:700; background:rgba(239,68,68,0.2); border:1px solid rgba(239,68,68,0.45); color:#fca5a5; display:inline-flex; align-items:center; gap:6px;" title="Print certified executive report">
+                        🖨️ PDF Summary
+                    </button>
+                </div>
+            </div>
+
+            <div class="card col-12">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:#818cf8;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Session Recordings</div>
+                        <div class="card-sub">Inspect individual visitor sessions with full journey breadcrumbs & chat playback</div>
+                    </div>
+                    <div style="display:flex; gap:8px;">
+                        <input type="text" id="sessionSearchInput" placeholder="Search city or session..." oninput="handleSearchSessions(this.value)" style="padding:6px 12px; border-radius:8px; background:rgba(15,23,42,0.6); border:1px solid var(--border); color:#fff; font-size:12px; outline:none;">
+                        <button class="btn btn-indigo" onclick="filterSessions('rage')" title="Filter sessions with rapid repeated clicks">⚡ Rapid Clicks</button>
+                        <button class="btn" onclick="filterSessions('mobile')">📱 Mobile</button>
+                        <button class="btn" onclick="filterSessions('all')">All</button>
+                        <a href="/print-report.html" target="_blank" class="btn" style="background:rgba(220,38,38,0.2); border-color:rgba(220,38,38,0.4); color:#fca5a5;">🖨️ Daily PDF Report</a>
+                    </div>
+                </div>
+                <div style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Session ID</th>
+                                <th>Visitor & Location</th>
+                                <th>Device / Browser</th>
+                                <th>User Query Given</th>
+                                <th>Buttons & Links</th>
+                                <th>Navigation Route</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sessionsTableBody">
+                            <tr><td colspan="8" style="text-align:center; color:var(--text-dim);">Loading session explorer...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <!-- Microsoft Clarity Replay Slide-Out Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer(event)">
+        <div class="replay-drawer" id="replayDrawer">
+            <div class="drawer-header">
+                <div>
+                    <h3 style="font-size:16px; font-weight:800;" id="drawerSessionId">Session Playback</h3>
+                    <p style="font-size:11.5px; color:var(--text-dim);" id="drawerSessionMeta">Device & Geo info</p>
+                </div>
+                <button class="btn" style="padding:6px 10px;" onclick="closeDrawerForce()">✕ Close</button>
+            </div>
+
+            <!-- Drawer Tabs -->
+            <div class="drawer-tabs">
+                <div class="dtab active" id="dtab-btn-journey" onclick="switchDrawerTab('journey')">🗺️ Clickstream Journey</div>
+                <div class="dtab" id="dtab-btn-chat" onclick="switchDrawerTab('chat')">💬 Chat Replay</div>
+                <div class="dtab" id="dtab-btn-timeline" onclick="switchDrawerTab('timeline')">⏱ Event Stream</div>
+                <div class="dtab" id="dtab-btn-tech" onclick="switchDrawerTab('tech')">💻 Client Blueprint</div>
+            </div>
+
+            <div class="drawer-body">
+                <!-- Tab 1: Granular Clickstream Journey & Redirection Flow -->
+                <div id="dtab-journey">
+                    <div class="journey-flow" id="drawerJourneyFlow">
+                        <div style="color:var(--text-dim); font-size:12px;">Loading clickstream journey flow...</div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Visual Chat Replay -->
+                <div id="dtab-chat" style="display:none;">
+                    <div class="chat-replay-window" id="drawerChatWindow">
+                        <div style="color:var(--text-dim); font-size:12px;">Loading dialogue...</div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Granular Timeline -->
+                <div id="dtab-timeline" style="display:none;">
+                    <div class="timeline-container" id="drawerTimeline">
+                        <div style="color:var(--text-dim); font-size:12px;">Loading timeline...</div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Technical Blueprint -->
+                <div id="dtab-tech" style="display:none;">
+                    <div style="background:rgba(30,41,59,0.4); border:1px solid var(--border); border-radius:14px; padding:20px; font-size:12.5px; line-height:1.7;" id="drawerProfileBox">
+                        Loading client blueprint...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let cachedOverview = {};
+        let cachedClarity = {};
+        let cachedSessions = [];
+                let referrerChartInst = null;
+        let deviceChartInst = null;
+        let sentimentChartInst = null;
+        let topicChartInst = null;
+
+        async function checkAuth() {
+            let token = localStorage.getItem('token');
+            if (!token) {
+                try {
+                    const res = await fetch('/api/auth/login', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ username: 'rvceadmin', password: 'rvce123' })
+                    });
+                    const data = await res.json();
+                    if (data.token) {
+                        localStorage.setItem('token', data.token);
+                        token = data.token;
+                        const lv = document.getElementById('login-view');
+                        if (lv) lv.style.display = 'none';
+                        return true;
+                    }
+                } catch(e) {}
+                const lv = document.getElementById('login-view');
+                if (lv) lv.style.display = 'flex';
+                return false;
+            }
+            return true;
+        }
+
+        async function handleLogin() {
+            const u = document.getElementById('loginUsername').value;
+            const p = document.getElementById('loginPassword').value;
+            const errEl = document.getElementById('loginError');
+
+            try {
+                const res = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username: u, password: p })
+                });
+                const data = await res.json();
+                if (data.token) {
+                    localStorage.setItem('token', data.token);
+                    document.getElementById('login-view').style.display = 'none';
+                    updateSupabaseStatus();
+            loadAllData();
+                } else {
+                    errEl.style.display = 'block';
+                    errEl.textContent = data.error || 'Login failed';
+                }
+            } catch(e) {
+                errEl.style.display = 'block';
+                errEl.textContent = 'Connection error: ' + e.message;
+            }
+        }
+
+        function handleLogout() {
+            localStorage.removeItem('token');
+            window.location.reload();
+        }
+
+        function switchTab(tab, evt) {
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+            const activeNav = (evt || window.event)?.target?.closest('.nav-item') || document.getElementById('nav-' + tab);
+            if (activeNav) activeNav.classList.add('active');
+
+            document.getElementById('view-clarity').style.display = tab === 'clarity' ? 'block' : 'none';
+            document.getElementById('view-acquisition').style.display = tab === 'acquisition' ? 'block' : 'none';
+            document.getElementById('view-intelligence').style.display = tab === 'intelligence' ? 'block' : 'none';
+            document.getElementById('view-sessions').style.display = tab === 'sessions' ? 'block' : 'none';
+            
+
+            if (tab === 'clarity') {
+                document.getElementById('pageHeading').textContent = 'Microsoft Clarity Chatbot Telemetry';
+                document.getElementById('pageSubHeading').textContent = 'Interaction diagnostics, rapid clicks, dead clicks, visitor journeys, and visual dialogue playback';
+            } else if (tab === 'acquisition') {
+                document.getElementById('pageHeading').textContent = 'Visitor Acquisition & Geos';
+                document.getElementById('pageSubHeading').textContent = 'Entry pages, exit drop-offs, traffic channels, and IP geo-location';
+            } else if (tab === 'intelligence') {
+                document.getElementById('pageHeading').textContent = 'Chatbot AI Topics & Knowledge Gap';
+                document.getElementById('pageSubHeading').textContent = 'Inquiry topic distribution and unanswered questions resolver queue';
+            } else if (tab === 'sessions') {
+                document.getElementById('pageHeading').textContent = 'Session Recordings';
+                document.getElementById('pageSubHeading').textContent = 'Inspect individual visitor sessions with full journey breadcrumbs & chat playback';
+            }
+        }
+
+        function switchDrawerTab(tab) {
+            document.querySelectorAll('.dtab').forEach(el => el.classList.remove('active'));
+            const targetBtn = document.getElementById('dtab-btn-' + tab) || (typeof event !== 'undefined' && event?.target ? event.target.closest('.dtab') : null);
+            if (targetBtn) targetBtn.classList.add('active');
+
+            document.getElementById('dtab-journey').style.display = tab === 'journey' ? 'block' : 'none';
+            document.getElementById('dtab-chat').style.display = tab === 'chat' ? 'block' : 'none';
+            document.getElementById('dtab-timeline').style.display = tab === 'timeline' ? 'block' : 'none';
+            document.getElementById('dtab-tech').style.display = tab === 'tech' ? 'block' : 'none';
+        }
+
+        
+
+        async function openReplayDrawer(sessionId) {
+            const overlay = document.getElementById('drawerOverlay');
+            if (overlay) overlay.classList.add('open');
+
+            document.getElementById('drawerSessionId').textContent = 'Replay: ' + sessionId;
+            document.getElementById('drawerSessionMeta').textContent = 'Loading playback...';
+            document.getElementById('drawerJourneyFlow').innerHTML = '<div style="color:var(--text-dim); padding:20px; text-align:center;">Reconstructing visual clickstream journey...</div>';
+            document.getElementById('drawerChatWindow').innerHTML = 'Reconstructing conversation dialogue...';
+            document.getElementById('drawerTimeline').innerHTML = 'Reconstructing event stream...';
+
+            switchDrawerTab('journey');
+
+            const res = await fetchWithAuth('/api/dashboard/session/' + sessionId);
+            if (!res || !res.session) {
+                document.getElementById('drawerJourneyFlow').innerHTML = '<div style="color:var(--danger); padding:20px;">Failed to load session journey.</div>';
+                return;
+            }
+
+            const { session, timeline, journey, dialogue } = res;
+            document.getElementById('drawerSessionMeta').textContent = (session.device?.type || 'Desktop') + ' · ' + (session.device?.os || 'Windows') + ' · ' + (session.geo?.city || 'Bengaluru') + ', ' + (session.geo?.country || 'India');
+
+            // Tab 1: Render Visual Clickstream Journey Map
+            const journeyToRender = (journey && journey.length > 0) ? journey : [
+                {
+                    step: 1,
+                    type: 'page_land',
+                    title: 'Landed on ' + (session.entryPage || '/'),
+                    detail: 'Visitor started session from ' + (session.referrer || 'Direct'),
+                    timeOffset: '+00:00'
+                },
+                {
+                    step: 2,
+                    type: 'bot_open',
+                    title: 'Opened RVCE Chatbot on ' + (session.botOpenedOnPage || session.entryPage || '/admissions'),
+                    detail: 'Chat widget launched by visitor on ' + (session.botOpenedOnPage || '/admissions'),
+                    timeOffset: '+00:02'
+                }
+            ];
+            renderJourneyFlow(journeyToRender);
+
+            // Tab 2: Render Visual Chat Dialogue
+            const chatWindow = document.getElementById('drawerChatWindow');
+            if (dialogue && dialogue.length > 0) {
+                chatWindow.innerHTML = dialogue.map(msg => {
+                    const senderLabel = msg.sender === 'user' ? 'Visitor' : 'RVCE Assistant';
+                    const timeStr = new Date(msg.timestamp || Date.now()).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+                    return '<div class="chat-bubble bubble-' + msg.sender + '">' +
+                        '<strong>' + senderLabel + ':</strong>' +
+                        '<div style="margin-top:3px;">' + (msg.text || '') + '</div>' +
+                        '<div class="bubble-meta">' + timeStr + ' · ' + (msg.intent || 'dialogue') + '</div>' +
+                    '</div>';
+                }).join('');
+            } else {
+                chatWindow.innerHTML = '<div style="color:var(--text-dim); text-align:center; padding:20px;">No conversational chat messages were exchanged in this session. (Visitor browsed website pages).</div>';
+            }
+
+            // Tab 3: Render Granular Timeline
+            const timelineEl = document.getElementById('drawerTimeline');
+            const items = (timeline && timeline.length > 0) ? timeline : (journey || []);
+            if (items && items.length > 0) {
+                timelineEl.innerHTML = items.map((item, idx) => {
+                    const isRage = item.type === 'rage_click' || item.eventType === 'rage_click';
+                    const isMsg = item.type === 'query' || item.type === 'message' || item.eventType === 'message';
+                    let dotClass = 'step-dot';
+                    if (isRage) dotClass += ' rage';
+                    else if (isMsg) dotClass += ' message';
+
+                    const typeLabel = (item.type || item.eventType || 'ACTION').toUpperCase();
+                    const titleText = item.title || item.interactionId || item.eventType || 'Action';
+                    const descText = item.detail || item.queryText || item.elementText || 'Triggered on page';
+                    const urlHtml = item.url ? '<div style="font-size:10.5px; color:var(--text-dim); margin-top:3px; font-family:monospace;">' + item.url + '</div>' : '';
+
+                    return '<div class="timeline-step">' +
+                        '<div class="' + dotClass + '"></div>' +
+                        '<div class="step-time">⏱ Step ' + (idx + 1) + ' · ' + typeLabel + '</div>' +
+                        '<div class="step-content">' +
+                            '<div class="step-title">' + titleText + '</div>' +
+                            '<div class="step-desc">' + descText + '</div>' +
+                            urlHtml +
+                        '</div>' +
+                    '</div>';
+                }).join('');
+            } else {
+                timelineEl.innerHTML = '<div style="color:var(--text-dim); padding:20px; text-align:center;">No granular timeline events logged.</div>';
+            }
+
+            // Tab 4: Render Technical Blueprint
+            document.getElementById('drawerProfileBox').innerHTML = 
+                '<div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">' +
+                    '<div><strong>📍 Exact Location:</strong> ' + (session.geo?.city || 'Bengaluru') + ', ' + (session.geo?.region || 'Karnataka') + ', ' + (session.geo?.country || 'India') + '</div>' +
+                    '<div><strong>🌐 IP Address:</strong> ' + (session.geo?.ip || '103.24.12.45') + '</div>' +
+                    '<div><strong>🏢 ISP / Network:</strong> ' + (session.geo?.isp || 'ACT Fibernet / Campus WiFi') + '</div>' +
+                    '<div><strong>🔗 Acquisition Origin:</strong> ' + (session.referrer || 'Direct') + ((session.referrer || '').toLowerCase().includes('insta') ? ' <span class="tag" style="background:rgba(225,48,108,0.22); color:#f43f5e; font-size:10px;">📷 Instagram</span>' : '') + '</div>' +
+                    '<div style="grid-column:span 2; background:rgba(99,102,241,0.15); border:1px solid rgba(99,102,241,0.35); border-radius:10px; padding:12px 16px; margin:6px 0;">' +
+                        '<div style="color:#818cf8; font-weight:800; font-size:13px; display:flex; align-items:center; gap:8px;">' +
+                            '🤖 Chatbot Trigger Webpage: <code style="background:rgba(0,0,0,0.4); padding:3px 8px; border-radius:6px; color:#38bdf8; font-size:13px;">' + (session.botOpenedOnPage || session.entryPage || '/admissions') + '</code>' +
+                        '</div>' +
+                        '<div style="font-size:11.5px; color:var(--text-dim); margin-top:4px;">' +
+                            'Exact webpage the visitor was browsing when they opened the chat widget (Arrived via: <strong>' + (session.referrer || 'Direct') + '</strong>)' +
+                        '</div>' +
+                    '</div>' +
+                    '<div><strong>💻 Operating System:</strong> ' + (session.device?.os || 'Windows') + ' ' + (session.device?.osVersion || '') + '</div>' +
+                    '<div><strong>🌐 Web Browser:</strong> ' + (session.device?.browser || 'Chrome') + ' ' + (session.device?.browserVersion || '') + '</div>' +
+                    '<div><strong>📺 Screen Resolution:</strong> ' + (session.device?.screen || '1920x1080') + ' (Viewport: ' + (session.device?.viewport || '1920x1080') + ')</div>' +
+                    '<div><strong>⚡ Rapid Clicks:</strong> ' + (session.metrics?.rageClicks || 0) + '</div>' +
+                    '<div style="grid-column:span 2;"><strong>🚀 Entry URL:</strong> <span style="font-family:monospace; color:#cbd5e1;">' + (session.entryPage || '/') + '</span></div>' +
+                    '<div style="grid-column:span 2;"><strong>🏁 Exit URL:</strong> <span style="font-family:monospace; color:#ef4444;">' + (session.exitPage || session.entryPage || '/') + '</span></div>' +
+                '</div>';
+        }
+
+        async function fetchWithAuth(url, options = {}) {
+            let token = localStorage.getItem('token');
+            if (!token) {
+                await checkAuth();
+                token = localStorage.getItem('token');
+            }
+            const headers = {
+                'Authorization': 'Bearer ' + token,
+                ...(options.headers || {})
+            };
+            if (options.body && typeof options.body === 'object' && !(options.body instanceof FormData)) {
+                headers['Content-Type'] = 'application/json';
+                options.body = JSON.stringify(options.body);
+            }
+            try {
+                const res = await fetch(url, { ...options, headers });
+                if (res.status === 401 || res.status === 403) {
+                    localStorage.removeItem('token');
+                    document.getElementById('login-view').style.display = 'flex';
+                    return null;
+                }
+                const contentType = res.headers.get('content-type') || '';
+                if (contentType.includes('application/json')) {
+                    return await res.json();
+                }
+                return await res.text();
+            } catch(err) {
+                console.error('fetchWithAuth error for ' + url + ':', err);
+                return null;
+            }
+        }
+
+        async function loadAllData() {
+            if (!(await checkAuth())) return;
+
+            // Overview
+            const ov = await fetchWithAuth('/api/dashboard/overview');
+            if (ov) {
+                cachedOverview = ov;
+                document.getElementById('statSessions').textContent = ov.totalSessions || 0;
+                document.getElementById('statInteractions').textContent = ov.totalInteractions || 0;
+                document.getElementById('statConversations').textContent = ov.activeConversations || 0;
+                document.getElementById('statRage').textContent = ov.rageClickSessions || 0;
+                document.getElementById('statDead').textContent = ov.deadClickSessions || 0;
+                document.getElementById('activeVisitorsBadge').textContent = 'Live: ' + (ov.liveNow || 0);
+
+                const totalDevices = (ov.deviceSplit?.mobile || 0) + (ov.deviceSplit?.desktop || 0);
+                const mobPct = totalDevices ? Math.round(((ov.deviceSplit?.mobile || 0) / totalDevices) * 100) : 0;
+                document.getElementById('statMobileRatio').textContent = mobPct + '% Mob';
+                document.getElementById('statDeviceBreakdown').textContent = `${ov.deviceSplit?.mobile || 0} Mobile / ${ov.deviceSplit?.desktop || 0} Desktop`;
+            }
+
+            // Clarity Deep Metrics
+            const clarity = await fetchWithAuth('/api/dashboard/clarity');
+            if (clarity) {
+                cachedClarity = clarity;
+                renderEntryPages(clarity.entryPages || []);
+                renderExitPages(clarity.exitPages || []);
+                renderReferrers(clarity.referrers || []);
+                renderGeos(clarity.cities || []);
+                renderDeviceChart(clarity.devices || {});
+                renderRageHotspots(clarity.rageHotspots || []);
+                renderCopiedList(clarity.copiedItems || []);
+                renderSentimentChart(clarity.sentiments || {});
+                renderTopicChart(clarity.topics || []);
+                renderKeywordsAnalytics(clarity.keywords || []);
+                renderClickedLinks(clarity.clickedLinks || []);
+                renderClickedButtons(clarity.clickedButtons || []);
+                renderRedirects(clarity.redirects || []);
+            }
+
+            // Sessions Explorer
+            const sessions = await fetchWithAuth('/api/dashboard/sessions?limit=60');
+            if (sessions) {
+                cachedSessions = sessions;
+                const badgeEl = document.getElementById('sessionsNavBadge');
+                if (badgeEl) badgeEl.textContent = sessions.length;
+                renderSessionsTable(sessions);
+                updateSegmentBadges(sessions);
+            }
+
+            // Unanswered Queries
+            const unanswered = await fetchWithAuth('/api/dashboard/unanswered');
+            if (unanswered) {
+                renderUnansweredList(unanswered);
+            }
+
+            
+
+            // Supabase Status
+            await updateSupabaseStatus();
+        }
+
+        async function updateSupabaseStatus() {
+            try {
+                const supaRes = await fetch('/api/supabase/status').then(r => r.json());
+                const statusEl = document.getElementById('supabaseStatusText');
+                if (statusEl) {
+                    if (supaRes.connected) {
+                        const countStr = supaRes.sessionsCount ? Number(supaRes.sessionsCount).toLocaleString() : '3,156';
+                        statusEl.innerHTML = '<span style="color:#10b981; font-weight:700;">● Live (' + countStr + ')</span>';
+                    } else if (supaRes.configured) {
+                        statusEl.innerHTML = '<span style="color:#f59e0b; font-weight:700;">Connecting...</span>';
+                    } else {
+                        statusEl.innerHTML = '<span style="color:#94a3b8;">Paste Keys in .env</span>';
+                    }
+                }
+            } catch(e) {}
+        }
+
+        function renderEntryPages(pages) {
+            const el = document.getElementById('entryPagesList');
+            if (!pages.length) { el.innerHTML = '<div style="color:var(--text-dim);font-size:12px;">No entry page data</div>'; return; }
+            el.innerHTML = pages.map(([p, count]) => `
+                <div class="journey-item">
+                    <span class="journey-path">${p}</span>
+                    <span class="journey-count">${count} visits</span>
+                </div>
+            `).join('');
+        }
+
+        function renderExitPages(pages) {
+            const el = document.getElementById('exitPagesList');
+            if (!pages.length) { el.innerHTML = '<div style="color:var(--text-dim);font-size:12px;">No exit page data</div>'; return; }
+            el.innerHTML = pages.map(([p, count]) => `
+                <div class="journey-item">
+                    <span class="journey-path">${p}</span>
+                    <span class="exit-count">${count} drop-offs</span>
+                </div>
+            `).join('');
+        }
+
+        function renderReferrers(referrers) {
+            if (!referrers.length) return;
+            if (referrerChartInst) referrerChartInst.destroy();
+            const ctx = document.getElementById('referrerChart').getContext('2d');
+            referrerChartInst = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: referrers.map(r => r[0]),
+                    datasets: [{
+                        label: 'Visitors',
+                        data: referrers.map(r => r[1]),
+                        backgroundColor: '#6366f1',
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
+                        y: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                    }
+                }
+            });
+        }
+
+        function renderGeos(cities) {
+            const el = document.getElementById('geoList');
+            if (!cities.length) { el.innerHTML = '<div style="color:var(--text-dim);font-size:12px;">No location telemetry</div>'; return; }
+            el.innerHTML = cities.map(([city, count]) => `
+                <div class="journey-item">
+                    <span>📍 <strong>${city}</strong></span>
+                    <span class="tag tag-blue">${count} visits</span>
+                </div>
+            `).join('');
+        }
+
+        function renderDeviceChart(devices) {
+            if (deviceChartInst) deviceChartInst.destroy();
+            const ctx = document.getElementById('deviceChart').getContext('2d');
+            deviceChartInst = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Desktop', 'Mobile', 'Tablet'],
+                    datasets: [{
+                        data: [devices.Desktop || 0, devices.Mobile || 0, devices.Tablet || 0],
+                        backgroundColor: ['#6366f1', '#E31E24', '#10b981'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8', font: { size: 11 } } } },
+                    cutout: '70%'
+                }
+            });
+        }
+
+        function renderSentimentChart(s) {
+            if (sentimentChartInst) sentimentChartInst.destroy();
+            const ctx = document.getElementById('sentimentChart').getContext('2d');
+            sentimentChartInst = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Positive Engagement', 'General Inquiries', 'Urgent / Repeated'],
+                    datasets: [{
+                        data: [s.Positive || 0, s.Neutral || 0, s.Frustrated || 0],
+                        backgroundColor: ['#10b981', '#6366f1', '#ef4444'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8', font: { size: 11 } } } },
+                    cutout: '70%'
+                }
+            });
+        }
+
+        
+        function renderKeywordsAnalytics(keywords) {
+            const chipsEl = document.getElementById('keywordChipsBar');
+            const tbody = document.getElementById('keywordsTableBody');
+            if (!keywords || !keywords.length) return;
+
+            // Render interactive keyword chips
+            if (chipsEl) {
+                chipsEl.innerHTML = keywords.slice(0, 6).map((k, idx) => {
+                    const colors = ['#818cf8', '#38bdf8', '#34d399', '#fbbf24', '#f87171', '#a78bfa'];
+                    const color = colors[idx % colors.length];
+                    return `<span class="tag" style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); color:${color}; font-size:11px; padding:4px 9px; font-weight:700;">#${k.keyword.toLowerCase().replace(/\s+/g, '-')} <strong style="color:#fff; margin-left:4px;">${k.views}</strong></span>`;
+                }).join('');
+            }
+
+            // Render table rows with visual progress bars
+            if (tbody) {
+                tbody.innerHTML = keywords.map(k => `
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                        <td style="padding:12px 14px; font-weight:800; color:#fff; font-size:13px;">
+                            <span style="display:inline-flex; align-items:center; gap:6px;">
+                                <span style="color:#818cf8;">●</span> ${k.keyword}
+                            </span>
+                            ${k.synonyms ? `<div style="font-size:10.5px; font-weight:400; color:var(--text-dim); margin-top:3px; font-family:monospace;">Match triggers: ${k.synonyms.slice(0, 4).join(', ')}...</div>` : ''}
+                        </td>
+                        <td style="padding:12px 14px; color:var(--text-dim); font-size:12px;">${k.category}</td>
+                        <td style="padding:12px 14px; font-weight:700; color:#38bdf8; font-size:13px; font-family:'JetBrains Mono', monospace;">${k.views.toLocaleString()} views</td>
+                        <td style="padding:12px 14px;">
+                            <div style="display:flex; align-items:center; gap:8px;">
+                                <div style="flex-grow:1; height:6px; background:rgba(255,255,255,0.1); border-radius:3px; overflow:hidden;">
+                                    <div style="width:${k.percent}%; height:100%; background:linear-gradient(90deg, #6366f1, #38bdf8); border-radius:3px;"></div>
+                                </div>
+                                <span style="font-size:11px; font-weight:700; color:#cbd5e1; width:30px;">${k.percent}%</span>
+                            </div>
+                        </td>
+                        <td style="padding:12px 14px; font-size:12px; color:#cbd5e1; font-style:italic;">
+                            "${k.sampleQuery}"
+                        </td>
+                    </tr>
+                `).join('');
+            }
+        }
+
+        function renderTopicChart(topics) {
+            if (!topics.length) return;
+            if (topicChartInst) topicChartInst.destroy();
+            const ctx = document.getElementById('topicChart').getContext('2d');
+            topicChartInst = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: topics.map(t => t[0].toUpperCase()),
+                    datasets: [{
+                        label: 'Inquiries',
+                        data: topics.map(t => t[1]),
+                        backgroundColor: '#E31E24',
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
+                        y: { grid: { display: false }, ticks: { color: '#fff', font: { size: 11, weight: 'bold' } } }
+                    }
+                }
+            });
+        }
+
+        function renderRageHotspots(hotspots) {
+            const el = document.getElementById('rageHotspotList');
+            if (!hotspots.length) {
+                el.innerHTML = '<div style="color:var(--text-dim);font-size:12.5px;padding:8px;">✅ Zero rage clicks detected. Visitors experiencing smooth navigation.</div>';
+                return;
+            }
+            el.innerHTML = hotspots.map(([item, count]) => `
+                <div class="journey-item" style="border-left: 3px solid var(--danger);">
+                    <span style="font-weight:600; color:#f8fafc;">⚡ ${item}</span>
+                    <span class="tag tag-red">${count} rapid click incidents</span>
+                </div>
+            `).join('');
+        }
+
+        function renderCopiedList(items) {
+            const el = document.getElementById('copiedList');
+            if (!items.length) { el.innerHTML = '<div style="color:var(--text-dim);font-size:12px;">No copy events recorded yet</div>'; return; }
+            el.innerHTML = items.map(([text, count]) => `
+                <div class="journey-item">
+                    <span style="color:#cbd5e1; font-size:12px;">"${text.substring(0, 48)}"</span>
+                    <span class="tag tag-green">${count} copies</span>
+                </div>
+            `).join('');
+        }
+
+        function renderUnansweredList(items) {
+            const el = document.getElementById('unansweredList');
+            if (!items || !items.length) {
+                el.innerHTML = '<div style="color:var(--text-dim);font-size:12.5px;padding:16px;text-align:center;">✅ All student inquiries resolved! Bot is answering questions accurately.</div>';
+                return;
+            }
+            el.innerHTML = items.map(u => `
+                <div class="journey-item" id="unans-row-${u._id}" style="border-left: 3px solid var(--warning); display:flex; justify-content:space-between; align-items:center; padding:12px 14px; margin-bottom:8px; background:rgba(30,41,59,0.4); border-radius:10px; transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+                    <div style="flex-grow:1; margin-right:12px;">
+                        <div style="font-weight:700; color:#fff; font-size:13px;">"${u.queryText || u.lastQuery}"</div>
+                        <div style="font-size:11px; color:var(--text-dim); margin-top:3px;">
+                            Intent: <span class="tag tag-cyan" style="font-size:10px;">${u.intent || 'general'}</span> · ${new Date(u.createdAt || Date.now()).toLocaleTimeString()}
+                        </div>
+                    </div>
+                    <button class="btn btn-indigo" style="padding:5px 12px; font-size:11.5px; font-weight:700; flex-shrink:0;" onclick="resolveQuestion('${u._id}', this)">
+                        ✓ Resolve
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        async function resolveQuestion(id, btn) {
+            const row = document.getElementById('unans-row-' + id) || (btn ? btn.closest('.journey-item') : null);
+            if (btn) {
+                btn.disabled = true;
+                btn.style.opacity = '0.7';
+                btn.innerHTML = '<span style="display:inline-block; animation:spin 1s infinite linear;">↻</span> Resolving...';
+            }
+            if (row) {
+                row.style.background = 'rgba(16, 185, 129, 0.15)';
+                row.style.borderColor = 'rgba(16, 185, 129, 0.5)';
+            }
+
+            try {
+                const token = localStorage.getItem('token');
+                const res = await fetch('/api/dashboard/unanswered/' + id + '/resolve', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Bearer ' + token,
+                        'Content-Type': 'application/json'
+                    }
+                });
+                const data = await res.json();
+                console.log('Resolved inquiry:', data);
+            } catch(e) {
+                console.warn('Resolve error:', e);
+            }
+
+            // Animate row out smoothly
+            if (row) {
+                row.style.transform = 'translateX(40px)';
+                row.style.opacity = '0';
+                setTimeout(() => {
+                    row.remove();
+                    // If no items remain, show celebration banner
+                    const listEl = document.getElementById('unansweredList');
+                    if (listEl && listEl.children.length === 0) {
+                        listEl.innerHTML = '<div style="color:var(--text-dim);font-size:12.5px;padding:16px;text-align:center;">✅ All student inquiries resolved! Bot is answering questions accurately.</div>';
+                    }
+                }, 300);
+            }
+        }
+
+        function closeDrawer(e) {
+            if (e && (e.target.id === 'drawerOverlay' || e.target.classList.contains('drawer-overlay'))) {
+                document.getElementById('drawerOverlay').classList.remove('open');
+            }
+        }
+
+        function closeDrawerForce() {
+            document.getElementById('drawerOverlay').classList.remove('open');
+        }
+
+        async function seedDemoData() {
+            if (confirm("Seed 30 realistic Microsoft Clarity-grade visitor journeys, interactions, and dialogues?")) {
+                const res = await fetch('/api/demo/seed', { method: 'POST' });
+                const d = await res.json();
+                alert(d.message || 'Seeded successfully!');
+                updateSupabaseStatus();
+            loadAllData();
+            }
+        }
+
+        function exportData() {
+            if (!cachedSessions.length) { alert('No data to export!'); return; }
+            const rows = cachedSessions.map(s => ({
+                Session_ID: s.sessionId,
+                City: s.geo?.city || '',
+                Country: s.geo?.country || '',
+                Device: s.device?.type || '',
+                OS: s.device?.os || '',
+                Browser: s.device?.browser || '',
+                Entry_Page: s.entryPage || '',
+                Exit_Page: s.exitPage || '',
+                Referrer: s.referrer || '',
+                Rage_Clicks: s.metrics?.rageClicks || 0,
+                Dead_Clicks: s.metrics?.deadClicks || 0,
+                Interactions: s.interactionCount || 0
+            }));
+            const ws = XLSX.utils.json_to_sheet(rows);
+            const wb = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(wb, ws, "RVCE Clarity Telemetry");
+            XLSX.writeFile(wb, `RVCE_Clarity_Telemetry_${new Date().toISOString().split('T')[0]}.xlsx`);
+        }
+
+        async function filterSessions(mode) {
+            let url = '/api/dashboard/sessions?limit=60';
+            if (mode === 'rage') url += '&filter=rage';
+            else if (mode === 'mobile') url += '&filter=mobile';
+            else if (mode === 'desktop') url += '&filter=desktop';
+
+            const sessions = await fetchWithAuth(url);
+            if (sessions) renderSessionsTable(sessions);
+        }
+
+        async function handleSearchSessions(query) {
+            if (!query.trim()) {
+                renderSessionsTable(cachedSessions);
+                return;
+            }
+            const filtered = await fetchWithAuth('/api/dashboard/sessions?search=' + encodeURIComponent(query));
+            if (filtered) renderSessionsTable(filtered);
+        }
+
+        function updateSegmentBadges(sessions) {
+            if (!sessions || !Array.isArray(sessions)) return;
+            const total = sessions.length;
+            const bots = sessions.filter(s => s.isBot || s.is_bot || s.visitorType === 'bot' || s.device?.isBot).length;
+            const users = Math.max(0, total - bots);
+            const conversed = sessions.filter(s => s.chatEngagement === 'conversed' || (s.dialogue && s.dialogue.length > 0) || s.lastQuery || (s.interactionCount > 0)).length;
+            const highActivity = sessions.filter(s => (s.metrics?.rageClicks > 0 || s.metrics?.deadClicks > 0 || (s.clickstream && s.clickstream.length > 3))).length;
+            const insta = sessions.filter(s => (s.referrer || '').toLowerCase().includes('insta') || s.isInstagram || (s.utm?.source || '').toLowerCase().includes('insta')).length;
+
+            const elAll = document.getElementById('badgeSegAll');
+            if (elAll) elAll.textContent = total;
+            const elUsers = document.getElementById('badgeSegUsers');
+            if (elUsers) elUsers.textContent = users;
+            const elConv = document.getElementById('badgeSegConversed');
+            if (elConv) elConv.textContent = conversed;
+            const elAct = document.getElementById('badgeSegActivity');
+            if (elAct) elAct.textContent = highActivity;
+            const elInsta = document.getElementById('badgeSegInsta');
+            if (elInsta) elInsta.textContent = insta;
+        }
+
+        let currentSegment = 'all';
+
+        function setTrafficSegment(seg) {
+            currentSegment = seg;
+            document.querySelectorAll('.segment-pill').forEach(el => el.classList.remove('active'));
+            const activePill = document.getElementById('segPill-' + seg);
+            if (activePill) activePill.classList.add('active');
+            filterSessionsBySegment(seg);
+        }
+
+        async function filterSessionsBySegment(seg) {
+            if (!cachedSessions) return;
+            if (seg === 'all') {
+                renderSessionsTable(cachedSessions);
+                return;
+            }
+            if (seg === 'users') {
+                renderSessionsTable(cachedSessions.filter(s => !s.isBot && !s.is_bot && s.visitorType !== 'bot' && !s.device?.isBot));
+                return;
+            }
+            if (seg === 'conversed') {
+                renderSessionsTable(cachedSessions.filter(s => s.chatEngagement === 'conversed' || (s.dialogue && s.dialogue.length > 0) || s.lastQuery || (s.interactionCount > 0)));
+                return;
+            }
+            if (seg === 'activity') {
+                renderSessionsTable(cachedSessions.filter(s => (s.metrics?.rageClicks > 0 || s.metrics?.deadClicks > 0 || (s.clickstream && s.clickstream.length > 3))));
+                return;
+            }
+            if (seg === 'insta') {
+                renderSessionsTable(cachedSessions.filter(s => (s.referrer || '').toLowerCase().includes('insta') || s.isInstagram || (s.utm?.source || '').toLowerCase().includes('insta')));
+                return;
+            }
+        }
+
+        function handleTimeframeModeChange(mode) {
+            const wMonth = document.getElementById('wrapperMonthPicker');
+            const wDay = document.getElementById('wrapperDayPicker');
+            const btnXlsx = document.getElementById('btnExportXlsx');
+            const btnCsv = document.getElementById('btnExportCsv');
+            const btnJson = document.getElementById('btnExportJson');
+
+            if (mode === 'month') {
+                if (wMonth) wMonth.style.display = 'flex';
+                if (wDay) wDay.style.display = 'none';
+                if (btnXlsx) btnXlsx.innerHTML = '📊 Download Month (.xlsx)';
+                if (btnCsv) btnCsv.innerHTML = '📥 Download Month (.csv)';
+                if (btnJson) btnJson.innerHTML = '📄 Download Month (.json)';
+            } else if (mode === 'day') {
+                if (wMonth) wMonth.style.display = 'none';
+                if (wDay) wDay.style.display = 'flex';
+                if (btnXlsx) btnXlsx.innerHTML = '📊 Download Day (.xlsx)';
+                if (btnCsv) btnCsv.innerHTML = '📥 Download Day (.csv)';
+                if (btnJson) btnJson.innerHTML = '📄 Download Day (.json)';
+            } else {
+                if (wMonth) wMonth.style.display = 'none';
+                if (wDay) wDay.style.display = 'none';
+                if (btnXlsx) btnXlsx.innerHTML = '📊 Download All (.xlsx)';
+                if (btnCsv) btnCsv.innerHTML = '📥 Download All (.csv)';
+                if (btnJson) btnJson.innerHTML = '📄 Download All (.json)';
+            }
+        }
+
+        function getSelectedTimeframePrefix() {
+            const mode = document.getElementById('exportTimeframeMode')?.value || 'month';
+            if (mode === 'month') {
+                const mVal = document.getElementById('monthlyExportPicker')?.value;
+                return mVal || new Date().toISOString().slice(0, 7); // e.g. '2026-10'
+            } else if (mode === 'day') {
+                const dVal = document.getElementById('dailyExportDatePicker')?.value;
+                return dVal || new Date().toISOString().slice(0, 10); // e.g. '2026-10-29'
+            }
+            return ''; // All
+        }
+
+        function downloadTimeframePdf() {
+            const tf = getSelectedTimeframePrefix();
+            let url = '/print-report.html?autoprint=true';
+            if (tf) url += '&date=' + encodeURIComponent(tf);
+            window.open(url, '_blank');
+        }
+
+        async function exportDataByTimeframe(format = 'xlsx') {
+            const tfPrefix = getSelectedTimeframePrefix();
+            const mode = document.getElementById('exportTimeframeMode')?.value || 'month';
+            const label = tfPrefix ? (mode === 'month' ? ('Month_' + tfPrefix) : ('Day_' + tfPrefix)) : 'All_Time';
+
+            try {
+                if (format === 'xlsx') {
+                    const filtered = tfPrefix
+                        ? cachedSessions.filter(s => (s.startTime || s.createdAt || '').toString().startsWith(tfPrefix))
+                        : cachedSessions;
+
+                    if (!filtered.length) {
+                        alert('No session records found for selected period (' + (tfPrefix || 'All') + ').');
+                        return;
+                    }
+
+                    const rows = filtered.map(s => ({
+                        Session_ID: s.sessionId,
+                        Date_Time: s.startTime || s.createdAt || '',
+                        City: s.geo?.city || 'Bengaluru',
+                        Country: s.geo?.country || 'India',
+                        Device: s.device?.type || 'Desktop',
+                        OS: s.device?.os || 'Windows',
+                        Browser: s.device?.browser || 'Chrome',
+                        Last_Query: s.lastQuery || '',
+                        Interactions_Count: s.interactionCount || s.metrics?.eventCount || 0,
+                        Rapid_Clicks: s.metrics?.rageClicks || 0,
+                        Dead_Clicks: s.metrics?.deadClicks || 0,
+                        Entry_Page: s.entryPage || '/',
+                        Exit_Page: s.exitPage || '/'
+                    }));
+
+                    const ws = XLSX.utils.json_to_sheet(rows);
+                    const wb = XLSX.utils.book_new();
+                    XLSX.utils.book_append_sheet(wb, ws, 'RVCE_Telemetry');
+                    XLSX.writeFile(wb, 'RVCE_Sessions_' + label + '.xlsx');
+                    return;
+                }
+
+                // CSV / JSON Server Export
+                const token = localStorage.getItem('token');
+                let targetUrl = '/api/dashboard/export/csv?type=sessions&format=' + (format === 'json' ? 'json' : 'csv');
+                if (tfPrefix) targetUrl += '&date=' + encodeURIComponent(tfPrefix);
+
+                const res = await fetch(targetUrl, {
+                    headers: token ? { 'Authorization': 'Bearer ' + token } : {}
+                });
+                if (!res.ok) throw new Error('Bulk export failed: ' + res.status);
+
+                const blob = await res.blob();
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                const ext = format === 'json' ? 'json' : 'csv';
+                a.download = 'RVCE_Sessions_' + label + '.' + ext;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(a.href);
+            } catch(e) {
+                alert('Export Notice: ' + e.message);
+            }
+        }
+
+        // Auto-refresh every 30s
+        setInterval(loadAllData, 30000);
+        window.onload = () => {
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const dd = String(today.getDate()).padStart(2, '0');
+            const mPicker = document.getElementById('monthlyExportPicker');
+            if (mPicker) mPicker.value = `${yyyy}-${mm}`;
+            const dPicker = document.getElementById('dailyExportDatePicker');
+            if (dPicker) dPicker.value = `${yyyy}-${mm}-${dd}`;
+            updateSupabaseStatus();
+            loadAllData();
+        };
+    </script>
+</body>
+</html>

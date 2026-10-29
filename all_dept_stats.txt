@@ -1,0 +1,2057 @@
+
+--- https://rvce.edu.in/department/cse/placement/ ---
+Highlights:
+Average Salary (LPA) 0
+Average Salary (LPA) 0
+Average Salary (LPA)
+Average Salary (LPA)
+Average Salary (LPA)
+Maximum salary(LPA) 0
+Maximum salary(LPA) 0
+Maximum salary(LPA)
+Maximum salary(LPA)
+Maximum salary(LPA)
+Average Salary (LPA) 0
+Average Salary (LPA) 0
+Average Salary (LPA)
+Average Salary (LPA)
+Average Salary (LPA)
+Maximum salary(LPA) 0
+Maximum salary(LPA) 0
+Maximum salary(LPA)
+Maximum salary(LPA)
+Maximum salary(LPA)
+Average Salary (LPA) 0
+Average Salary (LPA) 0
+Average Salary (LPA)
+Average Salary (LPA)
+Average Salary (LPA)
+Maximum salary(LPA) 0
+Maximum salary(LPA) 0
+Maximum salary(LPA)
+Maximum salary(LPA)
+Maximum salary(LPA)
+Average Salary (LPA) 0
+Average Salary (LPA) 0
+Average Salary (LPA)
+Average Salary (LPA)
+Average Salary (LPA)
+Maximum salary(LPA) 0
+Maximum salary(LPA) 0
+Maximum salary(LPA)
+Maximum salary(LPA)
+Maximum salary(LPA)
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary(LPA) – 16.92
+Average Salary(LPA) – 16.92
+Average Salary(LPA) – 16.92
+Maximum Salary(LPA) – 67
+Maximum Salary(LPA) – 67
+Maximum Salary(LPA) – 67
+Average salary(LPA) – 15.81
+Average salary(LPA) – 15.81
+Average salary(LPA) – 15.81
+Maximum salary(LPA) – 67
+Maximum salary(LPA) – 67
+Maximum salary(LPA) – 67
+Average salary (LPA)- 14.66
+Average salary (LPA)- 14.66
+Average salary (LPA)- 14.66
+Maximum salary(LPA) – 48
+Maximum salary(LPA) – 48
+Maximum salary(LPA) – 48
+Average salary(LPA) – 14.12
+Average salary(LPA) – 14.12
+Average salary(LPA) – 14.12
+Maximum salary(LPA) – 35.37
+Maximum salary(LPA) – 35.37
+Maximum salary(LPA) – 35.37
+Average salary(LPA) – 15.01
+Average salary(LPA) – 15.01
+Average salary(LPA) – 15.01
+Maximum salary(LPA) – 32
+Maximum salary(LPA) – 32
+Maximum salary(LPA) – 32
+Average Salary: 19.21 LPA
+Average Salary: 19.21 LPA
+Average Salary: 19.21 LPA
+Maximum Salary: 24 LPA
+Maximum Salary: 24 LPA
+Maximum Salary: 24 LPA
+Average salary – 15.13 LPA
+Average salary – 15.13 LPA
+Average salary – 15.13 LPA
+Maximum salary – 25 LPA
+Maximum salary – 25 LPA
+Maximum salary – 25 LPA
+Average salary – 13.01 LPA
+Average salary – 13.01 LPA
+Average salary – 13.01 LPA
+Maximum salary – 26 LPA
+Maximum salary – 26 LPA
+Maximum salary – 26 LPA
+Average salary – 11.05 LPA
+Average salary – 11.05 LPA
+Average salary – 11.05 LPA
+Maximum salary – 29.05 LPA
+Maximum salary – 29.05 LPA
+Maximum salary – 29.05 LPA
+Average salary – XXX
+Average salary – XXX
+Average salary – XXX
+Average Salary: 13.02 LPA
+Average Salary: 13.02 LPA
+Average Salary: 13.02 LPA
+Maximum Salary: 24 LPA
+Maximum Salary: 24 LPA
+Maximum Salary: 24 LPA
+Average salary – 5.76 LPA
+Average salary – 5.76 LPA
+Average salary – 5.76 LPA
+Maximum salary – 15 LPA
+Maximum salary – 15 LPA
+Maximum salary – 15 LPA
+Average salary – 7.98 LPA
+Average salary – 7.98 LPA
+Average salary – 7.98 LPA
+Maximum salary – 16.24 LPA
+Maximum salary – 16.24 LPA
+Maximum salary – 16.24 LPA
+Average salary – 8.57 LPA
+Average salary – 8.57 LPA
+Average salary – 8.57 LPA
+Maximum salary – 20 LPA
+Maximum salary – 20 LPA
+Maximum salary – 20 LPA
+Average salary – XXX
+Average salary – XXX
+Average salary – XXX
+Average salary – 19.73 LPA
+Average salary – 19.73 LPA
+Average salary – 19.73 LPA
+Maximum salary – 67 LPA
+Maximum salary – 67 LPA
+Maximum salary – 67 LPA
+Average salary – 15.81 LPA
+Average salary – 15.81 LPA
+Average salary – 15.81 LPA
+Maximum salary – 67 LPA
+Maximum salary – 67 LPA
+Maximum salary – 67 LPA
+Average salary – 14.66 LPA
+Average salary – 14.66 LPA
+Average salary – 14.66 LPA
+Maximum salary – 48 LPA
+Maximum salary – 48 LPA
+Maximum salary – 48 LPA
+Average salary – 14.12 LPA
+Average salary – 14.12 LPA
+Average salary – 14.12 LPA
+Maximum salary – 35.37 LPA
+Maximum salary – 35.37 LPA
+Maximum salary – 35.37 LPA
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – 19.21 LPA
+Average salary – 19.21 LPA
+Average salary – 19.21 LPA
+Maximum salary – 24 LPA
+Maximum salary – 24 LPA
+Maximum salary – 24 LPA
+Average salary – 15.13 LPA
+Average salary – 15.13 LPA
+Average salary – 15.13 LPA
+Maximum salary – 25 LPA
+Maximum salary – 25 LPA
+Maximum salary – 25 LPA
+Average salary – 13.01 LPA
+Average salary – 13.01 LPA
+Average salary – 13.01 LPA
+Maximum salary – 26 LPA
+Maximum salary – 26 LPA
+Maximum salary – 26 LPA
+Average salary – 11.05 LPA
+Average salary – 11.05 LPA
+Average salary – 11.05 LPA
+Maximum salary – 29.05 LPA
+Maximum salary – 29.05 LPA
+Maximum salary – 29.05 LPA
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – 13.02 LPA
+Average salary – 13.02 LPA
+Average salary – 13.02 LPA
+Maximum salary – 24 LPA
+Maximum salary – 24 LPA
+Maximum salary – 24 LPA
+Average salary – 5.76 LPA
+Average salary – 5.76 LPA
+Average salary – 5.76 LPA
+Maximum salary – 15 LPA
+Maximum salary – 15 LPA
+Maximum salary – 15 LPA
+Average salary – 7.98 LPA
+Average salary – 7.98 LPA
+Average salary – 7.98 LPA
+Maximum salary – 16.24 LPA
+Maximum salary – 16.24 LPA
+Maximum salary – 16.24 LPA
+Average salary – 8.57 LPA
+Average salary – 8.57 LPA
+Average salary – 8.57 LPA
+Maximum salary – 20 LPA
+Maximum salary – 20 LPA
+Maximum salary – 20 LPA
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average19
+Average19
+Average19
+Average19
+Average19
+Average20
+Average20
+Average20
+Average20
+Average20
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average19
+Average19
+Average19
+Average19
+Average19
+Average20
+Average20
+Average20
+Average20
+Average20
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+
+Tables:
+
+--- https://rvce.edu.in/department/ae/placement/ ---
+Highlights:
+Average Salary TBD Later
+Average Salary TBD Later
+Average Salary
+Average Salary
+Average Salary
+Average salary (LPA) -8.12
+Average salary (LPA) -8.12
+Average salary (LPA) -8.12
+Average salary (LPA)
+Maximum salary (LPA)- 11.00
+Maximum salary (LPA)- 11.00
+Maximum salary (LPA)- 11.00
+Average salary (LAP)-7.02
+Average salary (LAP)-7.02
+Average salary (LAP)-7.02
+Average salary
+Average salary – 6.83
+Average salary – 6.83
+Average salary – 6.83
+Average salary
+Average salary – 7.60
+Average salary – 7.60
+Average salary – 7.60
+Average salary
+Average salary – 7.83
+Average salary – 7.83
+Average salary – 7.83
+Average salary
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+Average7.70
+Average7.70
+Average7.70
+Average7.70
+Average7.70
+Average7.63
+Average7.63
+Average7.63
+Average7.63
+Average7.63
+Average7.59
+Average7.59
+Average7.59
+Average7.59
+Average7.59
+Average6.12
+Average6.12
+Average6.12
+Average6.12
+Average6.12
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+Average7.70
+Average7.70
+Average7.70
+Average7.70
+Average7.70
+Average7.63
+Average7.63
+Average7.63
+Average7.63
+Average7.63
+Average12.90
+Average12.90
+Average12.90
+Average12.90
+Average12.90
+Average6.12
+Average6.12
+Average6.12
+Average6.12
+Average6.12
+
+Tables:
+
+--- https://rvce.edu.in/department/ai_ml/placement/ ---
+Highlights:
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum Salary 0 LPA
+Maximum Salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average salary(LPA) – 14.50
+Average salary(LPA) – 14.50
+Average salary(LPA) – 14.50
+Average salary(LPA)
+Maximum salary(LPA) – 53
+Maximum salary(LPA) – 53
+Maximum salary(LPA) – 53
+Maximum salary(LPA)
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+
+Tables:
+
+--- https://rvce.edu.in/department/biotechnology/placement/ ---
+Highlights:
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average salary – (LPA) – 5.5
+Average salary – (LPA) – 5.5
+Average salary – (LPA) – 5.5
+Average salary – (LPA)
+Maximum salary (LPA) – 6
+Maximum salary (LPA) – 6
+Maximum salary (LPA) – 6
+Maximum salary (LPA)
+Average salary (LPA) – 4.75
+Average salary (LPA) – 4.75
+Average salary (LPA) – 4.75
+Average salary (LPA)
+Maximum salary (LPA) – 14.81
+Maximum salary (LPA) – 14.81
+Maximum salary (LPA) – 14.81
+Maximum salary (LPA)
+Average salary (LPA)– 5.49
+Average salary (LPA)– 5.49
+Average salary (LPA)– 5.49
+Average salary (LPA)
+Maximum salary (LPA) – 12
+Maximum salary (LPA) – 12
+Maximum salary (LPA) – 12
+Maximum salary (LPA)
+Average salary (LPA) – 5.42
+Average salary (LPA) – 5.42
+Average salary (LPA) – 5.42
+Average salary (LPA)
+Maximum salary (LPA) – 11.6
+Maximum salary (LPA) – 11.6
+Maximum salary (LPA) – 11.6
+Maximum salary (LPA)
+Maximum salary (LPA) – 16
+Maximum salary (LPA) – 16
+Maximum salary (LPA) – 16
+Maximum salary (LPA)
+Average salary (LPA)– 5.42
+Average salary (LPA)– 5.42
+Average salary (LPA)– 5.42
+Average salary (LPA)
+Average salary (LPA) – 4.30
+Average salary (LPA) – 4.30
+Average salary (LPA) – 4.30
+Maximum Salary (LPA) -5.5
+Maximum Salary (LPA) -5.5
+Maximum Salary (LPA) -5.5
+Average salary (LPA)- 3.8
+Average salary (LPA)- 3.8
+Average salary (LPA)- 3.8
+Maximum Salary (LPA) – 6.21
+Maximum Salary (LPA) – 6.21
+Maximum Salary (LPA) – 6.21
+Average salary (LPA)– 3
+Average salary (LPA)– 3
+Average salary (LPA)– 3
+Average salary (LPA)
+Maximum Salary (LPA) – 3.8
+Maximum Salary (LPA) – 3.8
+Maximum Salary (LPA) – 3.8
+Average salary (LPA) – 3.35
+Average salary (LPA) – 3.35
+Average salary (LPA) – 3.35
+Average salary (LPA)
+Maximum Salary (LPA) – 5.8
+Maximum Salary (LPA) – 5.8
+Maximum Salary (LPA) – 5.8
+Average salary (LPA) – 3.5
+Average salary (LPA) – 3.5
+Average salary (LPA) – 3.5
+Average salary (LPA)
+Maximum Salary (LPA) – 4.2
+Maximum Salary (LPA) – 4.2
+Maximum Salary (LPA) – 4.2
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+
+Tables:
+
+--- https://rvce.edu.in/department/chemical_engineering/placement/ ---
+Highlights:
+Average Salary 0
+Average Salary 0
+Average Salary
+Average Salary
+Average Salary
+Average salary(LPA) – 6.69
+Average salary(LPA) – 6.69
+Average salary(LPA) – 6.69
+Average salary(LPA)
+Maximum salary(LPA) – 14.63
+Maximum salary(LPA) – 14.63
+Maximum salary(LPA) – 14.63
+Maximum salary(LPA)
+Average salary(LPA) – 6.78
+Average salary(LPA) – 6.78
+Average salary(LPA) – 6.78
+Average salary(LPA)
+Maximum salary(LPA) -15.7
+Maximum salary(LPA) -15.7
+Maximum salary(LPA) -15.7
+Maximum salary(LPA)
+Average salary(LPA) – 7.7
+Average salary(LPA) – 7.7
+Average salary(LPA) – 7.7
+Average salary(LPA)
+Maximum salary(LPA) -13.95
+Maximum salary(LPA) -13.95
+Maximum salary(LPA) -13.95
+Maximum salary(LPA)
+Average salary(LPA) – 7.14
+Average salary(LPA) – 7.14
+Average salary(LPA) – 7.14
+Average salary(LPA)
+Maximum salary(LPA) – 12.9
+Maximum salary(LPA) – 12.9
+Maximum salary(LPA) – 12.9
+Maximum salary(LPA)
+Average10.44
+Average10.44
+Average10.44
+Average10.44
+Average10.44
+Average7.3
+Average7.3
+Average7.3
+Average7.3
+Average7.3
+Average7.7
+Average7.7
+Average7.7
+Average7.7
+Average7.7
+Average7.5
+Average7.5
+Average7.5
+Average7.5
+Average7.5
+Average5.3
+Average5.3
+Average5.3
+Average5.3
+Average5.3
+Average10.44
+Average10.44
+Average10.44
+Average10.44
+Average10.44
+Average7.3
+Average7.3
+Average7.3
+Average7.3
+Average7.3
+Average7.7
+Average7.7
+Average7.7
+Average7.7
+Average7.7
+Average7.5
+Average7.5
+Average7.5
+Average7.5
+Average7.5
+Average5.3
+Average5.3
+Average5.3
+Average5.3
+Average5.3
+
+Tables:
+
+--- https://rvce.edu.in/department/civil_engineering/placement/ ---
+Highlights:
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary(LPA) – 5.52
+Average Salary(LPA) – 5.52
+Average Salary(LPA) – 5.52
+Maximum Salary(LPA) – 33
+Maximum Salary(LPA) – 33
+Maximum Salary(LPA) – 33
+Average salary – 5.11 LPA
+Average salary – 5.11 LPA
+Average salary – 5.11 LPA
+Maximum salary – 10 LPA
+Maximum salary – 10 LPA
+Maximum salary – 10 LPA
+Average salary – 6.72 LPA
+Average salary – 6.72 LPA
+Average salary – 6.72 LPA
+Maximum salary – 13.95 LPA
+Maximum salary – 13.95 LPA
+Maximum salary – 13.95 LPA
+Average salary – 6.39 LPA
+Average salary – 6.39 LPA
+Average salary – 6.39 LPA
+Maximum salary – 12.09 LPA
+Maximum salary – 12.09 LPA
+Maximum salary – 12.09 LPA
+Average salary – XXX
+Average salary – XXX
+Average salary – XXX
+Average Salary: XX
+Average Salary: XX
+Average Salary: XX
+Average salary – 3.06 LPA
+Average salary – 3.06 LPA
+Average salary – 3.06 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Average salary – 4.96 LPA
+Average salary – 4.96 LPA
+Average salary – 4.96 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Average salary – 4.22 LPA
+Average salary – 4.22 LPA
+Average salary – 4.22 LPA
+Maximum salary – 5 LPA
+Maximum salary – 5 LPA
+Maximum salary – 5 LPA
+Average salary – XXX
+Average salary – XXX
+Average salary – XXX
+Average Salary: XX
+Average Salary: XX
+Average Salary: XX
+Average salary – 4.05 LPA
+Average salary – 4.05 LPA
+Average salary – 4.05 LPA
+Maximum salary – 7 LPA
+Maximum salary – 7 LPA
+Maximum salary – 7 LPA
+Average salary – 5.22 LPA
+Average salary – 5.22 LPA
+Average salary – 5.22 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Average salary – 4.74 LPA
+Average salary – 4.74 LPA
+Average salary – 4.74 LPA
+Maximum salary – 5.03 LPA
+Maximum salary – 5.03 LPA
+Maximum salary – 5.03 LPA
+Average salary – XXX
+Average salary – XXX
+Average salary – XXX
+Average salary – 7.03 LPA
+Average salary – 7.03 LPA
+Average salary – 7.03 LPA
+Maximum salary – 18.33 LPA
+Maximum salary – 18.33 LPA
+Maximum salary – 18.33 LPA
+Average salary – 5.11 LPA
+Average salary – 5.11 LPA
+Average salary – 5.11 LPA
+Maximum salary – 10 LPA
+Maximum salary – 10 LPA
+Maximum salary – 10 LPA
+Average salary – 6.72 LPA
+Average salary – 6.72 LPA
+Average salary – 6.72 LPA
+Maximum salary – 13.95 LPA
+Maximum salary – 13.95 LPA
+Maximum salary – 13.95 LPA
+Average salary – 6.72 LPA
+Average salary – 6.72 LPA
+Average salary – 6.72 LPA
+Maximum salary – 12.9 LPA
+Maximum salary – 12.9 LPA
+Maximum salary – 12.9 LPA
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – 3.06 LPA
+Average salary – 3.06 LPA
+Average salary – 3.06 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Average salary – 4.96 LPA
+Average salary – 4.96 LPA
+Average salary – 4.96 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Average salary – 4.22 LPA
+Average salary – 4.22 LPA
+Average salary – 4.22 LPA
+Maximum salary – 5 LPA
+Maximum salary – 5 LPA
+Maximum salary – 5 LPA
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – 4.05 LPA
+Average salary – 4.05 LPA
+Average salary – 4.05 LPA
+Maximum salary – 7 LPA
+Maximum salary – 7 LPA
+Maximum salary – 7 LPA
+Average salary – 5.22 LPA
+Average salary – 5.22 LPA
+Average salary – 5.22 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Maximum salary – 6 LPA
+Average salary – 4.74 LPA
+Average salary – 4.74 LPA
+Average salary – 4.74 LPA
+Maximum salary – 5.03 LPA
+Maximum salary – 5.03 LPA
+Maximum salary – 5.03 LPA
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average6.23
+Average6.23
+Average6.23
+Average6.23
+Average6.23
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average6.23
+Average6.23
+Average6.23
+Average6.23
+Average6.23
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+Average4.78
+
+Tables:
+
+--- https://rvce.edu.in/department/eee/placement/ ---
+Highlights:
+Average Salary
+Average Salary
+Average Salary
+Average Salary
+Average Salary
+Average Salary 0
+Average Salary 0
+Average Salary
+Average Salary
+Average Salary
+Average salary(LPA) – 10.26
+Average salary(LPA) – 10.26
+Average salary(LPA) – 10.26
+Average salary(LPA)
+Maximum salary(LPA) – 25.72
+Maximum salary(LPA) – 25.72
+Maximum salary(LPA) – 25.72
+Maximum salary(LPA)
+Average salary – 8.83
+Average salary – 8.83
+Average salary – 8.83
+Average salary
+Average salary – 10.24
+Average salary – 10.24
+Average salary – 10.24
+Average salary
+Average salary – 10.49
+Average salary – 10.49
+Average salary – 10.49
+Average salary
+Average salary – 6.83
+Average salary – 6.83
+Average salary – 6.83
+Average salary
+Average salary – 6.68
+Average salary – 6.68
+Average salary – 6.68
+Average salary
+Average salary – 6.17
+Average salary – 6.17
+Average salary – 6.17
+Average salary
+Average salary – 6.55
+Average salary – 6.55
+Average salary – 6.55
+Average salary
+Average7.2
+Average7.2
+Average7.2
+Average7.2
+Average7.2
+Average5.56
+Average5.56
+Average5.56
+Average5.56
+Average5.56
+Average16
+Average16
+Average16
+Average16
+Average16
+Average6.80
+Average6.80
+Average6.80
+Average6.80
+Average6.80
+Average10
+Average10
+Average10
+Average10
+Average10
+Average7.2
+Average7.2
+Average7.2
+Average7.2
+Average7.2
+Average5.56
+Average5.56
+Average5.56
+Average5.56
+Average5.56
+Average16
+Average16
+Average16
+Average16
+Average16
+Average6.80
+Average6.80
+Average6.80
+Average6.80
+Average6.80
+Average10
+Average10
+Average10
+Average10
+Average10
+
+Tables:
+
+--- https://rvce.edu.in/department/ece/placement/ ---
+Highlights:
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA *Placement ongoing.
+Maximum salary 0 LPA *Placement ongoing.
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary(LPA)– 13.40
+Average Salary(LPA)– 13.40
+Average Salary(LPA)– 13.40
+Average Salary(LPA)
+Maximum salary(LPA)– 44.72
+Maximum salary(LPA)– 44.72
+Maximum salary(LPA)– 44.72
+Maximum salary(LPA)
+Average Salary– 11.27
+Average Salary– 11.27
+Average Salary– 11.27
+Average Salary
+Average Salary– 12.12
+Average Salary– 12.12
+Average Salary– 12.12
+Average Salary
+Average Salary– 84
+Average Salary– 84
+Average Salary– 84
+Average Salary
+Average Salary– 19.41
+Average Salary– 19.41
+Average Salary– 19.41
+Average Salary
+Average Salary– 16.18
+Average Salary– 16.18
+Average Salary– 16.18
+Average Salary
+Average Salary– 11.97
+Average Salary– 11.97
+Average Salary– 11.97
+Average Salary
+Average Salary– 12.75
+Average Salary– 12.75
+Average Salary– 12.75
+Average Salary
+Average Salary– 10.33
+Average Salary– 10.33
+Average Salary– 10.33
+Average Salary
+Average Salary– 8.46
+Average Salary– 8.46
+Average Salary– 8.46
+Average Salary
+Average Salary– 7.06
+Average Salary– 7.06
+Average Salary– 7.06
+Average Salary
+Average Salary– 8.05
+Average Salary– 8.05
+Average Salary– 8.05
+Average Salary
+Average salary- 16.47
+Average salary- 16.47
+Average salary- 16.47
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average19
+Average19
+Average19
+Average19
+Average19
+Average20
+Average20
+Average20
+Average20
+Average20
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average19
+Average19
+Average19
+Average19
+Average19
+Average20
+Average20
+Average20
+Average20
+Average20
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+
+Tables:
+
+--- https://rvce.edu.in/department/eim/placement/ ---
+Highlights:
+Average Salary 0
+Average Salary 0
+Average Salary
+Average Salary
+Average Salary
+Average salary(LPA) – 9.28
+Average salary(LPA) – 9.28
+Average salary(LPA) – 9.28
+Average salary(LPA)
+Maximum salary(LPA) – 39
+Maximum salary(LPA) – 39
+Maximum salary(LPA) – 39
+Maximum salary(LPA)
+Average salary – 9.29
+Average salary – 9.29
+Average salary – 9.29
+Average salary
+Average salary – 9.59
+Average salary – 9.59
+Average salary – 9.59
+Average salary
+Average salary – 11.11
+Average salary – 11.11
+Average salary – 11.11
+Average salary
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+
+Tables:
+
+--- https://rvce.edu.in/department/iem/placement/ ---
+Highlights:
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA *Placement Ongoing
+Maximum salary 0 LPA *Placement Ongoing
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary(LPA)-7.68
+Average Salary(LPA)-7.68
+Average Salary(LPA)-7.68
+Average Salary(LPA)-7.68
+Maximum salary(LPA)– 21.45
+Maximum salary(LPA)– 21.45
+Maximum salary(LPA)– 21.45
+Maximum salary(LPA)
+Average Salary– 9.06
+Average Salary– 9.06
+Average Salary– 9.06
+Average Salary
+Average Salary– 8.39
+Average Salary– 8.39
+Average Salary– 8.39
+Average Salary
+Average Salary– 9.03
+Average Salary– 9.03
+Average Salary– 9.03
+Average Salary
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average19
+Average19
+Average19
+Average19
+Average19
+Average20
+Average20
+Average20
+Average20
+Average20
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average19
+Average19
+Average19
+Average19
+Average19
+Average20
+Average20
+Average20
+Average20
+Average20
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+
+Tables:
+
+--- https://rvce.edu.in/department/ise/placement/ ---
+Highlights:
+Average Salary 0
+Average Salary 0
+Average Salary
+Average Salary
+Average Salary
+Average Salary
+Average Salary 0
+Average Salary 0
+Average Salary
+Average Salary
+Average Salary
+Average Salary
+Average Salary 0
+Average Salary 0
+Average Salary
+Average Salary
+Average Salary
+Average Salary
+Average salary(LPA) – 15.41
+Average salary(LPA) – 15.41
+Average salary(LPA) – 15.41
+Average salary(LPA)
+Maximum salary(LPA) – 67
+Maximum salary(LPA) – 67
+Maximum salary(LPA) – 67
+Maximum salary(LPA)
+Average salary – 16.37
+Average salary – 16.37
+Average salary – 16.37
+Average salary
+Average salary – 14.12
+Average salary – 14.12
+Average salary – 14.12
+Average salary
+Average salary – 14.12
+Average salary – 14.12
+Average salary – 14.12
+Average salary
+Average salary – 15.18
+Average salary – 15.18
+Average salary – 15.18
+Average salary
+Average salary – 7.95
+Average salary – 7.95
+Average salary – 7.95
+Average salary
+Average salary – 10.00
+Average salary – 10.00
+Average salary – 10.00
+Average salary
+Average salary – 9.1
+Average salary – 9.1
+Average salary – 9.1
+Average salary
+Average salary – 14.7
+Average salary – 14.7
+Average salary – 14.7
+Average salary
+Average salary – 5.65
+Average salary – 5.65
+Average salary – 5.65
+Average salary
+Average salary – 11
+Average salary – 11
+Average salary – 11
+Average salary
+Average salary – 10.95
+Average salary – 10.95
+Average salary – 10.95
+Average salary
+Maximum38 LPA
+Maximum38 LPA
+Maximum38 LPA
+Maximum38 LPA
+Maximum38 LPA
+Average17.5 LPA
+Average17.5 LPA
+Average17.5 LPA
+Average17.5 LPA
+Average17.5 LPA
+Maximum 92 LPA
+Maximum 92 LPA
+Maximum 92 LPA
+Maximum 92 LPA
+Maximum 92 LPA
+Average18.48 LPA
+Average18.48 LPA
+Average18.48 LPA
+Average18.48 LPA
+Average18.48 LPA
+Maximum 62 LPA
+Maximum 62 LPA
+Maximum 62 LPA
+Maximum 62 LPA
+Maximum 62 LPA
+Average18.06 LPA
+Average18.06 LPA
+Average18.06 LPA
+Average18.06 LPA
+Average18.06 LPA
+Maximum 39 LPA
+Maximum 39 LPA
+Maximum 39 LPA
+Maximum 39 LPA
+Maximum 39 LPA
+Average16.5 LPA
+Average16.5 LPA
+Average16.5 LPA
+Average16.5 LPA
+Average16.5 LPA
+Maximum 40 LPA
+Maximum 40 LPA
+Maximum 40 LPA
+Maximum 40 LPA
+Maximum 40 LPA
+Average14.3 LPA
+Average14.3 LPA
+Average14.3 LPA
+Average14.3 LPA
+Average14.3 LPA
+Maximum38 LPA
+Maximum38 LPA
+Maximum38 LPA
+Maximum38 LPA
+Maximum38 LPA
+Average17.5 LPA
+Average17.5 LPA
+Average17.5 LPA
+Average17.5 LPA
+Average17.5 LPA
+Maximum 92 LPA
+Maximum 92 LPA
+Maximum 92 LPA
+Maximum 92 LPA
+Maximum 92 LPA
+Average18.48 LPA
+Average18.48 LPA
+Average18.48 LPA
+Average18.48 LPA
+Average18.48 LPA
+Maximum 62 LPA
+Maximum 62 LPA
+Maximum 62 LPA
+Maximum 62 LPA
+Maximum 62 LPA
+Average18.06 LPA
+Average18.06 LPA
+Average18.06 LPA
+Average18.06 LPA
+Average18.06 LPA
+Maximum 39 LPA
+Maximum 39 LPA
+Maximum 39 LPA
+Maximum 39 LPA
+Maximum 39 LPA
+Average16.50 LPA
+Average16.50 LPA
+Average16.50 LPA
+Average16.50 LPA
+Average16.50 LPA
+Maximum 40 LPA
+Maximum 40 LPA
+Maximum 40 LPA
+Maximum 40 LPA
+Maximum 40 LPA
+Average14.3 LPA
+Average14.3 LPA
+Average14.3 LPA
+Average14.3 LPA
+Average14.3 LPA
+
+Tables:
+
+--- https://rvce.edu.in/department/mca/placement/ ---
+Highlights:
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum Salary 0 LPA
+Maximum Salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary (LPA) – 4.4
+Average Salary (LPA) – 4.4
+Average Salary (LPA) – 4.4
+Average Salary
+Maximum Salary (LPA) – 11.59
+Maximum Salary (LPA) – 11.59
+Maximum Salary (LPA) – 11.59
+Maximum Salary (LPA)
+Average salary – 9
+Average salary – 9
+Average salary – 9
+Average salary
+Average salary – 8.29
+Average salary – 8.29
+Average salary – 8.29
+Average salary
+Average salary – 10
+Average salary – 10
+Average salary – 10
+Average salary
+Average salary – 7.5
+Average salary – 7.5
+Average salary – 7.5
+Average salary
+Average4
+Average4
+Average4
+Average4
+Average4
+Average 9
+Average 9
+Average 9
+Average 9
+Average 8.9
+Average 8.9
+Average 8.9
+Average 8.9
+Average10
+Average10
+Average10
+Average10
+Average 7.5
+Average 7.5
+Average 7.5
+Average 7.5
+Average4
+Average4
+Average4
+Average4
+Average4
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+AverageX
+
+Tables:
+
+--- https://rvce.edu.in/department/me/placement/ ---
+Highlights:
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum salary 0 LPA
+Maximum salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average salary(LPA) – 7.52
+Average salary(LPA) – 7.52
+Average salary(LPA) – 7.52
+Maximum salary(LPA) – 18.33
+Maximum salary(LPA) – 18.33
+Maximum salary(LPA) – 18.33
+Average salary – 7.51 LPA
+Average salary – 7.51 LPA
+Average salary – 7.51 LPA
+Average salary – 7.51 LPA
+Maximum salary – 15.7 LPA
+Maximum salary – 15.7 LPA
+Maximum salary – 15.7 LPA
+Average salary – 8.4 LPA
+Average salary – 8.4 LPA
+Average salary – 8.4 LPA
+Average salary – 8.4 LPA
+Maximum salary – 23.17 LPA
+Maximum salary – 23.17 LPA
+Maximum salary – 23.17 LPA
+Average salary – 7.87 LPA
+Average salary – 7.87 LPA
+Average salary – 7.87 LPA
+Maximum salary – 12.9 LPA
+Maximum salary – 12.9 LPA
+Maximum salary – 12.9 LPA
+Average salary – 7.09 LPA
+Average salary – 7.09 LPA
+Average salary – 7.09 LPA
+Maximum salary – 14 LPA
+Maximum salary – 14 LPA
+Maximum salary – 14 LPA
+Average salary – 6.82 LPA
+Average salary – 6.82 LPA
+Average salary – 6.82 LPA
+Average salary – 6.82 LPA
+Maximum salary – 10 LPA
+Maximum salary – 10 LPA
+Maximum salary – 10 LPA
+Average salary – 6.45 LPA
+Average salary – 6.45 LPA
+Average salary – 6.45 LPA
+Maximum salary – 12 LPA
+Maximum salary – 12 LPA
+Maximum salary – 12 LPA
+Average salary – 6.02 LPA
+Average salary – 6.02 LPA
+Average salary – 6.02 LPA
+Maximum salary – 8 LPA
+Maximum salary – 8 LPA
+Maximum salary – 8 LPA
+Average salary – 6.44 LPA
+Average salary – 6.44 LPA
+Average salary – 6.44 LPA
+Average salary – 6.44 LPA
+Maximum salary – 20 LPA
+Maximum salary – 20 LPA
+Maximum salary – 20 LPA
+Average salary – 5.83 LPA
+Average salary – 5.83 LPA
+Average salary – 5.83 LPA
+Maximum salary – 12 LPA
+Maximum salary – 12 LPA
+Maximum salary – 12 LPA
+Average salary – 9.22 LPA
+Average salary – 9.22 LPA
+Average salary – 9.22 LPA
+Maximum salary – 18.33 LPA
+Maximum salary – 18.33 LPA
+Maximum salary – 18.33 LPA
+Average salary – 7.51 LPA
+Average salary – 7.51 LPA
+Average salary – 7.51 LPA
+Maximum salary – 15.7 LPA
+Maximum salary – 15.7 LPA
+Maximum salary – 15.7 LPA
+Average salary – 8.04 LPA
+Average salary – 8.04 LPA
+Average salary – 8.04 LPA
+Maximum salary – 23.17 LPA
+Maximum salary – 23.17 LPA
+Maximum salary – 23.17 LPA
+Average salary – 7.87 LPA
+Average salary – 7.87 LPA
+Average salary – 7.87 LPA
+Maximum salary – 12.09 LPA
+Maximum salary – 12.09 LPA
+Maximum salary – 12.09 LPA
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – 7.09 LPA
+Average salary – 7.09 LPA
+Average salary – 7.09 LPA
+Maximum salary – 14 LPA
+Maximum salary – 14 LPA
+Maximum salary – 14 LPA
+Average salary -XX
+Average salary -XX
+Average salary -XX
+Average salary – 6.82 LPA
+Average salary – 6.82 LPA
+Average salary – 6.82 LPA
+Maximum salary – 10 LPA
+Maximum salary – 10 LPA
+Maximum salary – 10 LPA
+Average salary – 6.45 LPA
+Average salary – 6.45 LPA
+Average salary – 6.45 LPA
+Maximum salary – 12 LPA
+Maximum salary – 12 LPA
+Maximum salary – 12 LPA
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average salary – 6.02 LPA
+Average salary – 6.02 LPA
+Average salary – 6.02 LPA
+Maximum salary – 8 LPA
+Maximum salary – 8 LPA
+Maximum salary – 8 LPA
+Average salary -XX
+Average salary -XX
+Average salary -XX
+Average salary – 6.44 LPA
+Average salary – 6.44 LPA
+Average salary – 6.44 LPA
+Maximum salary – 20 LPA
+Maximum salary – 20 LPA
+Maximum salary – 20 LPA
+Average salary – 5.83 LPA
+Average salary – 5.83 LPA
+Average salary – 5.83 LPA
+Maximum salary – 12 LPA
+Maximum salary – 12 LPA
+Maximum salary – 12 LPA
+Average salary – XX
+Average salary – XX
+Average salary – XX
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average19
+Average19
+Average19
+Average19
+Average19
+Average20
+Average20
+Average20
+Average20
+Average20
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average17.2
+Average19
+Average19
+Average19
+Average19
+Average19
+Average20
+Average20
+Average20
+Average20
+Average20
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average15.3
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+Average13.07
+
+Tables:
+
+--- https://rvce.edu.in/department/etc/placement/ ---
+Highlights:
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum Salary 0 LPA
+Maximum Salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average Salary 0 LPA
+Average Salary 0 LPA
+Average Salary
+Average Salary
+Average Salary
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Maximum Salary 0 LPA
+Maximum Salary 0 LPA
+0 LPA
+0 LPA
+0 LPA
+0 LPA
+Average salary(LPA) – 9.67
+Average salary(LPA) – 9.67
+Average salary(LPA) – 9.67
+Maximum salary(LPA) – 39
+Maximum salary(LPA) – 39
+Maximum salary(LPA) – 39
+Average salary – 15 LPA
+Average salary – 15 LPA
+Average salary – 15 LPA
+Average salary
+Maximum salary – 15 LPA
+Maximum salary – 15 LPA
+Maximum salary – 15 LPA
+Average salary – 7.5 LPA
+Average salary – 7.5 LPA
+Average salary – 7.5 LPA
+Average salary
+Maximum salary – 10 LPA
+Maximum salary – 10 LPA
+Maximum salary – 10 LPA
+Average salary – 7.09 LPA
+Average salary – 7.09 LPA
+Average salary – 7.09 LPA
+Average salary
+Maximum salary – 18.6 LPA
+Maximum salary – 18.6 LPA
+Maximum salary – 18.6 LPA
+Average salary – 8.22 LPA
+Average salary – 8.22 LPA
+Average salary – 8.22 LPA
+Average salary
+Maximum salary – 21.5 LPA
+Maximum salary – 21.5 LPA
+Maximum salary – 21.5 LPA
+Average11.128
+Average11.128
+Average11.128
+Average11.128
+Average11.128
+Average10.8
+Average10.8
+Average10.8
+Average10.8
+Average10.8
+Average10.35
+Average10.35
+Average10.35
+Average10.35
+Average10.35
+Average9.5
+Average9.5
+Average9.5
+Average9.5
+Average9.5
+Average6.37
+Average6.37
+Average6.37
+Average6.37
+Average6.37
+Average 11.128
+Average 11.128
+Average 11.128
+Average 11.128
+Average10.8
+Average10.8
+Average10.8
+Average10.8
+Average10.8
+Average10.35
+Average10.35
+Average10.35
+Average10.35
+Average10.35
+Average9.5
+Average9.5
+Average9.5
+Average9.5
+Average9.5
+Average6.37
+Average6.37
+Average6.37
+Average6.37
+Average6.37
+
+Tables:

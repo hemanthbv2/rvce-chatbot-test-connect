@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Report — RVCE Smart Assistant v3.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #E31E24;
+            --secondary: #004B8D;
+            --text: #1e293b;
+            --bg: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: #f1f5f9;
+            padding: 40px;
+        }
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 80px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            min-height: 29.7cm; /* A4 height */
+        }
+        
+        .header { text-align: center; margin-bottom: 60px; border-bottom: 2px solid var(--primary); padding-bottom: 20px; }
+        .header h1 { font-size: 36px; color: var(--primary); font-weight: 800; margin-bottom: 10px; }
+        .header p { font-size: 18px; color: var(--secondary); font-weight: 600; }
+
+        .section { margin-bottom: 40px; }
+        .section h2 { font-size: 24px; color: var(--secondary); margin-bottom: 15px; border-left: 5px solid var(--primary); padding-left: 15px; }
+        .section p { margin-bottom: 15px; text-align: justify; }
+        
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .feature-item { padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px; background: #f8fafc; }
+        .feature-item h3 { color: var(--primary); font-size: 16px; margin-bottom: 10px; }
+        
+        .mockup { width: 100%; border-radius: 12px; margin: 30px 0; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        
+        .footer { text-align: center; margin-top: 60px; font-size: 12px; color: #94a3b8; }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .page { box-shadow: none; margin: 0; width: 100%; padding: 40px; }
+            .refresh-btn { display: none; }
+        }
+        
+        .refresh-btn {
+            position: fixed; top: 20px; right: 20px;
+            background: var(--primary); color: white; border: none; padding: 12px 24px;
+            border-radius: 8px; cursor: pointer; font-weight: 700; box-shadow: 0 4px 12px rgba(227,30,36,0.3);
+        }
+    </style>
+</head>
+<body>
+    <button class="refresh-btn" onclick="window.print()">🖨️ Print to PDF</button>
+
+    <div class="page">
+        <div class="header">
+            <p>Project Documentation</p>
+            <h1>RVCE Smart Assistant v3.0</h1>
+            <p>An Intelligent Campus Engagement & Information System</p>
+        </div>
+
+        <div class="section">
+            <h2>1. Executive Summary</h2>
+            <p>
+                The RVCE Smart Assistant is a production-grade conversational AI designed to streamline communication within the RV College of Engineering ecosystem. Built with a focus on speed, accuracy, and premium user experience, the system serves as a 24/7 digital concierge for students, faculty, and administrative staff.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>2. Core Intelligence Framework</h2>
+            <p>
+                The system utilizes a proprietary <strong>Priority-Based Intent Classification</strong> engine. Unlike standard rule-based bots, this engine evaluates queries through three layers of matching:
+            </p>
+            <ul>
+                <li><strong>Layer 1 (Exact Match):</strong> Instant resolution for high-frequency commands.</li>
+                <li><strong>Layer 2 (Branch-Specific Placements):</strong> A dynamic system that maps placement data to over 30 individual UG/PG departments.</li>
+                <li><strong>Layer 3 (Direct Faculty Hook):</strong> A rapid lookup engine for over 300+ faculty profiles and biodatas.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Adaptive UI/UX</h3>
+                    <p>Features a "Tone Switch" allowing users to toggle between funny and professional conversational styles.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Voice Search</h3>
+                    <p>Integrated Web Speech API for hands-free voice-to-text queries.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Content Moderation</h3>
+                    <p>Advanced safety filters to prevent abusive language or inappropriate content.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Dynamic Suggestions</h3>
+                    <p>Context-aware buttons that predict the next logical question in a user journey.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Analytics Dashboard</h2>
+            <p>
+                The system includes a dedicated Analytics Dashboard (integrated via WordPress and available as a standalone module). It tracks key performance indicators (KPIs) such as interaction volume, success rates, and <strong>Missed Queries</strong>.
+            </p>
+            <img class="mockup" src="file:///C:/Users/HP/.gemini/antigravity/brain/c17c8907-eb6f-4298-a7a5-5a840d296399/chatbot_analytics_dashboard_1777958608439.png" alt="Dashboard Mockup">
+        </div>
+
+        <div class="section">
+            <h2>5. Technical Specifications</h2>
+            <p><strong>Frontend:</strong> Vanilla JavaScript (ES6+), CSS3 (Flexbox/Grid), HTML5.</p>
+            <p><strong>Deployment:</strong> Optimized for Vercel and GitHub Pages with automated CI/CD pipelines.</p>
+            <p><strong>Security:</strong> All interaction data is handled via local browser storage or encrypted WordPress AJAX endpoints.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Conclusion</h2>
+            <p>
+                The RVCE Smart Assistant represents a significant leap forward in campus digitization. By providing instant access to complex departmental data and a robust management dashboard, it reduces administrative load and enhances the student experience.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 RVCE Smart Assistant Project | Generated for Hemanth BV</p>
+        </div>
+    </div>
+</body>
+</html>

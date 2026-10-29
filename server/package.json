@@ -1,0 +1,16 @@
+{
+  "name": "rvce-chatbot-server",
+  "version": "1.0.0",
+  "description": "Backend API for RVCE Chatbot — stores chat logs in MongoDB for global tracking",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.5.0"
+  }
+}
