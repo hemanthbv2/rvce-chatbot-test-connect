@@ -49,10 +49,37 @@ add_action('admin_menu', 'rvce_chatbot_add_admin_menu');
  * Render the Analytics Dashboard via Secure iframe
  */
 function rvce_chatbot_analytics_dashboard_page() {
-    $dashboard_url = admin_url('admin-post.php?action=rvce_chatbot_dashboard_view&tab=index');
+    $vercel_url = get_option('rvce_chatbot_vercel_url', '');
+    $mode = isset($_GET['view']) ? sanitize_text_field($_GET['view']) : 'live';
+
+    if (!empty($vercel_url) && $mode !== 'local') {
+        $dashboard_url = rtrim($vercel_url, '/') . '/dashboard';
+        $is_live = true;
+    } else {
+        $dashboard_url = admin_url('admin-post.php?action=rvce_chatbot_dashboard_view&tab=index');
+        $is_live = false;
+    }
     ?>
-    <div class="wrap" style="margin: 0; padding: 0; max-width: 100%; height: calc(100vh - 32px);">
-        <iframe src="<?php echo esc_url($dashboard_url); ?>" style="width: 100%; height: 100%; border: none;"></iframe>
+    <div class="wrap" style="margin: 0; padding: 0; max-width: 100%; min-height: 900px; background: #0b0f19;">
+        <!-- Top Navigation Bar inside WP Admin -->
+        <div style="padding: 12px 24px; background: #0f172a; border-bottom: 1px solid #1e293b; display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 14px;">
+                <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981;"></span>
+                <span style="color: #fff; font-weight: 800; font-size: 15px;">RVCE Analytics Command Center</span>
+                <span style="background: rgba(99,102,241,0.18); border: 1px solid rgba(99,102,241,0.35); padding: 3px 10px; border-radius: 6px; font-size: 11px; color: #818cf8; font-weight: 700;">
+                    <?php echo $is_live ? '⚡ Connected to Vercel & Supabase' : '📁 Local WordPress Database'; ?>
+                </span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <?php if (!empty($vercel_url)) : ?>
+                    <a href="<?php echo esc_url($dashboard_url); ?>" target="_blank" class="button" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;">↗ Open Full Screen</a>
+                <?php endif; ?>
+                <a href="<?php echo esc_url(admin_url('admin.php?page=rvce-chatbot')); ?>" class="button button-primary">⚙ Chatbot Settings</a>
+            </div>
+        </div>
+
+        <!-- Embedded Full Dashboard -->
+        <iframe src="<?php echo esc_url($dashboard_url); ?>" style="width: 100%; height: calc(100vh - 90px); min-height: 850px; border: none;" allow="clipboard-write; clipboard-read"></iframe>
     </div>
     <?php
 }
@@ -279,6 +306,22 @@ function rvce_chatbot_settings_page() {
             <div>
                 <h1 style="margin:0; font-size:24px;"><?php echo esc_html(__('RVCE Chatbot Settings', 'rvce-chatbot')); ?></h1>
                 <p style="margin:2px 0 0; color:#64748b;"><?php echo esc_html(__('Configure display titles, behavior, notification emails, and dual-write telemetry endpoints.', 'rvce-chatbot')); ?></p>
+            </div>
+        </div>
+
+        <!-- Command Center Live Access Banner -->
+        <div style="background: linear-gradient(135deg, #0f172a, #1e293b); border: 1px solid #334155; border-radius: 12px; padding: 20px 26px; margin: 20px 0 25px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+            <div>
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                    <span style="color: #818cf8; font-size: 18px;">📊</span>
+                    <h2 style="margin: 0; color: #fff; font-size: 17px; font-weight: 800;"><?php _e('Analytics Command Center Inside WordPress', 'rvce-chatbot'); ?></h2>
+                </div>
+                <p style="margin: 0; color: #94a3b8; font-size: 13px;"><?php _e('View live visitor sessions, Instagram acquisition tags, search keywords, and full clickstream replays right here in your WordPress admin panel.', 'rvce-chatbot'); ?></p>
+            </div>
+            <div>
+                <a href="<?php echo esc_url(admin_url('admin.php?page=rvce-chatbot-dashboard')); ?>" class="button button-primary" style="height: 38px; line-height: 36px; padding: 0 18px; font-weight: 700; font-size: 13px; background: #6366f1; border-color: #4f46e5;">
+                    📊 Open Dashboard
+                </a>
             </div>
         </div>
 
