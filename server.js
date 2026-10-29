@@ -14,6 +14,10 @@ app.use(express.urlencoded({ extended: true }));
 // Serve static files from the current directory (your frontend)
 app.use(express.static(__dirname));
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 // Configure Nodemailer transporter
 const transporter = nodemailer.createTransport({
     service: 'gmail', // You can change this if using Outlook/Yahoo, etc.

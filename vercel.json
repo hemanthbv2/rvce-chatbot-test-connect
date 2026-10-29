@@ -3,12 +3,12 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/api",
-      "destination": "/api/index.js"
+      "source": "/api/(.*)",
+      "destination": "/api"
     },
     {
-      "source": "/api/:match*",
-      "destination": "/api/index.js"
+      "source": "/api",
+      "destination": "/api"
     },
     {
       "source": "/dashboard",
@@ -29,18 +29,6 @@
     {
       "source": "/dashboard/analytics",
       "destination": "/dashboard/analytics.html"
-    },
-    {
-      "source": "/dashboard/:match*",
-      "destination": "/dashboard/:match*"
-    },
-    {
-      "source": "/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/:match*",
-      "destination": "/:match*"
     }
   ],
   "env": {
