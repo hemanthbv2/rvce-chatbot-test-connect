@@ -3940,6 +3940,9 @@ fab.addEventListener('click',()=>{
     if(chatOpen){
         if(badge) badge.classList.add('hidden');
         inp.focus();
+        if(typeof rvceTrackEvent==='function'){
+            rvceTrackEvent('bot_open',{pagePath:window.location.pathname,pageUrl:window.location.href,referrer:document.referrer||'',title:document.title});
+        }
     } else {
         if(badge) badge.classList.remove('hidden');
     }
